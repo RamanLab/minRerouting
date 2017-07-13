@@ -1,9 +1,16 @@
 function [solutionWT] = fluxMOMAzn( model,fluxDel )
-% fluxMOMA performs zero norm version of MOMA
-% [solutionWT] = MOMA(modelWT,fluxDel)
+% fluxMOMA performs zero norm version of MOMA for a given model and flux
+% vector
+%% [solutionWT] = MOMA(model,fluxDel)
 %
-%INPUTS
-% model            Wild type model
+% INPUT
+% model (the following fields are required - others can be supplied)
+%   S            Stoichiometric matrix
+%   b            Right hand side = dx/dt
+%   c            Objective coefficients
+%   lb           Lower bounds
+%   ub           Upper bounds
+%   rxns         Reaction Names
 % fluxDel          Deletion strain flux vector
 %
 %OUTPUTS
