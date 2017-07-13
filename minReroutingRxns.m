@@ -21,12 +21,8 @@ function [minRerouting] = minReroutingRxns(model,Jdl,cutOff)
 %   PathCommon   List of reactions common in both the alternate paths
 %
 % Omkar Mohite       13 Jul,2017.
-if exist('cutoff', 'var')
-    if isempty(cutoff)
-        cutoff = 0.0001;
-    end
-else
-    cutoff = 0.0001;
+if (nargin <3 || isempty(cutOff))
+        cutOff = 0.0001;
 end
 
 nLethals = length(Jdl);
@@ -84,10 +80,10 @@ for iLeth=1:nLethals
     end
     
     modeldel_1.lb(delIdx_1)=model.lb(delIdx_1);
-    modeldel_1.ub(delIdx_1)=model.lb(delIdx_1);
+    modeldel_1.ub(delIdx_1)=model.ub(delIdx_1);
     
     modeldel_2.lb(delIdx_2)=model.lb(delIdx_2);
-    modeldel_2.ub(delIdx_2)=model.lb(delIdx_2);
+    modeldel_2.ub(delIdx_2)=model.ub(delIdx_2);
     waitbar(iLeth/nLethals,h,[num2str(round(iLeth*100/nLethals)) '% completed...']);
 end
 
