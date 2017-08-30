@@ -19,7 +19,7 @@ We enlist synthetic lethal pairs identified using **Fast-SL** and as reported by
 
 List of additional lethal pairs identified using Fast-SL:
 
-| Extra Pairs by Fast-SL | |
+| Extra Pairs by Fast-SL  |
 |:--- | :---|
 | O2tex | OPHHX3  |
 |O2tpp	|CPPPGO2|
