@@ -10,5 +10,11 @@ This excercise attempts to analyse and comparer the classification of lethals as
 
 This classification was based on the optimal FBA solution to maximize biomass growth rate. Metabolic constraints define a range of solution space. FBA is a based on linear programming approach to identify a particular solution maximizing given objective function, generally biomas  gorwth rate. Even though the solution space is reduced, FBA picks one of the solutions satisfying optimal growth. `optimizeCbModel` function in COBRA toolbox can be used to find such FBA solutions with additional objectives such as `minNorm`. We here compare several FBA solutions found using several minNorm conditions as well as different solvers.
 
+#### Synthetic Lethals Pairs
+We enlist synthetic lethal pairs identified using **Fast-SL** and as reported by Güell et al (2014).
+
+| Organism      | Fast-SL       | Güell et al (2014) |
+| :-------------: |:-----------:| :-----:|
+| Ecoli iJO1366 | 267           | 256 |
 
 
