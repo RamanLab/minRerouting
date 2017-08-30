@@ -17,4 +17,18 @@ We enlist synthetic lethal pairs identified using **Fast-SL** and as reported by
 | :-------------: |:-----------:| :-----:|
 | Ecoli iJO1366 | 267           | 256 |
 
+List of additional lethal pairs identified using Fast-SL:
+O2tex|	OPHHX3
+O2tpp	|CPPPGO2
+O2tpp	|OPHHX3
+O2tpp	|SUCCtex
+OPHHX	|OPHHX3
+PDX5PO2	|PDX5POi
+PRPPS	|R1PK
+O2tpp	|ENO
+O2tpp	|GAPD
+PGK	|O2tpp
+PGM	|O2tpp
+PPPGO3	|O2tpp
+
 
