@@ -14,14 +14,11 @@ This classification was based on the optimal FBA solution to maximize biomass gr
 We enlist synthetic lethal pairs identified using **Fast-SL** and as reported by Güell et al (2014).
 
 | Organism      | Fast-SL       | Güell et al (2014) |
-
-
-
 | :-------------: |:-----------:| :-----:|
 | Ecoli iJO1366 | 267           | 256 |
 
 List of additional lethal pairs identified using Fast-SL:
-
+|:--- | :---|
 | O2tex | OPHHX3  |
 |O2tpp	|CPPPGO2|
 |O2tpp	|OPHHX3|
