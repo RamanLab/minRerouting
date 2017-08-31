@@ -36,6 +36,7 @@ List of additional lethal pairs identified using Fast-SL:
 
 One pair *I2FE2SR,SCYSDS* was not found by FastSL. (This pair is double lethal but not identified with FastSL)
 
+
 We classified 267 SL pairs in redundancy and plasticity according to FBA solutions obtained using different minNorm conditions and diffent solvers.
 
 | Method  | Plasticity  | Redundancy  |
