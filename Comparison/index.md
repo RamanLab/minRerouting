@@ -19,7 +19,7 @@ We enlist synthetic lethal pairs identified using **Fast-SL** and as reported by
 
 List of additional lethal pairs identified using Fast-SL:
 
-| Extra Pairs by Fast-SL  |
+| Extra Pairs by Fast-SL  | |
 |:--- | :---|
 | O2tex | OPHHX3  |
 |O2tpp	|CPPPGO2|
@@ -33,5 +33,18 @@ List of additional lethal pairs identified using Fast-SL:
 |PGK	|O2tpp|
 |PGM	|O2tpp|
 |PPPGO3	|O2tpp |
+
+One pair *I2FE2SR,SCYSDS* was not found by FastSL. (This pair is double lethal but not identified with FastSL)
+
+We classified 267 SL pairs in redundancy and plasticity according to FBA solutions obtained using different minNorm conditions and diffent solvers.
+
+| Method  | Plasticity  | Redundancy  |
+|:---     |:---         |:---         |
+| Gurobi  | 234 | 33  |
+| GLPK    | 233 | 34  |
+| CPLEX   | 238 | 29  |
+| minNorm=0 | 240 | 27  |
+| minNorm=1 | 240 | 27  |
+| minNorm=2 | 221 | 46  |
 
 
