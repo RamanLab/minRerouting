@@ -7,8 +7,8 @@
 
 ### Example - One of the clusters of 9 pairs have 17 reactions in rerouting 
 
-|Lethal Pairs| |              |Minimal Rerouting Set| 
-|--- | ---|                   |---|
+|Lethal Pairs| |              
+|--- | ---|                   
 AACPS4	|'3HAD161'
 'AACPS4'	|'3OAR161'
 'AACPS4'	|'3OAS161'
@@ -18,5 +18,25 @@ AACPS4	|'3HAD161'
 'FACOAE161'	|'3HAD161'
 'FACOAE161'	|'3OAR161'
 'FACOAE161'	|'3OAS161'
+
+|Minimal Rerouting Set| 
+|---|
+'3HAD161'
+'3OAR161'
+'3OAS161'
+'AACPS2'
+'AACPS4'
+'ACACT7r'
+'ACOAD6f'
+'ACOATA'
+'CTECOAI6'
+'CTECOAI7'
+'EAR161x'
+'ECOAH7'
+'FACOAE141'
+'FACOAE161'
+'FADRx2'
+'HACD7'
+'MACPD'
 
 We identify rerouting between each of the 136 pairs derived from set of 17 reactions.
