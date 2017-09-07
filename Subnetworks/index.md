@@ -64,12 +64,13 @@ We identify rerouting between each of the 136 pairs derived from set of 17 react
 
 Classifying subnetwork based on pairwise rerouting:
 
+Reactions with zero rerouting with every other reaction in the subnetwork are those which belong to both the pathways.  
 | Path 1     | Path 2     | Common   |
 |------------|------------|----------|
 | 3HAD161   | AACPS4    | ACOATA  |
 | 3OAR161   | ACACT7r   | EAR161x |
 | 3OAS161   | ACOAD6f   | FADRx2  |
 | AACPS2    | CTECOAI7  | MACPD   |
-| CTECOAI6  | ECOAH7    |          |
-| FACOAE141 | FACOAE161 |          |
-|            | HACD7     |          |
+| CTECOAI6  | ECOAH7    |         |
+| FACOAE141 | FACOAE161 |         |
+|           | HACD7     |         |
