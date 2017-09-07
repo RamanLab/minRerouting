@@ -7,5 +7,5 @@
 
 ### Example - One of the clusters of 9 pairs have 17 reactions in rerouting 
  
-![Cluster 8](https://github.com/RamanLab/minRerouting/blob/master/Subnetworks/Images/cluster2C.jpeg | width=100 )
+![Cluster 8](https://github.com/RamanLab/minRerouting/blob/master/Subnetworks/Images/cluster2C.jpeg)
 
