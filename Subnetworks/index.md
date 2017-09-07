@@ -6,6 +6,17 @@
 4. Classify the reaction pairs with no rerouting into one group and those with rerouting in different groups.
 
 ### Example - One of the clusters of 9 pairs have 17 reactions in rerouting 
- 
-![Cluster 8](https://github.com/RamanLab/minRerouting/blob/master/Subnetworks/Images/cluster2C.jpeg)
 
+Lethal Pairs| 
+--- | ---
+'AACPS4'	|'3HAD161'
+'AACPS4'	|'3OAR161'
+'AACPS4'	|'3OAS161'
+'CTECOAI7'	|'3HAD161'
+'CTECOAI7'	|'3OAR161'
+'CTECOAI7'	|'3OAS161'
+'FACOAE161'	|'3HAD161'
+'FACOAE161'	|'3OAR161'
+'FACOAE161'	|'3OAS161'
+
+We identify rerouting between each of the 136 pairs derived from set of 17 reactions.
