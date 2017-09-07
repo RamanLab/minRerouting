@@ -64,7 +64,8 @@ We identify rerouting between each of the 136 pairs derived from set of 17 react
 
 Classifying subnetwork based on pairwise rerouting:
 
-Reactions with zero rerouting with every other reaction in the subnetwork are those which belong to both the pathways.  
+Reactions with zero rerouting with every other reaction in the subnetwork are those which belong to both the pathways. 
+
 | Path 1     | Path 2     | Common   |
 |------------|------------|----------|
 | 3HAD161   | AACPS4    | ACOATA  |
@@ -74,3 +75,7 @@ Reactions with zero rerouting with every other reaction in the subnetwork are th
 | CTECOAI6  | ECOAH7    |         |
 | FACOAE141 | FACOAE161 |         |
 |           | HACD7     |         |
+
+Here's the reaction network of 17 reactions in minRerouting set visualized in Cytoscape
+
+![Subnetwork](https://github.com/RamanLab/minRerouting/blob/master/Subnetworks/Images/cluster2C.jpeg)
