@@ -9,7 +9,7 @@
 
 |Lethal Pairs| |
 |--- | ---|
-|AACPS4	|3HAD161|
+AACPS4	|'3HAD161'
 'AACPS4'	|'3OAR161'
 'AACPS4'	|'3OAS161'
 'CTECOAI7'	|'3HAD161'
