@@ -63,6 +63,7 @@ We identify rerouting between each of the 136 pairs derived from set of 17 react
 
 
 Classifying subnetwork based on pairwise rerouting:
+
 | Path 1     | Path 2     | Common   |
 |------------|------------|----------|
 | 3HAD161'   | AACPS4'    | ACOATA'  |
