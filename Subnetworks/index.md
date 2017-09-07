@@ -8,7 +8,7 @@
 ### Example - One of the clusters of 9 pairs have 17 reactions in rerouting 
 
 |Lethal Pairs|             
-|--- | ---|                   
+|--- |                  
 AACPS4	|'3HAD161'
 'AACPS4'	|'3OAR161'
 'AACPS4'	|'3OAS161'
