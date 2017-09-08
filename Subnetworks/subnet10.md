@@ -51,8 +51,9 @@ RNDR2
 RNDR3
 TRDR
 
-..* NDPK3 and RNTR3c2 show similar rewiring suggesting that these are consecutive reactions of one path.
-..* RNTR1c2, RNTR2c2 and RNTR3c2 show  
+- NDPK3 and RNTR3c2 show similar rewiring suggesting that these are consecutive reactions of one path
+- Each of RNTR1c2, RNTR2c2 and RNTR3c2 show rerouting with other two suggesting parellel reactions
+- Each of RNTR1c2, RNTR2c2 and RNTR3c2 show rerouting with NDPK8, NDPK5 and NDPK7 respectively suggesting alternate reactions
 
 
 
