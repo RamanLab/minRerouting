@@ -42,7 +42,7 @@
 #### Classifying subnetwork based on pairwise rerouting:
 In this subnetwork, the alternet routes are complex with multiple essential metabolites involved. 
 
-..* | Reactions with zero rerouting | 
+| Reactions with zero rerouting | 
 |---|
 FLDR2
 NDPK1
