@@ -42,7 +42,7 @@
 #### Classifying subnetwork based on pairwise rerouting:
 In this subnetwork, the alternet routes are complex with multiple essential metabolites involved. 
 
-| Following reactions showed zero rerouting with all |
+..* | Reactions with zero rerouting | 
 |---|
 FLDR2
 NDPK1
@@ -50,5 +50,9 @@ RNDR1
 RNDR2
 RNDR3
 TRDR
+
+..* NDPK3 and RNTR3c2 show similar rewiring suggesting that these are consecutive reactions of one path.
+..* RNTR1c2, RNTR2c2 and RNTR3c2 show  
+
 
 
