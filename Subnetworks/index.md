@@ -9,5 +9,6 @@
 Subnetworks represented by some of the clusters among 31 are classified as below
 
 1. [Subnetwork 1](https://github.com/RamanLab/minRerouting/blob/master/Subnetworks/subnet1.md)
+1. [Subnetwork 2](https://github.com/RamanLab/minRerouting/blob/master/Subnetworks/subnet2.md)
 8. [Subnetwork 8](https://github.com/RamanLab/minRerouting/blob/master/Subnetworks/subnet8.md)
-. 
+ 
