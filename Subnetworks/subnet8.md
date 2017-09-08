@@ -34,7 +34,7 @@ MACPD
 
 We identify rerouting between each of the 136 pairs derived from set of 17 reactions.
 
-| 3HAD161   | 3OAR161 | 3OAS161 | AACPS2 | AACPS4 | ACACT7r | ACOAD6f | ACOATA | CTECOAI6 | CTECOAI7 | EAR161x | ECOAH7 | FACOAE141 | FACOAE161 | FADRx2 | HACD7 | MACPD |   |
+| | 3HAD161   | 3OAR161 | 3OAS161 | AACPS2 | AACPS4 | ACACT7r | ACOAD6f | ACOATA | CTECOAI6 | CTECOAI7 | EAR161x | ECOAH7 | FACOAE141 | FACOAE161 | FADRx2 | HACD7 | MACPD |  
 |------------|----------|----------|---------|---------|----------|----------|---------|-----------|-----------|----------|---------|------------|------------|---------|--------|--------|---|
 | 3HAD161   | 0        | 0        | 0       | 0       | 17       | 17       | 17      | 0         | 0         | 17       | 0       | 17         | 0          | 17      | 0      | 17     | 0 |
 | 3OAR161   | 0        | 0        | 0       | 0       | 17       | 17       | 17      | 0         | 0         | 17       | 0       | 17         | 0          | 17      | 0      | 17     | 0 |
