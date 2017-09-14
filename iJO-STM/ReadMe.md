@@ -1,5 +1,10 @@
 ### Comparison of synthetic lethals and minimal rerouting between Ecoli (iJO1366) and S Typhimurium (STM_V1.0)
 
+#### All reactions: 
+* iJO1366 : [**2583**]
+* STM_v1.0 : [**2546**]
+* Common SLs : [**1873**]
+
 #### Single Lethals: 
 * iJO1366 : [**270**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Jsl_iJO.md) 
 * STM_v1.0 : [**329**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Jsl_STM.md)
