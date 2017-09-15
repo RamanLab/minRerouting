@@ -15,3 +15,10 @@
 * STM_v1.0 : [**152**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Jdl_STM.md) 
 * Common DLs : [**47**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/CommonJdl.md) 
 
+#### Heatmap comparing synthetic lethals
+![](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Figures/SL_iJO_STM.jpg)
+
+The area in rectangle shows the reactions which are single lethal in Salmonella but double lethals in Ecoli. We further reduce the data of above heatmap to see the diffent regions.
+
+![](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Figures/SLReduced_iJO_STM.jpg)
+
