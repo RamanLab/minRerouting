@@ -22,3 +22,6 @@ The area in rectangle shows the reactions which are single lethal in Salmonella 
 
 ![](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Figures/SLReduced_iJO_STM.jpg)
 
+List of all the unique reactions can be found at [ExcelFile](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/iJO-STM.xlsx) or [here](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/IJO_STMTable.md).
+
+
