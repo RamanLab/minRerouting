@@ -2,18 +2,16 @@
 
 #### All reactions: 
 * iJO1366 : **2583**
-* STM_v1.0 : **2546**
-* Common SLs : **1873**
+* STM_v1.0 : **2545**
 
 #### Single Lethals: 
 * iJO1366 : [**270**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Jsl_iJO.md) 
-* STM_v1.0 : [**329**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Jsl_STM.md)
-* Common SLs : [**206**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/CommonJsl.md)
+* STM_v1.0 : [**332**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Jsl_STM.md)
+
 
 #### Double Lethals: 
 * iJO1366 : [**267**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Jdl_iJO.md)  
-* STM_v1.0 : [**152**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Jdl_STM.md) 
-* Common DLs : [**47**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/CommonJdl.md) 
+* STM_v1.0 : [**166**](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Jdl_STM.md) 
 
 #### Heatmap comparing synthetic lethals
 ![](https://github.com/RamanLab/minRerouting/blob/master/iJO-STM/Figures/SL_iJO_STM.jpg)
