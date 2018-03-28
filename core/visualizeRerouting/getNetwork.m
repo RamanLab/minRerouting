@@ -14,16 +14,16 @@ for m=1:length(rxnSet)
     if model.rev(rxnSetId(m))==1
         for p=1:length(model.mets)
             if rxnSetS(p,m)~=0
-                inputNetwork=[inputNetwork;[model.mets(p),rxnSet(m),'species','reaction']];
-                inputNetwork=[inputNetwork;[rxnSet(m),model.mets(p),'reaction','species']];
+                inputNetwork=[inputNetwork;[model.mets(p),rxnSet(m),'species']];
+                inputNetwork=[inputNetwork;[rxnSet(m),model.mets(p),'reaction']];
             end    
         end
     else
         for p=1:length(model.mets) 
             if rxnSetS(p,m)<0 
-                inputNetwork=[inputNetwork;[model.mets(p),rxnSet(m),'species','reaction']];
+                inputNetwork=[inputNetwork;[model.mets(p),rxnSet(m),'species']];
             elseif rxnSetS(p,m)>0
-                inputNetwork=[inputNetwork;[rxnSet(m),model.mets(p),'reaction','species']];
+                inputNetwork=[inputNetwork;[rxnSet(m),model.mets(p),'reaction']];
             end
         end  
     end 

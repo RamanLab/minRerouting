@@ -1,24 +1,24 @@
 % Degree of rerouting
 % Generating input for Cytoscape for 6 lethals of different size of
 % rerouting. For each lethal pair run the function GetNetwork 
-% 1. {'IPDDI','IPDPS'} - 51
-% 2. {'G5SD','NACODA'} - 45
-% 3. {'3OAS160','FACOAE160'} - 21
-% 4. {'TKT2','RPE'} - 127
-% 5. {'PGK','O2tex'} - 106
-% 6. {'PPKr','PPA'} - 74
-iLeth=1;
-minSet_i=minRerouted(iLeth).rxns(abs(minRerouteddiff(iLeth,:))>0.0001);
+% 1. {'NI2tpp','NI2uabcpp'} - 212
+% 2. {'G3PAT160','APG3PAT160'} -138
+% 3. {'G5SD','NACODA'} - 141
+% 4. {'I4FE4ST','S4FE4ST'} - 204
+% 5. {'AACPS7','3HAD120'} - 7
+% 6. {'PGM','O2tex'} - 250 
+iLeth=250;
+minSet_i=minReFBA(iLeth).cluster;
 net=getNetwork(minSet_i,model);
- fid = fopen('FVA_DL1.csv','wt');
- fprintf(fid,'source,target,Column 3,Column 4\n');
- if fid>0
-     for k=1:size(net,1)
-         fprintf(fid,'%s,%s,%s,%s\n',net{k,:});
+fname=sprintf('DLPairFBA_%d.csv',iLeth)
+     fid = fopen(fullfile(fname),'wt');
+     fprintf(fid,'source,target,Column 3\n');
+     if fid>0
+         for k=1:size(net,1)
+             fprintf(fid,'%s,%s,%s\n',net{k,:});
+         end
+         fclose(fid);
      end
-     fclose(fid);
- end
-
 % Classification of lethals
 % 1. Acetyl pathways - 21 Lethals
 Leth_cat=strcat(LethalsAcetylPathway(:,1),LethalsAcetylPathway(:,2));
@@ -53,10 +53,10 @@ for m=1:length(Leth_cat)
     IdxLeth=[IdxLeth; find(strcmp(Leth_cat(m),Jdl_cat))];
 end    
 for k=1:length(IdxLeth)
-%     if length(minRerouted(IdxLeth(k)).rxns)<50
-%         minSetClass_all=[minSetClass_all; minRerouted(IdxLeth(k)).rxns];
+%     if length(minRerouting(IdxLeth(k)).rxns)<50
+%         minSetClass_all=[minSetClass_all; minRerouting(IdxLeth(k)).rxns];
 %     else 
-        minSetClass_all=[minSetClass_all; minRerouted(IdxLeth(k)).rxns(abs(minRerouteddiff(IdxLeth(k),:))>0.0001)];
+        minSetClass_all=[minSetClass_all; minRerouting(IdxLeth(k)).rxns(abs(minReroutingdiff(IdxLeth(k),:))>0.0001)];
 %     end
 end
 

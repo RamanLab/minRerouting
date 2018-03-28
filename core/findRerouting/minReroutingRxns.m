@@ -1,4 +1,4 @@
-function [minRerouting] = minReroutingRxns(model,Jdl,cutOff)
+function [minRerouting] = minReroutingRxns(model,Jdl,cutOff,Iter)
 %% [minRerouting] = minReroutingRxns(model,Jdl,cutOff)
 % INPUT
 % model (the following fields are required - others can be supplied)
@@ -8,7 +8,7 @@ function [minRerouting] = minReroutingRxns(model,Jdl,cutOff)
 %   lb           Lower bounds
 %   ub           Upper bounds
 %   rxns         Reaction Names
-% Jdl            List of reaction pairs(double lethals generally) for identifying the flux rerouting
+% Jdl            List of reaction pairs(doJdl(uble lethals generally) for identifying the flux rerouting
 %OPTIONAL
 % cutoff         cutoff flux difference value for MOMA difference.Default is 0.0001.
 %
@@ -25,7 +25,11 @@ if (nargin <3 || isempty(cutOff))
         cutOff = 0.0001;
 end
 
-nLethals = length(Jdl);
+if (nargin <4 || isempty(Iter))
+        Iter = 3;
+end
+
+[nLethals,temp] = size(Jdl);
 
 % minRerouting consists information on reactions in alternate paths
 minRerouting(nLethals).rxns=[];
@@ -38,7 +42,7 @@ minRerouting(nLethals).pathCommon=[];
 h = waitbar(0,'0.00','Name','Identifying minRerouitngSets...');
 modeldel_1=model;
 modeldel_2=model;
-for iLeth=1:nLethals
+for iLeth=69:nLethals
     delIdx_1=find(strcmp(Jdl(iLeth,1),model.rxns));
     delIdx_2=find(strcmp(Jdl(iLeth,2),model.rxns));
     
@@ -48,15 +52,54 @@ for iLeth=1:nLethals
     modeldel_2.lb(delIdx_2)=0;
     modeldel_2.ub(delIdx_2)=0;
     
-    sol_11=optimizeCbModel(modeldel_1,'max','zero'); %Sol_11 is for modelDel1 -FBA
-    fluxFBA=sol_11.x;
-    
-    sol_21=fluxMOMAzn(modeldel_2,fluxFBA);   %Sol_21 is for modelDel2 close to V11 - MOMA
-    flux2=sol_21.x;
-    
-    sol_12=fluxMOMAzn(modeldel_1,flux2);   %Sol_12 is for modelDel1 close to V21 - MOMA
-    flux1=sol_12.x;
+%     sol_11=optimizeCbModel(modeldel_1,'max','zero'); %Sol_11 is for modelDel1 -FBA
+%     fluxFBA=sol_11.x;
+%     
+%     sol_21=fluxMOMAzn(modeldel_2,fluxFBA);   %Sol_21 is for modelDel2 close to V11 - MOMA
+%     flux2=sol_21.x;
+%     
+%     sol_12=fluxMOMAzn(modeldel_1,flux2);   %Sol_12 is for modelDel1 close to V21 - MOMA
+%     flux1=sol_12.x;
+%     
+%     sol_22=fluxMOMAzn(modeldel_2,flux1);   %Sol_21 is for modelDel2 close to V11 - MOMA
+%     flux2=sol_22.x;
 
+% Run 3 iterations of MOMA
+    V1=zeros(length(model.rxns),Iter);
+    V2=zeros(length(model.rxns),Iter);
+
+    sol_11=optimizeCbModel(modeldel_1,'max','zero'); %Sol_11 is MT1 Iteration 1
+    V1(:,1)=sol_11.x;
+    
+    sol_21=fluxMOMAzn(modeldel_2,V1(:,1));   %Sol_21 is MT2 Iteration 1
+    V2(:,1)=sol_21.x;
+    
+    for j=2:Iter
+        sol_1j=fluxMOMAzn(modeldel_1,V2(:,j-1));
+        V1(:,j)=sol_1j.x;
+        
+        sol_2j=fluxMOMAzn(modeldel_2,V1(:,j));        
+        V2(:,j)=sol_2j.x;
+    end
+ 
+%  % Quadratic MOMA
+%  sol_11=optimizeCbModel(modeldel_1,'max','one'); %Sol_11 is MT1 Iteration 1
+%     V1(:,1)=sol_11.x;
+%     
+%     sol_21=fluxMOMA(modeldel_2,V1(:,1));   %Sol_21 is MT2 Iteration 1
+%     V2(:,1)=sol_21.x;
+%     
+%     for j=2:3
+%         sol_1j=fluxMOMA(modeldel_1,V2(:,j-1));
+%         V1(:,j)=sol_1j.x;
+%         
+%         sol_2j=fluxMOMA(modeldel_2,V1(:,j));        
+%         V2(:,j)=sol_2j.x;
+%     end
+%     
+    flux1=V1(:,Iter);
+    flux2=V2(:,Iter);
+    
     diff=flux1-flux2;
     
     minRerouting(iLeth).rxns=model.rxns(find(abs(diff)>cutOff));

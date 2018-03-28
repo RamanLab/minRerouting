@@ -1,5 +1,5 @@
 function [ minReSet ] = getMinSetofCluster(lethSet,Jdl,minRerouted)
-%GETMINSETOFCLUSTER Summary of this function goes here
+%[ minReSet ] = getMinSetofCluster(lethSet,Jdl,minRerouted)
 %   Detailed explanation goes here
 
     Leth_cat=strcat(lethSet(:,1),lethSet(:,2));

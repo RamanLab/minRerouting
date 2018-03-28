@@ -1,4 +1,4 @@
-function [ Cyto ] = plotClusters( model,Cluster, Jdl, minRerouted )
+function [ Cyto ] = plotClusters( model,Cluster, Jdl, minRerouting )
 %PLOTCLUSTERS generates CSV files for all clusters identified to be used in
 %cytoscape
 for i=1:length(Cluster)
@@ -11,17 +11,17 @@ for i=1:length(Cluster)
         IdxLeth=[IdxLeth; find(strcmp(Leth_cat(m),Jdl_cat))];
     end    
     for k=1:length(IdxLeth)
-            minSetClass_all=[minSetClass_all; minRerouted(IdxLeth(k)).rxns];
+            minSetClass_all=[minSetClass_all; minRerouting(IdxLeth(k)).rxns];
     end
 
     minSet_i=unique(minSetClass_all);
     net=getNetwork(minSet_i,model);
     fname=sprintf('clust_%d.csv',i)
      fid = fopen(fullfile(fname),'wt');
-     fprintf(fid,'source,target,Column 3,Column 4\n');
+     fprintf(fid,'source,target,Column 3\n');
      if fid>0
          for k=1:size(net,1)
-             fprintf(fid,'%s,%s,%s,%s\n',net{k,:});
+             fprintf(fid,'%s,%s,%s\n',net{k,:});
          end
          fclose(fid);
      end

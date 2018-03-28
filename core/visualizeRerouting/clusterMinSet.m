@@ -8,13 +8,13 @@ for iLeth=1:length(Jdl)
 end    
 D=pdist(p,'jaccard');
 l=linkage(D);
-c=cluster(l,'Cutoff',eps);
+c=cluster(l,'Cutoff',1);
 m=1;
 for k=1:max(c)
-    if(sum(c==k)<=1)
-        continue
-    end
-%     fprintf('Cluster %d:\n',k)
+%     if(sum(c==k)<=1)
+%         continue
+%     end
+    fprintf('Cluster %d:\n',k)
     Cluster_temp(m).Jdl=Jdl(c==k,:); 
     len(m)=length(Jdl(c==k,:)); m=m+1;
 end
@@ -24,3 +24,4 @@ for Idx=1:m-1
 end
 fprintf('Total number of clusters identified: %d\n',m-1)
 end
+
