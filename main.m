@@ -38,13 +38,14 @@ for k=1:length(minReSets)
     size_minReShort(k,1) = length(minReSets(k).PathShort);
     size_minReLong(k,1) = length(minReSets(k).PathLong);
 end    
-
+% Histogram plot
 hist(size_minReSets,15)
 title('Distribution of degree of rerouting across double lethals','fontSize',20)
 xlabel('Number of reactions being rerouted','fontSize',20)
 ylabel('Number of double lethals pairs','fontSize',20)
 print('Output\hist_minReSets','-dpng')
 
+% Scatter plot
 [size_uniq]=unique([size_minReShort, size_minReLong],'rows');
 tbl=tabulate([1000*size_minReShort+size_minReLong]);
 
@@ -57,6 +58,7 @@ plot(size_uniq(:,1),yCalc1)
 title('Comparison between lengths of alternative paths','fontSize',20)
 xlabel('Number of reactions in Shorter Path','fontSize',20)
 ylabel('Number of reactions in Longer Path','fontSize',20)
+print('Output\scatter_pathlen','-dpng')
 
 
 
