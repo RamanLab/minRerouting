@@ -1,16 +1,9 @@
 function [solutionWT] = fluxMOMAzn( model,fluxDel )
 % fluxMOMA performs zero norm version of MOMA for a given model and flux
 % vector
-%% [solutionWT] = MOMA(model,fluxDel)
-%
+%%
 % INPUT
-% model (the following fields are required - others can be supplied)
-%   S            Stoichiometric matrix
-%   b            Right hand side = dx/dt
-%   c            Objective coefficients
-%   lb           Lower bounds
-%   ub           Upper bounds
-%   rxns         Reaction Names
+% model            model file
 % fluxDel          Deletion strain flux vector
 %
 %OUTPUTS
@@ -36,8 +29,6 @@ zeroNormApprox = 'cappedL1'; %This is default apporximation used in optimizeCbMo
     constraint.lb = model.lb-fluxDel;
     constraint.ub = model.ub-fluxDel;
     
-%     params.epsilon=10e-4;
-    
     % Call the sparse LP solver
     solutionL0 = sparseLP('cappedL1',constraint);
     
@@ -48,5 +39,6 @@ zeroNormApprox = 'cappedL1'; %This is default apporximation used in optimizeCbMo
     solution.rcost  = [];        
 %     solution.dual=solution.dual(1:m,1);
     solutionWT.x = solution.full(1:nRxns)+fluxDel;
+    solutionWT.stat = solutionL0.stat;
 end
 

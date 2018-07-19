@@ -5,12 +5,11 @@ function minReOutputs = minRe(filename, SL_data)
 % Optional
 % SL_data  - FastSL output file (With structure including at least Jsl and Jdl) ; if empty run fastSL
 
-initCobraToolbox;
+% initCobraToolbox;
 addpath('core\findRerouting','core\visualizeRerouting'); %adding libraries
-delete('Output\*'); % delete output folder to save newly genrated data for current model
 
 model = readCbModel(filename);
-
+save('model.mat','model')
 if (nargin <2 || isempty(cutOff))
     eliList=model.rxns(find(findExcRxns(model)));
     fastSL(model,0.05,2,eliList);
@@ -22,22 +21,17 @@ else
     movefile(SL_data,'Output')
 end
 
-% Generate Synthetic Lethal xls files in output directory
-fname = 'Output\SyntheticLethal_list.xlsx';
-data1 = {'Single Lethal Reactions', Jsl{:}};
-xlswrite(fname, transpose(data1), 1);
-data2 = {'Double Lethal Reactions','Rxn A', Jdl{:,1};
-            '','Rxn B', Jdl{:,2}};
-xlswrite(fname, transpose(data2), 2);
-
 % Generate min rerouting data in output folder
-minReSets=minReroutingRxns(model,Jdl,0.0001,3,'True');
+minReSets=minReroutingRxns(model,Jdl,0.000001,0,3,'True'); 
+save('Output\minReSets.mat', 'minReSets'); 
 
+%% Figures 
 for k=1:length(minReSets)
     size_minReSets(k,1) = length(minReSets(k).rxns);
     size_minReShort(k,1) = length(minReSets(k).PathShort);
     size_minReLong(k,1) = length(minReSets(k).PathLong);
 end    
+
 % Histogram plot
 hist(size_minReSets,15)
 title('Distribution of degree of rerouting across double lethals','fontSize',20)
@@ -48,7 +42,6 @@ print('Output\hist_minReSets','-dpng')
 % Scatter plot
 [size_uniq]=unique([size_minReShort, size_minReLong],'rows');
 tbl=tabulate([1000*size_minReShort+size_minReLong]);
-
 b1=size_uniq(:,1)\size_uniq(:,2);
 yCalc1 = b1*size_uniq(:,1);
 figure(3)
@@ -60,33 +53,49 @@ xlabel('Number of reactions in Shorter Path','fontSize',20)
 ylabel('Number of reactions in Longer Path','fontSize',20)
 print('Output\scatter_pathlen','-dpng')
 
+%% Excel files data 
+% Generate Synthetic Lethal xls files in output directory
+data1 = {'Single Lethal Reactions', Jsl{:}};
+data2 = {'Double Lethal Reactions','Rxn A', Jdl{:,1};
+            '','Rxn B', Jdl{:,2}};
 
+fname1 = 'Output\SyntheticLethal_list.xlsx';
+xlswrite(fname1, transpose(data1), 1);        
+xlswrite(fname1, transpose(data2), 2);
 
+% MinReSet Excel file 
+data_matrix = {};
+data_matrix(1,:) = {'Synthetic Lethal Pair', '', 'Size of minReSet','Total flux difference(abs)', 'Reactions in minReSet/ Flux difference'};
+for k = 1:length(Jdl)
+    data_matrix(2*k,1:4) = {Jdl{k,1},Jdl{k,2},length(minReSets(k).rxns), sum(abs(minReSets(k).diff))};    
 
-    fprintf(fid,'%s,%s,%d,',Jdl{k,1},Jdl{k,2},length(minRerouting(k).rxns));
-    for m=1:length(minRerouting(k).rxns)
-        fprintf(fid,'%s,',minRerouting(k).rxns{m});
+    for m=1:length(minReSets(k).rxns)
+        data_matrix(2*k,4+m) = minReSets(k).rxns(m);
+        data_matrix(2*k+1,4+m) = num2cell(minReSets(k).diff(m));
     end
-    fprintf(fid,'\n');
-end
+end    
 
-fname=sprintf('minReAll_iML.csv');
-     fid = fopen(fullfile(fname),'wt');
-     if fid>0
-         for k=1:length(minRerouting)
-             fprintf(fid,'%s,%s,%d,',Jdl{k,1},Jdl{k,2},length(minRerouting(k).rxns));
-             for m=1:length(minRerouting(k).rxns)
-                 fprintf(fid,'%s,',minRerouting(k).rxns{m});
-             end
-             fprintf(fid,'\n');         
-         end
-         fclose(fid);
-     end
+fname2= 'Output\minReSetsData.xlsx';
+xlswrite(fname2, data_matrix)
+
+% coreMinReSet Excel file 
+data_matrix_c = {};
+data_matrix_c(1,:) = {'Synthetic Lethal Pair', '', 'Size of coreminReSet','Total flux difference(abs)', 'Reactions in coreminReSet/ Flux difference'};
+for k = 1:length(Jdl)
+    data_matrix_c(2*k,1:4) = {Jdl{k,1},Jdl{k,2},length(coreReSets(k).rxns), sum(abs(coreReSets(k).diff))};    
+
+    for m=1:length(coreReSets(k).rxns)
+        data_matrix_c(2*k,4+m) = coreReSets(k).rxns(m);
+        data_matrix_c(2*k+1,4+m) = num2cell(coreReSets(k).diff(m));
+    end
+end    
+
+fname3= 'Output\coreminReSetsData.xlsx';
+xlswrite(fname3, data_matrix_c)
+
      
-Divide=divideMinSet(model,minRerouting,Jdl);     
-     
-Clusters=clusterMinSet(model,Jdl,minRerouting);
-fname=sprintf('Clusters_Auto.csv');
+Clusters = clusterMinSet(model,Jdl,minReSets);
+fname = sprintf('Clusters_Auto.csv');
      fid = fopen(fullfile(fname),'wt');
      if fid>0
          for k=1:length(Clusters)
@@ -99,6 +108,7 @@ fname=sprintf('Clusters_Auto.csv');
          end
          fclose(fid);
      end
+     
      
 
 lethSet_1=ClusterEcoli(1).Jdl;
