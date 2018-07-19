@@ -37,7 +37,9 @@ core(Single, Double, Nonessential, Single_to_double)
 simTable (SingleCnt, Single.rxns) 
  To Do: modify for TL compare
 
+```Matlab 
 >> [Castle, lethPair] = compareModelsPairwise(Castle, model1, model2)
+```
 To Do : Need to finish
 
 
