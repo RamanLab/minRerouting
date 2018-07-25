@@ -83,8 +83,9 @@ for i = 1:nModels
         Castle.simTable.SingleCnt(i,j) = length(intersect(Castle.data(i).Jsl,Castle.data(j).Jsl));
         Castle.simTable.Single(i,j).rxns = intersect(Castle.data(i).Jsl,Castle.data(j).Jsl);
     end
-end    
-        % Sinlge lethal similarity table of nxn
+end
+
+% Sinlge lethal similarity table of rxn
 
 
 
