@@ -7,9 +7,10 @@ for j= 1:nModels
 %     Castle.data(j).minRe =
 %     minReroutingRxns(Castle.data(j).model,Castle.data(j).Jdl); % Old
 %     version
-   Castle.data(j).minRe = minReroutingRxns_l1_moma(Castle.data(j).model,Castle.data(j).Jdl);    %linearMOMA version
-%     Castle.data(j).minRe =
-%     minReroutingRxns_l0_moma(Castle.data(j).model,Castle.data(j).Jdl);    %sparseMOMA version
+   Castle.data(j).minRe = minReroutingRxns_l2_moma(Castle.data(j).model,Castle.data(j).Jdl);    %quadraticMOMA version
+%    Castle.data(j).minRe = minReroutingRxns_l1_moma(Castle.data(j).model,Castle.data(j).Jdl);    %linearMOMA version
+%    Castle.data(j).minRe = minReroutingRxns_l0_moma(Castle.data(j).model,Castle.data(j).Jdl);    %sparseMOMA version
+
 end    
 end
 
