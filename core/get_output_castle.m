@@ -70,8 +70,6 @@ fname = sprintf('Clusters_Auto.csv');
          end
          fclose(fid);
      end
-
-
-
+     
 end
 
