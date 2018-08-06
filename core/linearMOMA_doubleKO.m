@@ -228,13 +228,15 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
             solutionDel2.f = sum(modelDel2.c.*solutionDel2.x);            
         end
     end
+    
+    solutionDel1.stat = LPsolution.stat;
+    solutionDel2.stat = LPsolution.stat;
+    solStatus = LPsolution.stat;
 
 elseif solutionDel1.stat <= 0 
     warning('Deletion 1 strain FBA problem is infeasible or unconstrained');
+    solStatus = solutionDel1.stat;
 else 
-    warning('Deletion 1 strain FBA problem is infeasible or unconstrained');
+    warning('Deletion strain FBA problem is infeasible or unconstrained');
+    solStatus = solutionDel2.stat;
 end
-
-solutionDel1.stat = LPsolution.stat;
-solutionDel2.stat = LPsolution.stat;
-solStatus = LPsolution.stat;
