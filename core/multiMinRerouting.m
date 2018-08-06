@@ -4,7 +4,11 @@ function [Castle] = multiMinRerouting(Castle)
 nModels = length(Castle.data);
 for j= 1:nModels
     disp("Finding set of minimal rerouting reactions for double lethals in " + Castle.data(j).model_name);
-    Castle.data(j).minRe = minReroutingRxns(Castle.data(j).model,Castle.data(j).Jdl); 
+%     Castle.data(j).minRe =
+%     minReroutingRxns(Castle.data(j).model,Castle.data(j).Jdl); % Old
+%     version
+   Castle.data(j).minRe = minReroutingRxns_l1_moma(Castle.data(j).model,Castle.data(j).Jdl);    %linearMOMA versio
+%     Castle.data(j).minRe = minReroutingRxns_l0_moma(Castle.data(j).model,Castle.data(j).Jdl);    %sparseMOMA versio
 end    
 end
 
