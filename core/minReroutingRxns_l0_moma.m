@@ -62,37 +62,41 @@ for iLeth=1:nLethals
     
     [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = sparseMOMA_doubleKO(modelDel1, modelDel2, 'max');
     
-    flux1 = solutionDel1.x;
-    flux2 = solutionDel2.x;
-    
-    diff = abs(flux1-flux2);
+    if solStatus > 0        
+        flux1 = solutionDel1.x;
+        flux2 = solutionDel2.x;
 
-    min_ids = find(diff>delta*abs(flux1) & diff>delta*abs(flux2) & diff>cutOff);
+        diff = abs(flux1-flux2);
 
-    minRerouting(iLeth).rxns=model.rxns(min_ids);
-    minRerouting(iLeth).diff=diff(min_ids);
-    minRerouting(iLeth).totalFluxDiff=totalFluxDiff;
-    minRerouting(iLeth).solStatus=solStatus;
-    
-    if strcmp(Division, 'True')
-        flux1Rxn=model.rxns(find(flux1));
-        flux2Rxn=model.rxns(find(flux2));
-        Path2=minRerouting(iLeth).rxns(ismember(minRerouting(iLeth).rxns,flux1Rxn));
-        Path1=minRerouting(iLeth).rxns(ismember(minRerouting(iLeth).rxns,flux2Rxn));
+        min_ids = find(diff>delta*abs(flux1) & diff>delta*abs(flux2) & diff>cutOff);
 
-        minRerouting(iLeth).pathCommon=Path1(ismember(Path1,Path2));
-        path1_Ex=Path1(~ismember(Path1,flux1Rxn));
-        path2_Ex=Path2(~ismember(Path2,flux2Rxn));
+        minRerouting(iLeth).rxns=model.rxns(min_ids);
+        minRerouting(iLeth).diff=diff(min_ids);
+        minRerouting(iLeth).totalFluxDiff=totalFluxDiff;
+        minRerouting(iLeth).solStatus=solStatus;
 
-        if length(path1_Ex)<=length(path2_Ex)
-            minRerouting(iLeth).PathShort=path1_Ex;
-            minRerouting(iLeth).PathLong=path2_Ex;
-        else
-            minRerouting(iLeth).PathShort=path2_Ex;
-            minRerouting(iLeth).PathLong=path1_Ex;
+        if strcmp(Division, 'True')
+            flux1Rxn=model.rxns(find(flux1));
+            flux2Rxn=model.rxns(find(flux2));
+            Path2=minRerouting(iLeth).rxns(ismember(minRerouting(iLeth).rxns,flux1Rxn));
+            Path1=minRerouting(iLeth).rxns(ismember(minRerouting(iLeth).rxns,flux2Rxn));
+
+            minRerouting(iLeth).pathCommon=Path1(ismember(Path1,Path2));
+            path1_Ex=Path1(~ismember(Path1,flux1Rxn));
+            path2_Ex=Path2(~ismember(Path2,flux2Rxn));
+
+            if length(path1_Ex)<=length(path2_Ex)
+                minRerouting(iLeth).PathShort=path1_Ex;
+                minRerouting(iLeth).PathLong=path2_Ex;
+            else
+                minRerouting(iLeth).PathShort=path2_Ex;
+                minRerouting(iLeth).PathLong=path1_Ex;
+            end
         end
     end
     
+    minRerouting(iLeth).solStatus=solStatus;
+
     modelDel1.lb(delIdx_1)=model.lb(delIdx_1);
     modelDel1.ub(delIdx_1)=model.ub(delIdx_1);
     

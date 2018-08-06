@@ -241,13 +241,16 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
         end
 
     end
+    solutionDel1.stat = LPsolution.stat;
+    solutionDel2.stat = LPsolution.stat;
+    solStatus = LPsolution.stat;
 
 elseif solutionDel1.stat <= 0 
     warning('Deletion 1 strain FBA problem is infeasible or unconstrained');
+    solStatus = solutionDel1.stat;
 else 
-    warning('Deletion 1 strain FBA problem is infeasible or unconstrained');
+    warning('Deletion 2 strain FBA problem is infeasible or unconstrained');
+    solStatus = solutionDel2.stat;
 end
 
-solutionDel1.stat = LPsolution.stat;
-solutionDel2.stat = LPsolution.stat;
-solStatus = LPsolution.stat;
+
