@@ -248,9 +248,11 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
 elseif solutionDel1.stat <= 0 
     warning('Deletion 1 strain FBA problem is infeasible or unconstrained');
     solStatus = solutionDel1.stat;
+    totalFluxDiff = []; 
 else 
     warning('Deletion 2 strain FBA problem is infeasible or unconstrained');
     solStatus = solutionDel2.stat;
+    totalFluxDiff = []; 
 end
 
 

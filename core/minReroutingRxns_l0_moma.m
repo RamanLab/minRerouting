@@ -93,6 +93,15 @@ for iLeth=1:nLethals
                 minRerouting(iLeth).PathLong=path1_Ex;
             end
         end
+    else
+        minRerouting(iLeth).rxns= [];
+        minRerouting(iLeth).diff=[];
+        minRerouting(iLeth).totalFluxDiff=[];
+        if strcmp(Division, 'True')
+            minRerouting(iLeth).pathCommon=[];           
+            minRerouting(iLeth).PathShort=[];
+            minRerouting(iLeth).PathLong=[];
+        end       
     end
     
     minRerouting(iLeth).solStatus=solStatus;
