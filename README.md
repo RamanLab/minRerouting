@@ -11,7 +11,7 @@ The rerouting of the reaction fluxes in the metabolic network to produce an esse
 Here we explain the example of some of the models of pathogenic organims downloaded from BIGG database. Exchange reactions are exluded from the analysis to focus on intracellular properties of metabolic networks
 
 ```Matlab 
->> addpath('core\findRerouting\','core\compareLethals\','core\visualizeRerouting')
+>> addpath('core')
 >> model_names = {'iIT341', 'iML1515', 'iNJ661', 'iPC815', 'iYL1228', 'STM_v1_0'} % Recommneded to rename model.mat file to modelNames.mat file
 >> path_to_models = {'examples/iIT341/', 'examples/iML1515/', 'examples/iNJ661/','examples/iPC815/', 'examples/iYL1228/', 'examples/STM_v1_0/'}
 >> Castle = getFastSL(model_names, path_to_models, 2); % 2 for double lethals and 3 for triple lethals
