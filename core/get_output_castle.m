@@ -1,6 +1,6 @@
 function get_output_from_castle(Castle, output_dir)
-%GET_CSV_FROM_CASTLE generates output files for mat object Castle
-%   Detailed explanation goes here
+%get_output_from_castle(Castle, output_dir)
+% get_output_from_castle generates output files for mat object Castle
 %   Input:
 %   Castle : The structure with models and synthetic lethals data
 %   output_dir : path to output folder to store all the csv files
