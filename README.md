@@ -22,7 +22,7 @@ Castle.data has models, SLs, modelNames
 
 3. Run minRerouting
 ```Matlab 
->> Castle = multiMinRerouting(Castle)
+>> Castle = multiMinRerouting(Castle, 'one')
 ``` 
 
 4. Comparitive analysis synthetic lethals 
