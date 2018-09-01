@@ -60,7 +60,7 @@ for iLeth=1:nLethals
     
     %fprintf('Finding minimal rerouting for pair: ( %s , %s )', Jdl(iLeth,1),Jdl(iLeth,2));
     
-    [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = sparseMOMA_doubleKO(modelDel1, modelDel2, 'max');
+    [solutionDel1, solutionDel2, solStatus] = sparseMOMA_doubleKO(modelDel1, modelDel2, 'max');
     
     if solStatus > 0        
         flux1 = solutionDel1.x;
@@ -72,7 +72,7 @@ for iLeth=1:nLethals
 
         minRerouting(iLeth).rxns=model.rxns(min_ids);
         minRerouting(iLeth).diff=diff(min_ids);
-        minRerouting(iLeth).totalFluxDiff=totalFluxDiff;
+%         minRerouting(iLeth).totalFluxDiff=totalFluxDiff;
         minRerouting(iLeth).solStatus=solStatus;
 
         if strcmp(Division, 'True')
@@ -96,7 +96,7 @@ for iLeth=1:nLethals
     else
         minRerouting(iLeth).rxns= [];
         minRerouting(iLeth).diff=[];
-        minRerouting(iLeth).totalFluxDiff=[];
+%         minRerouting(iLeth).totalFluxDiff=[];
         if strcmp(Division, 'True')
             minRerouting(iLeth).pathCommon=[];           
             minRerouting(iLeth).PathShort=[];

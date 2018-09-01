@@ -1,4 +1,4 @@
-function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = sparseMOMA_doubleKO(modelDel1, modelDel2, osenseStr, minFluxFlag, verbFlag)
+function [solutionDel1, solutionDel2, solStatus] = sparseMOMA_doubleKO(modelDel1, modelDel2, osenseStr, minFluxFlag, verbFlag)
 % Performs a sparse version of the MOMA (minimization of metabolic
 % adjustment) approach upgraded for comparing double knockouts
 %
@@ -183,7 +183,7 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
         solutionDel1.f = sum(modelDel1.c.*solutionDel1.x);
         solutionDel2.x = LPsolution.x((nRxns1+1):(nRxns1+nRxns2));
         solutionDel2.f = sum(modelDel2.c.*solutionDel2.x);
-        totalFluxDiff = LPsolution.obj;
+%         totalFluxDiff = LPsolution.x;
     end
 
     if (LPsolution.stat > 0 && minFluxFlag)
@@ -221,8 +221,8 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
         if (verbFlag)
             fprintf('Minimizing MOMA flux distribution norms: %d constraints %d variables ',size(A,1),size(A,2));
         end
-
-        [LPproblem.A,LPproblem.b,LPproblem.lb,LPproblem.ub,LPproblem.csense] = deal(A,b,lb,ub,csense);
+        csense
+        [LPproblem.A,LPproblem.b,LPproblem.lb,LPproblem.ub,LPproblem.csense] = deal(A,b,lb,ub, csense);
         
         [LPsolution, nIterations, bestApprox] = sparseLP(zeroNormApprox,LPproblem);
 
@@ -237,7 +237,7 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
             solutionDel1.f = sum(modelDel1.c.*solutionDel1.x);
             solutionDel2.x = LPsolution.x((nRxns1+1):(nRxns1+nRxns2));
             solutionDel2.f = sum(modelDel2.c.*solutionDel2.x);
-            totalFluxDiff = LPsolution.obj;
+%             totalFluxDiff = LPsolution.obj;
         end
 
     end
@@ -248,11 +248,11 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
 elseif solutionDel1.stat <= 0 
     warning('Deletion 1 strain FBA problem is infeasible or unconstrained');
     solStatus = solutionDel1.stat;
-    totalFluxDiff = []; 
+%     totalFluxDiff = []; 
 else 
     warning('Deletion 2 strain FBA problem is infeasible or unconstrained');
     solStatus = solutionDel2.stat;
-    totalFluxDiff = []; 
+%     totalFluxDiff = []; 
 end
 
 

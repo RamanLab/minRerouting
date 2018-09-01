@@ -24,6 +24,7 @@ Castle.data has models, SLs, modelNames
 ```Matlab 
 >> Castle = multiMinRerouting(Castle)
 ``` 
+
 4. Comparitive analysis synthetic lethals 
 Use Castle input Struct to run compareLethals
 ```Matlab 
@@ -42,4 +43,10 @@ simTable (SingleCnt, Single.rxns)
 ```
 To Do : Need to finish
 
+5. Save the output data in xls
+Use Castle structure to save output data in xls format
+```Matlab 
+>> get_output_castle(Castle_l1, 'examples/L1_minimal')
+>> get_output_castle(Castle_l2, 'examples/L2_minimal')
+```
 
