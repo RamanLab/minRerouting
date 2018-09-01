@@ -86,7 +86,7 @@ if (verbFlag)
     fprintf('Solving FBA for deletion 1 strain: %d constraints %d variables ',nMets1,nRxns1);
 end
 % Solve wt problem
-solutionDel1 = optimizeCbModel(modelDel1,osenseStr, 'one');
+solutionDel1 = optimizeCbModel(modelDel1,osenseStr, 'zero');
 
 if (verbFlag)
     fprintf('%f seconds\n',solutionDel1.time);
@@ -102,7 +102,7 @@ if (verbFlag)
     fprintf('Solving FBA for deletion 2 strain: %d constraints %d variables ',nMets1,nRxns2);
 end
 % Solve wt problem
-solutionDel2 = optimizeCbModel(modelDel2,osenseStr, 'one');
+solutionDel2 = optimizeCbModel(modelDel2,osenseStr, 'zero');
 
 if (verbFlag)
     fprintf('%f seconds\n',solutionDel2.time);
@@ -120,6 +120,7 @@ end
 %       v2 = deletion strain 2 flux vector
 %       delta+ = v1 - v2
 %       delta- = v2 - v1
+% First solve LP using linearLP and use these as constraint to find minimal set of reactions
 
 if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
     % Construct the LHS matrix
@@ -159,13 +160,77 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
         csense(end+1) = 'L';
         csense(end+1) = 'L';
     end
+    
+    % First find optimal solution value subject to a LP objective 
+    if (verbFlag)
+        fprintf('STEP 1: Solving linear MOMA upgraded for double knockouts: %d constraints %d variables ',size(A,1),size(A,2));
+    end
+    
+    % Solve the linearMOMA problem
+    [LPproblem.A,LPproblem.b,LPproblem.c,LPproblem.lb,LPproblem.ub,LPproblem.csense,LPproblem.osense] = deal(A,b,c,lb,ub,csense,1);
+    LPsolution = solveCobraLP(LPproblem);
 
     if (verbFlag)
-        fprintf('Solving sparse MOMA upgraded for double knockouts: %d constraints %d variables ',size(A,1),size(A,2));
+        fprintf('%f seconds\n',LPsolution.time);
     end
+    
+    if (LPsolution.stat > 0)
+        solution_full = LPsolution.full
+    end
+    
+    % Use solution_full as an additional constraint for sparseLP
+    % Extend the LHS matrix
+    % For variable x = [v1;v2;delta+;delta-]
+    % Rows:
+    % 1: Sdel1*v1 = 0 for the deletion strain 1
+    % 2: Sdel2*v2 = 0 for the deletion strain 2
+    % 3: delta+ >= v1-v2
+    % 4: delta- >= v2-v1
+    % 5: c'v1 = f1 (deletion strain 1)
+    % 6: c'v2 = f2 (deletion strain 2)
+    % 7: c'x = c'*solution_full 
+    
+    A_0 = [A; c']
 
+    % Extend the RHS vector
+    b_0 = [b: c'*solution_full];
+
+    % Construct the ub/lb
+    % delta+ and delta- are in [0 10000]
+    lb_0 = lb;
+    ub_0 = ub;
+
+    % Construct the constraint direction vector (G for delta's, E for
+    % everything else)
+    csense_0 = [csense; 'E']
+    
+    %
+    if (verbFlag)
+        fprintf('STEP 2: Solving linear MOMA upgraded for double knockouts: %d constraints %d variables ',size(A,1),size(A,2));
+    end
+    
     % Solve the sparseMOMA problem
-    [LPproblem.A,LPproblem.b,LPproblem.lb,LPproblem.ub,LPproblem.csense] = deal(A,b,lb,ub,csense);
+    [constraint.A,constraint.b,constraint.lb,constraint.ub,constraint.csense] = deal(A_0,b_0,lb_0,ub_0,csense_0);
+    
+    % Try all non-convex approximations of zero norm and take the best result
+    approximations = {'cappedL1','exp','log','SCAD','lp-','lp+'};
+    bestResult = n;
+    bestAprox = '';
+    for i=1:length(approximations)
+        solution = sparseLP(char(approximations(i)),constraint);
+        if solution.stat == 1
+            if bestResult > length(find(abs(solution.x)>eps))
+                bestResult=length(find(abs(solution.x)>eps));
+                bestAprox = char(approximations(i));
+                solutionL0 = solution;
+            end
+        end
+    end
+    
+    %TO BE CONTINUED
+    
+    
+    
     
     % Call the sparse LP solver
     zeroNormApprox = 'cappedL1'; %This is default apporximation used in optimizeCbModel
