@@ -86,7 +86,7 @@ if (verbFlag)
     fprintf('Solving FBA for deletion 1 strain: %d constraints %d variables ',nMets1,nRxns1);
 end
 % Solve wt problem
-solutionDel1 = optimizeCbModel(modelDel1,osenseStr, 'zero');
+solutionDel1 = optimizeCbModel(modelDel1,osenseStr, 'one');
 
 if (verbFlag)
     fprintf('%f seconds\n',solutionDel1.time);
@@ -102,7 +102,7 @@ if (verbFlag)
     fprintf('Solving FBA for deletion 2 strain: %d constraints %d variables ',nMets1,nRxns2);
 end
 % Solve wt problem
-solutionDel2 = optimizeCbModel(modelDel2,osenseStr, 'zero');
+solutionDel2 = optimizeCbModel(modelDel2,osenseStr, 'one');
 
 if (verbFlag)
     fprintf('%f seconds\n',solutionDel2.time);
@@ -129,9 +129,9 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
     % 2: Sdel2*v2 = 0 for the deletion strain 2
     % 3: delta+ >= v1-v2
     % 4: delta- >= v2-v1
-    % 5: c'v1 = f1 (deletion strain 1)
-    % 6: c'v2 = f2 (deletion strain 2)
-    
+    % 5: c'v1 >= 0.9*f1 (deletion strain 1) (10 % slack on obj)
+    % 6: c'v2 >= 0.9*f2 (deletion strain 2)
+    obj_slack = 0.1;
     A = [modelDel1.S sparse(nMets1,nRxns2+2*nCommon);
          sparse(nMets2,nRxns1) modelDel2.S sparse(nMets2,2*nCommon);
          createDeltaMatchMatrix(modelDel1.rxns,modelDel2.rxns);
@@ -139,7 +139,7 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
          sparse(1,nRxns1) modelDel2.c' sparse(1,2*nCommon)];
 
     % Construct the RHS vector
-    b = [zeros(nMets1+nMets2+2*nCommon,1);objValDel1 ;objValDel2];
+    b = [zeros(nMets1+nMets2+2*nCommon,1);(1-obj_slack)*objValDel1 ;(1-obj_slack)*objValDel2];
 
     % Construct the objective (sum of all delta+ and delta-)
     c = [zeros(nRxns1+nRxns2,1);ones(2*nCommon,1)];
@@ -175,7 +175,7 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
     end
     
     if (LPsolution.stat > 0)
-        solution_full = LPsolution.full
+        solution_full = LPsolution.full;
     end
     
     % Use solution_full as an additional constraint for sparseLP
@@ -186,14 +186,14 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
     % 2: Sdel2*v2 = 0 for the deletion strain 2
     % 3: delta+ >= v1-v2
     % 4: delta- >= v2-v1
-    % 5: c'v1 = f1 (deletion strain 1)
-    % 6: c'v2 = f2 (deletion strain 2)
+    % 5: c'v1 >= 0.9*f1 (deletion strain 1) (10 % slack on obj)
+    % 6: c'v2 >= 0.9*f2 (deletion strain 2)
     % 7: c'x = c'*solution_full 
-    
-    A_0 = [A; c']
+    obj_slack = 0.1;
+    A_0 = [A; c'];
 
     % Extend the RHS vector
-    b_0 = [b: c'*solution_full];
+    b_0 = [b; (1-obj_slack)*(c'*solution_full)];
 
     % Construct the ub/lb
     % delta+ and delta- are in [0 10000]
@@ -202,113 +202,65 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
 
     % Construct the constraint direction vector (G for delta's, E for
     % everything else)
-    csense_0 = [csense; 'E']
+    csense_0 = [csense'; 'G'];
     
     %
     if (verbFlag)
-        fprintf('STEP 2: Solving linear MOMA upgraded for double knockouts: %d constraints %d variables ',size(A,1),size(A,2));
+        fprintf('STEP 2: Solving sparse MOMA for double knockouts: %d constraints %d variables ',size(A,1),size(A,2));
     end
     
     % Solve the sparseMOMA problem
     [constraint.A,constraint.b,constraint.lb,constraint.ub,constraint.csense] = deal(A_0,b_0,lb_0,ub_0,csense_0);
     
     % Try all non-convex approximations of zero norm and take the best result
-    approximations = {'cappedL1','exp','log','SCAD','lp-','lp+'};
-    bestResult = n;
+    feasTol = getCobraSolverParams('LP', 'feasTol');
+    approximations = {'cappedL1'};
+    bestResult = 4*nCommon;
     bestAprox = '';
     for i=1:length(approximations)
+        try 
         solution = sparseLP(char(approximations(i)),constraint);
         if solution.stat == 1
-            if bestResult > length(find(abs(solution.x)>eps))
-                bestResult=length(find(abs(solution.x)>eps));
+            nnzSol=nnz(abs(solution.x)>feasTol);
+            if (verbFlag)
+                fprintf('%u%s%s',nnzSol,' active reactions in the sparseFBA solution with ', char(approximations(i)))
+            end
+            if bestResult > nnzSol
+                bestResult=nnzSol;
                 bestAprox = char(approximations(i));
                 solutionL0 = solution;
             end
         end
+        catch 
+            fprintf('Infeasaible solution!, skipped.\n');
+        end    
     end
     
-    %TO BE CONTINUED
+    % Select the most sparse flux vector, unless there is a numerical problem.
+    if ~isequal(bestAprox,'')
+        vBest = solutionL0.x;   
+        % Report the best approximation
+        display(strcat('Best step function approximation: ',bestAprox))
     
-    
-    
-    
-    % Call the sparse LP solver
-    zeroNormApprox = 'cappedL1'; %This is default apporximation used in optimizeCbModel
-
-    LPsolution = sparseLP(zeroNormApprox,LPproblem);
-
-    if (verbFlag)
-%         fprintf('%f seconds\n',LPsolution.time);
-%         fprintf('%d number of iterations \n',nIterations);
-        fprintf('%Best approximation : %f \n',solution.bestAprox);
+        % Report the number of active reactions in the most sparse flux vector
+        fprintf('%u%s',nnz(abs(vBest)>feasTol),' active reactions in the best sparse flux balance analysis solution.')
+    else
+        vBest = [];
+        fprintf('Min L0 problem error !!!!')
+        solutionL0.stat = 0;
     end
-
-    if (LPsolution.stat > 0)
-        solutionDel1.x = LPsolution.x(1:nRxns1);
+    
+    if (solutionL0.stat > 0)
+        solutionDel1.x = solutionL0.x(1:nRxns1);
         solutionDel1.f = sum(modelDel1.c.*solutionDel1.x);
-        solutionDel2.x = LPsolution.x((nRxns1+1):(nRxns1+nRxns2));
+        solutionDel2.x = solutionL0.x((nRxns1+1):(nRxns1+nRxns2));
         solutionDel2.f = sum(modelDel2.c.*solutionDel2.x);
 %         totalFluxDiff = LPsolution.x;
     end
 
-    if (LPsolution.stat > 0 && minFluxFlag)
-        A = [modelDel1.S sparse(nMets1,nRxns2+2*nCommon+2*nRxns1+2*nRxns2);
-            sparse(nMets2,nRxns1) modelDel2.S sparse(nMets2,2*nCommon+2*nRxns1+2*nRxns2);
-            createDeltaMatchMatrix(modelDel1.rxns,modelDel2.rxns) sparse(2*nCommon,2*nRxns1+2*nRxns2);
-            speye(nRxns1,nRxns1) sparse(nRxns1,nRxns2) sparse(nRxns1,2*nCommon) speye(nRxns1,nRxns1) sparse(nRxns1,nRxns1+2*nRxns2);
-            -speye(nRxns1,nRxns1) sparse(nRxns1,nRxns2) sparse(nRxns1,2*nCommon) sparse(nRxns1,nRxns1) speye(nRxns1,nRxns1) speye(nRxns1,2*nRxns2);
-            sparse(nRxns2,nRxns1) speye(nRxns2,nRxns2) sparse(nRxns2,2*nCommon) sparse(nRxns2,2*nRxns1) speye(nRxns2,nRxns2) sparse(nRxns2,nRxns2);
-            sparse(nRxns2,nRxns1) -speye(nRxns2,nRxns2) sparse(nRxns2,2*nCommon) sparse(nRxns2,2*nRxns1) sparse(nRxns2,nRxns2) speye(nRxns2,nRxns2);
-            modelDel1.c' sparse(1,nRxns2+2*nCommon+2*nRxns1+2*nRxns2);
-            sparse(1,nRxns1) modelDel2.c' sparse(1,2*nCommon+2*nRxns1+2*nRxns2);
-            sparse(1,nRxns1+nRxns2) ones(1,2*nCommon) sparse(1,2*nRxns1+2*nRxns2)];
-        % Construct the RHS vector
-        b = [zeros(nMets1+nMets2+2*nCommon+2*nRxns1+2*nRxns2,1);objValDel1;objValDel2;ceil(totalFluxDiff/tol)*tol];
-
-        % Construct the objective (sum of all delta+ and delta-)
-        c = [zeros(nRxns1+nRxns2+2*nCommon,1);ones(2*nRxns1+2*nRxns2,1)];
-
-        % Construct the ub/lb
-        % delta+ and delta- are in [0 10000]
-        lb = [modelDel1.lb;modelDel2.lb;zeros(2*nCommon+2*nRxns1+2*nRxns2,1)];
-        ub = [modelDel1.ub;modelDel2.ub;10000*ones(2*nCommon+2*nRxns1+2*nRxns2,1)];
-        csense(1:(nMets1+nMets2)) = 'E';
-        csense((nMets1+nMets2)+1:(nMets1+nMets2+2*nCommon+2*nRxns1+2*nRxns2)) = 'G';
-        if (strcmp(osenseStr,'max'))
-            csense(end+1) = 'G';
-            csense(end+1) = 'G';
-        else
-            csense(end+1) = 'L';
-            csense(end+1) = 'L';
-        end
-        csense(end+1) = 'L';
-
-        if (verbFlag)
-            fprintf('Minimizing MOMA flux distribution norms: %d constraints %d variables ',size(A,1),size(A,2));
-        end
-        csense
-        [LPproblem.A,LPproblem.b,LPproblem.lb,LPproblem.ub,LPproblem.csense] = deal(A,b,lb,ub, csense);
-        
-        [LPsolution, nIterations, bestApprox] = sparseLP(zeroNormApprox,LPproblem);
-
-        if (verbFlag)
-            fprintf('%f seconds\n',LPsolution.time);
-            fprintf('%d number of iterations \n',nIterations);
-            fprintf('%Best approximation : %f \n',bestApprox);
-        end
-
-        if (LPsolution.stat > 0)
-            solutionDel1.x = LPsolution.x(1:nRxns1);
-            solutionDel1.f = sum(modelDel1.c.*solutionDel1.x);
-            solutionDel2.x = LPsolution.x((nRxns1+1):(nRxns1+nRxns2));
-            solutionDel2.f = sum(modelDel2.c.*solutionDel2.x);
-%             totalFluxDiff = LPsolution.obj;
-        end
-
-    end
-    solutionDel1.stat = LPsolution.stat;
-    solutionDel2.stat = LPsolution.stat;
-    solStatus = LPsolution.stat;
+    solutionDel1.stat = solutionL0.stat;
+    solutionDel2.stat = solutionL0.stat;
+    solStatus = solutionL0.stat;
 
 elseif solutionDel1.stat <= 0 
     warning('Deletion 1 strain FBA problem is infeasible or unconstrained');

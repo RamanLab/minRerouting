@@ -48,7 +48,7 @@ end
 h = waitbar(0,'0.00','Name','Identifying minRerouitngSets...');
 modelDel1=model;
 modelDel2=model;
-for iLeth=1:nLethals
+%for iLeth=1:nLethals
     delIdx_1=find(strcmp(Jdl(iLeth,1),model.rxns));
     delIdx_2=find(strcmp(Jdl(iLeth,2),model.rxns));
     
@@ -60,9 +60,9 @@ for iLeth=1:nLethals
     
     %fprintf('Finding minimal rerouting for pair: ( %s , %s )', Jdl(iLeth,1),Jdl(iLeth,2));
     
-    [solutionDel1, solutionDel2, solStatus] = sparseMOMA_doubleKO(modelDel1, modelDel2, 'max');
+    [solutionDel1, solutionDel2, solStatus] = linearMOMA_doubleKO(modelDel1, modelDel2, 'max');
     
-    if solStatus > 0        
+    %if solStatus > 0        
         flux1 = solutionDel1.x;
         flux2 = solutionDel2.x;
 

@@ -45,6 +45,8 @@ if strcmp(Division, 'True')
     minRerouting(nLethals).pathCommon=[];
 end
 %%
+solWT=optimizeCbModel(model,'max','one');
+grWT=solWT.f;
 h = waitbar(0,'0.00','Name','Identifying minRerouitngSets...');
 modelDel1=model;
 modelDel2=model;
@@ -60,7 +62,7 @@ for iLeth=1:nLethals
     
 %     fprintf('Finding minimal rerouting for pair: ( %s , %s )', Jdl(iLeth,1),Jdl(iLeth,2));
     
-    [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_doubleKO(modelDel1, modelDel2, 'max');
+    [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_doubleKO(modelDel1, modelDel2, grWT,'max');
     
     if solStatus > 0
         flux1 = solutionDel1.x;
@@ -68,7 +70,7 @@ for iLeth=1:nLethals
         
         diff = abs(flux1-flux2);
 
-        min_ids = find(diff>delta*abs(flux1) & diff>delta*abs(flux2) & diff>cutOff);
+        min_ids = find(diff>delta*abs(flux1) & diff>delta*abs(flux2));% & diff>cutOff);
 
         minRerouting(iLeth).rxns=model.rxns(min_ids);
         minRerouting(iLeth).diff=diff(min_ids);

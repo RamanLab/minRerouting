@@ -7,15 +7,15 @@ function [Castle] = multiMinRerouting(Castle, minNorm)
 
 nModels = length(Castle.data);
 for j= 1:nModels
-    if minNorm == 'two'
+    if strcmp(minNorm, 'two')
         disp("Finding set of minimal rerouting reactions using L2 minNorm in " + Castle.data(j).model_name);
         Castle.data(j).minRe = minReroutingRxns_l2_moma(Castle.data(j).model,Castle.data(j).Jdl);    %quadraticMOMA version    
-    elif minNorm == 'one'
+    elseif strcmp(minNorm, 'one')
         disp("Finding set of minimal rerouting reactions using L1 minNorm in " + Castle.data(j).model_name);
         Castle.data(j).minRe = minReroutingRxns_l1_moma(Castle.data(j).model,Castle.data(j).Jdl);    %linearMOMA version   
-    elif minNorm == 'zero
+    elseif strcmp(minNorm, 'zero')
         disp("Finding set of minimal rerouting reactions using L0 minNorm (iterative formulation) in " + Castle.data(j).model_name);
-        Castle.data(j).minRe = minReroutingRxns(Castle.data(j).model,Castle.data(j).Jdl); % Iterative formulation    
+        Castle.data(j).minRe = minReroutingRxns_l0_moma(Castle.data(j).model,Castle.data(j).Jdl); % Iterative formulation    
     end
 end    
 end
