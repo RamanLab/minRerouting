@@ -1,11 +1,11 @@
-get_escher
-
-
 
 % List of reactions in minRe universe (Sets less than 50)
-uni_minRe = []
+Jdl = Castle_iML.data.Jdl;
+minReSets = Castle_iML.data.minRe;
+
+uni_minRe = [];
 for iLeth = 1:length(minReSets)
-    if length(minReSets(iLeth).rxns)<50
+    if length(minReSets(iLeth).rxns)<38
         uni_minRe = unique([uni_minRe;minReSets(iLeth).rxns]);
     end    
 end

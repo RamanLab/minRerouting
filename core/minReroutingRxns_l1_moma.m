@@ -70,7 +70,7 @@ for iLeth=1:nLethals
         
         diff = abs(flux1-flux2);
 
-        min_ids = find(diff>delta*abs(flux1) & diff>delta*abs(flux2));% & diff>cutOff);
+        min_ids = find(diff>delta*abs(flux1) & diff>delta*abs(flux2) & diff>cutOff);
 
         minRerouting(iLeth).rxns=model.rxns(min_ids);
         minRerouting(iLeth).diff=diff(min_ids);
