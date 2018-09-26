@@ -4,6 +4,8 @@ Package to understand the compensatory mechanisms performing similar metabolic f
 # Alternate Routes in Networks
 The rerouting of the reaction fluxes upon deletion of genes/reactions in the metabolic network is non-trivial and involves complex structrues. This package helps to identify minimal rerouting corresponding to synthetic lethal pairs using constraint based tools.   
 
+![Workflow for analysis of synthetic lethals](docs/workflow.jpg)
+
 # Steps in analysis
 1. Get FastSL toolbox from https://github.com/RamanLab/FastSL
 
