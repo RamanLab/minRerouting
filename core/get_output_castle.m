@@ -1,5 +1,5 @@
 function get_output_from_castle(Castle, output_dir)
-%get_output_from_castle(Castle, output_dir)
+% get_output_from_castle(Castle, output_dir)
 % get_output_from_castle generates output files for mat object Castle
 %   Input:
 %   Castle : The structure with models and synthetic lethals data
@@ -8,7 +8,7 @@ function get_output_from_castle(Castle, output_dir)
 % Generate Synthetic Lethal xls files in output directory
 for iModel = 1:length(Castle.data)
     model_name = Castle.data(iModel).model_name;
-    output_dir_i = horzcat(output_dir, '\' ,model_name);
+    output_dir_i = horzcat(output_dir, '\', model_name);
     
     Jsl = Castle.data(iModel).Jsl;
     Jdl = Castle.data(iModel).Jdl;
@@ -26,9 +26,9 @@ for iModel = 1:length(Castle.data)
     data3 = {};
     data3(1,:) = {'Synthetic Lethal Pair', '', 'Size of minReSet','Total flux difference(abs)', 'Reactions in minReSet/ Flux difference'};
     for k = 1:length(Jdl)
-        data3(2*k,1:4) = {Jdl{k,1},Jdl{k,2},length(minReSets(k).rxns), sum(abs(minReSets(k).diff))};
+        data3(2*k,1:4) = {Jdl{k,1}, Jdl{k,2}, length(minReSets(k).rxns), sum(abs(minReSets(k).diff))};
         
-        for m=1:length(minReSets(k).rxns)
+        for m = 1:length(minReSets(k).rxns)
             data3(2*k,4+m) = minReSets(k).rxns(m);
             data3(2*k+1,4+m) = num2cell(minReSets(k).diff(m));
         end
@@ -37,4 +37,3 @@ for iModel = 1:length(Castle.data)
     xlswrite(fname3, data3, 1);
 end
 end
-

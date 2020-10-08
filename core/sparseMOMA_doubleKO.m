@@ -43,7 +43,7 @@ function [solutionDel1, solutionDel2, solStatus] = sparseMOMA_doubleKO(modelDel1
 % .. Author: - Markus Herrgard 11/7/06
 % ..           Omkar Satyavan Mohite 06-08-2018
 
-if (nargin <3 || isempty(osenseStr))
+if (nargin < 3 || isempty(osenseStr))
     osenseStr = 'max';
 end
 if (nargin < 4 || isempty(minFluxFlag))
@@ -271,5 +271,3 @@ else
     solStatus = solutionDel2.stat;
 %     totalFluxDiff = []; 
 end
-
-

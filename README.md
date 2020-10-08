@@ -51,4 +51,12 @@ Use Castle structure to save output data in xls format
 >> get_output_castle(Castle_l1, 'examples/L1_minimal')
 >> get_output_castle(Castle_l2, 'examples/L2_minimal')
 ```
+6. pFBA Analysis
+```Matlab
+>> pfba_analysis(model_names, path_to_models)
+``` 
 
+7. PSL/RSL Analysis
+```Matlab
+>> psl_rsl_analysis(model_names, path_to_models)
+```

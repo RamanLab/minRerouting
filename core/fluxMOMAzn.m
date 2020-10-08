@@ -1,4 +1,4 @@
-function [solutionWT] = fluxMOMAzn( model,fluxDel )
+function [solutionWT] = fluxMOMAzn(model, fluxDel)
 % fluxMOMA performs zero norm version of MOMA for a given model and flux
 % vector
 %%
@@ -6,7 +6,7 @@ function [solutionWT] = fluxMOMAzn( model,fluxDel )
 % model            model file
 % fluxDel          Deletion strain flux vector
 %
-%OUTPUTS
+% OUTPUTS
 % solution        Wild-type solution structure
 
 % MOMA to find closest flux to given vector using zero norm LP
@@ -26,19 +26,18 @@ zeroNormApprox = 'cappedL1'; %This is default apporximation used in optimizeCbMo
     constraint.A = [model.S];
     constraint.b = [model.b];
     constraint.csense(1:nMets,1) = 'E'; 
-    constraint.lb = model.lb-fluxDel;
-    constraint.ub = model.ub-fluxDel;
+    constraint.lb = model.lb - fluxDel;
+    constraint.ub = model.ub - fluxDel;
     
     % Call the sparse LP solver
     solutionL0 = sparseLP('cappedL1',constraint);
     
     %Store results
-    solution.stat   = solutionL0.stat;
-    solution.full   = solutionL0.x;
-    solution.dual   = [];
-    solution.rcost  = [];        
-%     solution.dual=solution.dual(1:m,1);
-    solutionWT.x = solution.full(1:nRxns)+fluxDel;
+    solution.stat = solutionL0.stat;
+    solution.full = solutionL0.x;
+    solution.dual = [];
+    solution.rcost = [];        
+    % solution.dual = solution.dual(1:m,1);
+    solutionWT.x = solution.full(1:nRxns) + fluxDel;
     solutionWT.stat = solutionL0.stat;
 end
-

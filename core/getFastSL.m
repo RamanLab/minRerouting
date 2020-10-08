@@ -1,5 +1,5 @@
 function [Castle] = getFastSL(model_names, path_to_models, leth_order)
-%getFastSL returns Castle object with multiple models and synthetic lethals 
+% getFastSL returns Castle object with multiple models and synthetic lethals 
 % Input:
 % model_names     List of model IDs e.g. iML1515. Models should be stored
 % in path with modelID.mat name
@@ -17,7 +17,7 @@ function [Castle] = getFastSL(model_names, path_to_models, leth_order)
 % 
 % Omkar Mohite       10 Jul,2018.
 
-disp("Models to be find synthetic lethals for: " + length(model_names))
+disp("Models to find synthetic lethals for: " + length(model_names))
 
 for j = 1:length(path_to_models)
     model = load(strcat(path_to_models{j}, model_names{j},'.mat'));
@@ -26,22 +26,21 @@ for j = 1:length(path_to_models)
     clear model;
     
     disp('Eliminating exchange reactions from synthetic lethal search space...')
-    eliList= Castle.data(j).model.rxns(find(findExcRxns(Castle.data(j).model)));
-    disp(strcat('Identifying synthetic lethals for ', model_names{j}, ' using FastSL... This may take a while'))
+    eliList = Castle.data(j).model.rxns(findExcRxns(Castle.data(j).model));
+    fprintf('Identifying synthetic lethals for %s using FastSL... This may take a while\n', model_names{j})
     fastSL(Castle.data(j).model,0.01,leth_order,eliList)
 
     SL_dir = dir('*_Rxn_lethals.mat');
     load(SL_dir.name)
     Castle.data(j).Jsl = Jsl;
-    if leth_order>1
+    if leth_order > 1
         Castle.data(j).Jdl = Jdl;
     end
-    if leth_order>2
+    if leth_order > 2
         Castle.data(j).Jtl = Jtl;
     end   
-    disp(strcat('Number synthetic lethals identified for ', model_names{j}, ':'))
-    disp(strcat(length(Jsl), ' Single Lethals, ',  length(Jdl), ' Double Lethals')) %Update for triple lethals
+    fprintf('Number synthetic lethals identified for %s:\n', model_names{j})
+    fprintf('%d Single Lethals, %d Double Lethals\n', numel(Jsl), numel(Jdl)) %Update for triple lethals
     movefile (SL_dir.name,path_to_models{j});
 end 
 end
-

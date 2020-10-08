@@ -43,7 +43,7 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = quadraticMOMA_
 % .. Author: - Markus Herrgard 11/7/06
 % ..           Omkar Satyavan Mohite 06-08-2018
 
-if (nargin <3 || isempty(osenseStr))
+if (nargin < 3 || isempty(osenseStr))
     osenseStr = 'max';
 end
 if (nargin < 4 || isempty(minFluxFlag))
@@ -83,7 +83,7 @@ solutionDel2.x = [];
 solutionDel2.stat = -1;
 
 if (verbFlag)
-    fprintf('Solving FBA for deletion 1 strain: %d constraints %d variables ',nMets1,nRxns1);
+    fprintf('Solving FBA for deletion 1 strain: %d constraints %d variables ', nMets1, nRxns1);
 end
 % Solve wt problem
 solutionDel1 = optimizeCbModel(modelDel1,osenseStr, 'one');
@@ -202,5 +202,3 @@ else
     totalFluxDiff = [];
 end
 end
-
-
