@@ -52,5 +52,6 @@ for i = 1:numel(model_names)
     writetable(fvaResultAnalysis, strcat(model_names{i}, '_FVA_one_norm.csv'));
     % Move the file back to the original path of the model
     movefile(strcat(model_names{i}, '_FVA_one_norm.csv'), path_to_models{i});
+    fprintf('Done!\n')
 end
 end
