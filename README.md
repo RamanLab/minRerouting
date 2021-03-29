@@ -17,8 +17,8 @@ Here we explain the example of some of the models of pathogenic organims downloa
 	>> path_to_models = {'examples/iIT341/', 'examples/iML1515/', 'examples/iNJ661/','examples/iPC815/', 'examples/iYL1228/', 'examples/STM_v1_0/'};
 	>> Castle = getFastSL(model_names, path_to_models, 2); % 2 for double lethals and 3 for triple lethals
 	``` 
-Castle.data has models, SLs, modelNames  
-To Do: modify for without fastSL run in cases where SL are identified 
+	Castle.data has models, SLs, modelNames  
+	To Do: modify for without fastSL run in cases where SL are identified 
 
 3. Run minRerouting
 	```Matlab 
@@ -30,13 +30,15 @@ Use Castle input Struct to run compareLethals
 	```Matlab 
 	>> Castle = compareLethals(Castle, 2);
 	```
-Castle.data with new fields:
-lethStatus 
-lethCount 
-all_rxns
-core(Single, Double, Nonessential, Single_to_double)
-simTable (SingleCnt, Single.rxns) 
-To Do: modify for TL compare
+	Castle.data with new fields:  
+	- lethStatus   
+	- lethCount   
+	- all_rxns  
+	- core(Single, Double, Nonessential, Single_to_double)  
+	- simTable (SingleCnt, Single.rxns)   
+	
+	To Do: modify for TL compare
+
 	```Matlab
 	>> [Castle, lethPair] = compareModelsPairwise(Castle, model1, model2)
 	```
