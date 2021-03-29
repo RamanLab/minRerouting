@@ -1,0 +1,145 @@
+,Rxn_1,Rxn_2,Rxn_1_Class,Rxn_2_Class,Subsystem 1,Subsystem 2
+0,3OAS120,AACPS7,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+1,3OAS120,FACOAE120,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+2,3OAS120,ECOAH6,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+3,3OAS120,HACD6i,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+4,3OAS120,ACACT9,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+5,3OAS160,AACPS3,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+6,3OAS160,FACOAE160,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+7,3HAD120,AACPS7,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+8,3HAD120,FACOAE120,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+9,3HAD120,ECOAH6,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+10,3HAD120,HACD6i,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+11,3HAD120,ACACT9,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+12,3HAD140,FACOAE140,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+13,3HAD160,AACPS3,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+14,3HAD160,FACOAE160,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+15,ACHBS,ACLS_a,pFBAOpt_Rxns,ELE_Rxns,"Valine, Leucine, and Isoleucine Metabolism","Valine, Leucine, and Isoleucine Metabolism"
+16,ACHBS,ilvg,pFBAOpt_Rxns,ELE_Rxns,"Valine, Leucine, and Isoleucine Metabolism","Valine, Leucine, and Isoleucine Metabolism"
+17,3OAR120,AACPS7,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+18,3OAR120,FACOAE120,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+19,3OAR120,ECOAH6,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+20,3OAR120,HACD6i,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+21,3OAR120,ACACT9,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+22,3OAR160,AACPS3,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+23,3OAR160,FACOAE160,pFBAOpt_Rxns,MLE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+24,ACONTa,FGLU,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+25,ACONTa,FORAMD,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+26,ACONTa,HISDr,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+27,ACONTa,IZPN,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+28,ACONTa,URCN,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+29,ACONTb,FGLU,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+30,ACONTb,FORAMD,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+31,ACONTb,HISDr,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+32,ACONTb,IZPN,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+33,ACONTb,URCN,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+34,ASNS2,ASNS1,pFBAOpt_Rxns,MLE_Rxns,Alanine and Aspartate Metabolism,Alanine and Aspartate Metabolism
+35,CS,FGLU,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+36,CS,FORAMD,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+37,CS,HISDr,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+38,CS,IZPN,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+39,CS,URCN,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+40,CYSTGL,THRD_L,pFBAOpt_Rxns,ELE_Rxns,Methionine Metabolism,"Valine, Leucine, and Isoleucine Metabolism"
+41,CYS,CYSS,pFBAOpt_Rxns,MLE_Rxns,"Glycine, Serine and threonine metabolism",Cysteine Metabolism
+42,CYS,SERAT,pFBAOpt_Rxns,MLE_Rxns,"Glycine, Serine and threonine metabolism",Cysteine Metabolism
+43,CYTK1,NTD4,pFBAOpt_Rxns,MLE_Rxns,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+44,DALAt2pp,DALAtex,pFBAOpt_Rxns,MLE_Rxns,"Tranpsort, Inner Membrane","Transport, Outer Membrane Porin"
+45,DHORD2,DHORD5,pFBAOpt_Rxns,ELE_Rxns,Purine and Pyrimidine Biosynthesis,Purine and Pyrimidine Biosynthesis
+46,DNAMTn2r,METS,pFBAOpt_Rxns,MLE_Rxns,Exchange,Methionine Metabolism
+47,DNAMTn2r,MTHFR2,pFBAOpt_Rxns,MLE_Rxns,Exchange,Folate Metabolism
+48,EAR121y,EAR121x,pFBAOpt_Rxns,pFBAOpt_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+49,EAR141y,EAR141x,pFBAOpt_Rxns,pFBAOpt_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+50,EAR161x,EAR161y,pFBAOpt_Rxns,pFBAOpt_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+51,EAR181y,EAR181x,pFBAOpt_Rxns,pFBAOpt_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+52,EAR40x,EAR40y,pFBAOpt_Rxns,pFBAOpt_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+53,EAR60x,EAR60y,pFBAOpt_Rxns,pFBAOpt_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+54,EAR80y,EAR80x,pFBAOpt_Rxns,pFBAOpt_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+55,FUM,SUCCt3pp,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Transport
+56,GARFT,GART,pFBAOpt_Rxns,MLE_Rxns,Purine and Pyrimidine Biosynthesis,Purine and Pyrimidine Biosynthesis
+57,G5SD,NACODA,pFBAOpt_Rxns,MLE_Rxns,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+58,GLCtex,GLCtex,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane","Transport, Outer Membrane"
+59,GLU5K,NACODA,pFBAOpt_Rxns,MLE_Rxns,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+60,GLYCtpp,GLYCtex,pFBAOpt_Rxns,MLE_Rxns,"Tranpsort, Inner Membrane","Transport, Outer Membrane Porin"
+61,FLDR,NDPK7,pFBAOpt_Rxns,pFBAOpt_Rxns,Unassigned,Nucleotide Salvage Pathway
+62,FLDR,NDPK8,pFBAOpt_Rxns,ELE_Rxns,Unassigned,Nucleotide Salvage Pathway
+63,HCYSMT,METS,pFBAOpt_Rxns,MLE_Rxns,Methionine Metabolism,Methionine Metabolism
+64,HCYSMT,MTHFR2,pFBAOpt_Rxns,MLE_Rxns,Methionine Metabolism,Folate Metabolism
+65,ICDHyr,FGLU,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+66,ICDHyr,FORAMD,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+67,ICDHyr,HISDr,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+68,ICDHyr,IZPN,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+69,ICDHyr,URCN,pFBAOpt_Rxns,MLE_Rxns,Citric Acid Cycle,Histidine Metabolism
+70,KAS15,KAS14,pFBAOpt_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Membrane Lipid Metabolism
+71,NDPK1,ADK3,pFBAOpt_Rxns,ELE_Rxns,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+72,NDPK5,RNTR2c,pFBAOpt_Rxns,pFBAOpt_Rxns,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+73,MTHFC,GART,pFBAOpt_Rxns,MLE_Rxns,Folate Metabolism,Purine and Pyrimidine Biosynthesis
+74,MTHFC,PFL,pFBAOpt_Rxns,MLE_Rxns,Folate Metabolism,Pyruvate Metabolism
+75,MTHFD,GART,pFBAOpt_Rxns,MLE_Rxns,Folate Metabolism,Purine and Pyrimidine Biosynthesis
+76,MTHFD,PFL,pFBAOpt_Rxns,MLE_Rxns,Folate Metabolism,Pyruvate Metabolism
+77,PAPSR,GRXR,pFBAOpt_Rxns,ELE_Rxns,Cysteine Metabolism,Unassigned
+78,PAPSR,GTHOr,pFBAOpt_Rxns,ELE_Rxns,Cysteine Metabolism,Cofactor and Prosthetic Group Biosynthesis
+79,PAPSR,PAPSR2,pFBAOpt_Rxns,ELE_Rxns,Cysteine Metabolism,Cysteine Metabolism
+80,PGPP181,2AGPG181tipp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,"Tranpsort, Inner Membrane"
+81,PGPP181,2AGPGAT181,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+82,PGPP181,FACOAL181t2pp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Cell Envelope Biosynthesis
+83,PGPP181,PGPP181pp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+84,PGPP181,PGP181abcpp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,"Transport, Inner Membrane"
+85,PGPP181,PLIPA1G181pp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+86,PG160abcpp,PGP160abcpp,pFBAOpt_Rxns,MLE_Rxns,"Transport, Inner Membrane","Transport, Inner Membrane"
+87,PG160abcpp,PGPP160pp,pFBAOpt_Rxns,MLE_Rxns,"Transport, Inner Membrane",Glycerophospholipid Metabolism
+88,PG161abcpp,PGP161abcpp,pFBAOpt_Rxns,MLE_Rxns,"Transport, Inner Membrane","Transport, Inner Membrane"
+89,PG161abcpp,PGPP161pp,pFBAOpt_Rxns,MLE_Rxns,"Transport, Inner Membrane",Glycerophospholipid Metabolism
+90,PG181abcpp,PGPP181pp,pFBAOpt_Rxns,MLE_Rxns,"Transport, Inner Membrane",Glycerophospholipid Metabolism
+91,PG181abcpp,PGP181abcpp,pFBAOpt_Rxns,MLE_Rxns,"Transport, Inner Membrane","Transport, Inner Membrane"
+92,PIt2rpp,PIuabcpp,pFBAOpt_Rxns,MLE_Rxns,Inorganic Ion Transport and Metabolism,Inorganic Ion Transport and Metabolism
+93,PGPP160,2AGPG160tipp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,"Tranpsort, Inner Membrane"
+94,PGPP160,2AGPGAT160,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+95,PGPP160,FACOAL160t2pp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Cell Envelope Biosynthesis
+96,PGPP160,PGP160abcpp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,"Transport, Inner Membrane"
+97,PGPP160,PLIPA1G160pp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+98,PGPP160,PGPP160pp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+99,PGPP161,2AGPG161tipp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,"Tranpsort, Inner Membrane"
+100,PGPP161,2AGPGAT161,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+101,PGPP161,FACOAL161t2pp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Cell Envelope Biosynthesis
+102,PGPP161,PGP161abcpp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,"Transport, Inner Membrane"
+103,PGPP161,PLIPA1G161pp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+104,PGPP161,PGPP161pp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+105,RNTR1c,NDPK8,pFBAOpt_Rxns,ELE_Rxns,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+106,RNTR3c,NDPK7,pFBAOpt_Rxns,pFBAOpt_Rxns,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+107,RPI,KDOCT2,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Lipopolysaccharide Biosynthesis / Recycling
+108,RPI,MOAT,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Lipopolysaccharide Biosynthesis / Recycling
+109,RPI,MOAT2,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Lipopolysaccharide Biosynthesis / Recycling
+110,PPK,PPA,pFBAOpt_Rxns,MLE_Rxns,Oxidative Phosphorylation,Anaplerotic Reactions
+111,TRDR,GRXR,pFBAOpt_Rxns,ELE_Rxns,Oxidative Phosphorylation,Unassigned
+112,TRDR,GTHOr,pFBAOpt_Rxns,ELE_Rxns,Oxidative Phosphorylation,Cofactor and Prosthetic Group Biosynthesis
+113,TRDR,PAPSR2,pFBAOpt_Rxns,ELE_Rxns,Oxidative Phosphorylation,Cysteine Metabolism
+114,TRPS1,TRPS2,pFBAOpt_Rxns,ELE_Rxns,"Tyrosine, Tryptophan, and Phenylalanine Metabolism","Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+115,TRPS1,TRPS3,pFBAOpt_Rxns,ELE_Rxns,"Tyrosine, Tryptophan, and Phenylalanine Metabolism","Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+116,VALTA,VPAMTr,pFBAOpt_Rxns,ELE_Rxns,"Valine, Leucine, and Isoleucine Metabolism",Alanine and Aspartate Metabolism
+117,PRPPS,R15BPK,pFBAOpt_Rxns,ELE_Rxns,Histidine Metabolism,Alternate Carbon Metabolism
+118,PRPPS,R1PK,pFBAOpt_Rxns,ELE_Rxns,Histidine Metabolism,Exchange
+119,PRPPS,PPM,pFBAOpt_Rxns,ELE_Rxns,Histidine Metabolism,Alternate Carbon Metabolism
+120,NDPK5,FLDR,pFBAOpt_Rxns,pFBAOpt_Rxns,Nucleotide Salvage Pathway,Unassigned
+121,MTHFC,GARFT,pFBAOpt_Rxns,pFBAOpt_Rxns,Folate Metabolism,Purine and Pyrimidine Biosynthesis
+122,MTHFD,GARFT,pFBAOpt_Rxns,pFBAOpt_Rxns,Folate Metabolism,Purine and Pyrimidine Biosynthesis
+123,O2tex,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane Porin",Glycolysis/Gluconeogenesis
+124,O2tpp,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,Transport,Glycolysis/Gluconeogenesis
+125,PGCD,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycerophospholipid Metabolism
+126,PGK,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,"Transport, Outer Membrane Porin"
+127,PGK,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Transport
+128,PSERT,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycerophospholipid Metabolism
+129,PSP_L,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycerophospholipid Metabolism
+130,PPC,FUM,pFBAOpt_Rxns,pFBAOpt_Rxns,Anaplerotic Reactions,Citric Acid Cycle
+131,RPE,GND,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+132,RPI,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+133,SUCOAS,AKGDH,pFBAOpt_Rxns,pFBAOpt_Rxns,Citric Acid Cycle,Citric Acid Cycle
+134,TALA,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+135,TALA,RPI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+136,TKT1,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+137,TKT1,RPI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+138,TKT1,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+139,TKT2,GND,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+140,TKT2,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+141,TKT2,RPI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+142,TKT2,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+143,TKT2,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway

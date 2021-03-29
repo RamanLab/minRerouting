@@ -1,0 +1,76 @@
+,Rxn_1,Rxn_2,Rxn_1_Class,Rxn_2_Class,Subsystem 1,Subsystem 2
+0,THRS,THRD_L,pFBAOpt_Rxns,ELE_Rxns,"Glycine, Serine, and Threonine Metabolism",Methionine Metabolism
+1,PUNP5,HXPRT,pFBAOpt_Rxns,MLE_Rxns,Purine Metabolism,Purine Metabolism
+2,PIt,PIabc,pFBAOpt_Rxns,MLE_Rxns,Transport,Transport
+3,PREPTTA,PREPHACPH,pFBAOpt_Rxns,MLE_Rxns,Membrane Metabolism,Membrane Metabolism
+4,SADT,SADT2,pFBAOpt_Rxns,MLE_Rxns,Purine Metabolism,Other Amino Acid Metabolism
+5,P5CRx,P5CR,pFBAOpt_Rxns,ELE_Rxns,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+6,RPE,PGL,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+7,RPE,G6PDH2r,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+8,RPE,GND,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+9,TRPS1,TRPS3,pFBAOpt_Rxns,ELE_Rxns,Phenylalanine Tyrosine Tryptophan Metabolism,Phenylalanine Tyrosine Tryptophan Metabolism
+10,TRPS1,TRPS2,pFBAOpt_Rxns,ELE_Rxns,Phenylalanine Tyrosine Tryptophan Metabolism,Phenylalanine Tyrosine Tryptophan Metabolism
+11,MANAT2,G16MTM2,pFBAOpt_Rxns,pFBAOpt_Rxns,Membrane Metabolism,Membrane Metabolism
+12,IPDPS,IPDDI,pFBAOpt_Rxns,ELE_Rxns,Polyprenyl Metabolism,Polyprenyl Metabolism
+13,MAN1PT2,MAN1PT,pFBAOpt_Rxns,MLE_Rxns,Sugar Metabolism,Sugar Metabolism
+14,TKT2,PGL,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+15,TKT2,G6PDH2r,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+16,TKT2,GND,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+17,UMPK_copy1,UMPK_copy2,pFBAOpt_Rxns,pFBAOpt_Rxns,Nucleotide Sugar Metabolism,Pyrimidine Metabolism
+18,HSST,THRD_L,pFBAOpt_Rxns,ELE_Rxns,Other Amino Acid Metabolism,Methionine Metabolism
+19,HSK,THRD_L,pFBAOpt_Rxns,ELE_Rxns,"Glycine, Serine, and Threonine Metabolism",Methionine Metabolism
+20,GLU5K,ORNTA,pFBAOpt_Rxns,ELE_Rxns,Urea Cycle,Arginine and Proline Metabolism
+21,HSDxi,HSDy,pFBAOpt_Rxns,ELE_Rxns,"Glycine, Serine, and Threonine Metabolism","Glycine, Serine, and Threonine Metabolism"
+22,GLCabc,FBP,pFBAOpt_Rxns,MLE_Rxns,Transport,Glycolysis
+23,ORNTAC,ACODA,pFBAOpt_Rxns,MLE_Rxns,Urea Cycle,Other Amino Acid Metabolism
+24,ORNTAC,ACGS,pFBAOpt_Rxns,MLE_Rxns,Urea Cycle,Urea Cycle
+25,DMPPS,IPDDI,pFBAOpt_Rxns,ELE_Rxns,Cofactor Metabolism,Polyprenyl Metabolism
+26,CYTK2,NTPP3,pFBAOpt_Rxns,MLE_Rxns,Pyrimidine Metabolism,Nucleotide Sugar Metabolism
+27,CYTK2,NDPK7,pFBAOpt_Rxns,MLE_Rxns,Pyrimidine Metabolism,Pyrimidine Metabolism
+28,CTPS1,CTPS2,pFBAOpt_Rxns,MLE_Rxns,Pyrimidine Metabolism,Pyrimidine Metabolism
+29,DCPT,DCPT2,pFBAOpt_Rxns,pFBAOpt_Rxns,Polyprenyl Metabolism,Membrane Metabolism
+30,DCPT,DCPDPP2,pFBAOpt_Rxns,pFBAOpt_Rxns,Polyprenyl Metabolism,Membrane Metabolism
+31,DCPT,ARI,pFBAOpt_Rxns,pFBAOpt_Rxns,Polyprenyl Metabolism,Membrane Metabolism
+32,DCPE,DCPT2,pFBAOpt_Rxns,pFBAOpt_Rxns,Polyprenyl Metabolism,Membrane Metabolism
+33,DCPE,DCPDPP2,pFBAOpt_Rxns,pFBAOpt_Rxns,Polyprenyl Metabolism,Membrane Metabolism
+34,DCPE,ARI,pFBAOpt_Rxns,pFBAOpt_Rxns,Polyprenyl Metabolism,Membrane Metabolism
+35,DCPDPP,DCPT2,pFBAOpt_Rxns,pFBAOpt_Rxns,Polyprenyl Metabolism,Membrane Metabolism
+36,DCPDPP,DCPDPP2,pFBAOpt_Rxns,pFBAOpt_Rxns,Polyprenyl Metabolism,Membrane Metabolism
+37,DCPDPP,ARI,pFBAOpt_Rxns,pFBAOpt_Rxns,Polyprenyl Metabolism,Membrane Metabolism
+38,DADK,NTPP5,pFBAOpt_Rxns,MLE_Rxns,Nucleotide Sugar Metabolism,Nucleotide Sugar Metabolism
+39,DADK,NDPK8,pFBAOpt_Rxns,MLE_Rxns,Nucleotide Sugar Metabolism,Pyrimidine Metabolism
+40,ARGDr,ARGSS,pFBAOpt_Rxns,MLE_Rxns,Arginine and Proline Metabolism,Alanine and Aspartate Metabolism
+41,ARGDr,ARGSL,pFBAOpt_Rxns,MLE_Rxns,Arginine and Proline Metabolism,Alanine and Aspartate Metabolism
+42,FACOALPREPH,PREPHACPH,pFBAOpt_Rxns,MLE_Rxns,Membrane Metabolism,Membrane Metabolism
+43,FACOAL181,DESAT18,pFBAOpt_Rxns,ELE_Rxns,Fatty Acid Metabolism,Fatty Acid Metabolism
+44,FACOAL181,FACOAL180,pFBAOpt_Rxns,ELE_Rxns,Fatty Acid Metabolism,Fatty Acid Metabolism
+45,FAS181,DESAT18,pFBAOpt_Rxns,ELE_Rxns,Fatty Acid Metabolism,Fatty Acid Metabolism
+46,FAS181,FACOAL180,pFBAOpt_Rxns,ELE_Rxns,Fatty Acid Metabolism,Fatty Acid Metabolism
+47,FAS161,DESAT16,pFBAOpt_Rxns,ELE_Rxns,Fatty Acid Metabolism,Fatty Acid Metabolism
+48,FAS161,FACOAL161,pFBAOpt_Rxns,ELE_Rxns,Fatty Acid Metabolism,Fatty Acid Metabolism
+49,ALATA_L,MMSAD3,pFBAOpt_Rxns,MLE_Rxns,Alanine and Aspartate Metabolism,Sugar Metabolism
+50,ALATA_L,ASP1DC,pFBAOpt_Rxns,MLE_Rxns,Alanine and Aspartate Metabolism,Alanine and Aspartate Metabolism
+51,ALATA_L,APATr,pFBAOpt_Rxns,MLE_Rxns,Alanine and Aspartate Metabolism,Alanine and Aspartate Metabolism
+52,AIRCr,AIRC3,pFBAOpt_Rxns,MLE_Rxns,Purine Metabolism,Nucleotide Sugar Metabolism
+53,AIRCr,AIRC2,pFBAOpt_Rxns,MLE_Rxns,Purine Metabolism,Nucleotide Sugar Metabolism
+54,PGK,PGM,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis,Glycolysis
+55,RPE,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+56,TKT2,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+57,TKT2,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+58,TKT1,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+59,TKT1,TKT2,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+60,GLUt2r,ICDHyr,pFBAOpt_Rxns,pFBAOpt_Rxns,Transport,Citric Acid Cycle
+61,HSST,THRS,pFBAOpt_Rxns,pFBAOpt_Rxns,Other Amino Acid Metabolism,"Glycine, Serine, and Threonine Metabolism"
+62,HSST,SHSL4r,pFBAOpt_Rxns,pFBAOpt_Rxns,Other Amino Acid Metabolism,Cysteine Metabolism
+63,HSK,HSST,pFBAOpt_Rxns,pFBAOpt_Rxns,"Glycine, Serine, and Threonine Metabolism",Other Amino Acid Metabolism
+64,GLCabc,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Transport,Glycolysis
+65,GAPD,PGM,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis,Glycolysis
+66,NH4t,GLUt2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Transport,Transport
+67,ENO,PGK,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis,Glycolysis
+68,ENO,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis,Glycolysis
+69,DMPPS,IPDPS,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor Metabolism,Polyprenyl Metabolism
+70,GLYK,G3PD1ir,pFBAOpt_Rxns,pFBAOpt_Rxns,Sugar Metabolism,Cofactor Metabolism
+71,FBA,GLCabc,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis,Transport
+72,FAS181,FACOAL181,pFBAOpt_Rxns,pFBAOpt_Rxns,Fatty Acid Metabolism,Fatty Acid Metabolism
+73,ACONT,GLUt2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Citric Acid Cycle,Transport
+74,AICART,AICART2,pFBAOpt_Rxns,pFBAOpt_Rxns,Purine Metabolism,Purine Metabolism

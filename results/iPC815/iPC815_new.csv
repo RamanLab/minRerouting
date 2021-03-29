@@ -1,0 +1,189 @@
+,Var1,Var2,Subsystem 1,Subsystem 2
+0,GARFT,GART,Purine and Pyrimidine Biosynthesis,Purine and Pyrimidine Biosynthesis
+1,GARFT,PFL,Purine and Pyrimidine Biosynthesis,Pyruvate Metabolism
+2,GHMT2r,PGCD,Glycine and Serine Metabolism,Glycine and Serine Metabolism
+3,GHMT2r,PSERT,Glycine and Serine Metabolism,Glycine and Serine Metabolism
+4,GHMT2r,PSP_L,Glycine and Serine Metabolism,Glycine and Serine Metabolism
+5,3HAD120,AACPS7,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+6,3HAD120,FACOAE120,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+7,3HAD120,ECOAH6,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+8,3HAD120,HACD6i,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+9,3HAD120,ACACT9,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+10,3HAD140,AACPS1,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+11,3HAD140,FACOAE140,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+12,3HAD160,AACPS3,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+13,3HAD160,FACOAE160,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+14,3OAR120,AACPS7,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+15,3OAR120,FACOAE120,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+16,3OAR120,ECOAH6,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+17,3OAR120,HACD6i,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+18,3OAR120,ACACT9,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+19,3OAR160,AACPS3,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+20,3OAR160,FACOAE160,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+21,3OAS120,AACPS7,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+22,3OAS120,FACOAE120,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+23,3OAS120,ECOAH6,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+24,3OAS120,HACD6i,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+25,3OAS120,ACACT9,Cell Envelope Biosynthesis,Membrane Lipid Metabolism
+26,3OAS160,AACPS3,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+27,3OAS160,FACOAE160,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+28,ASNS2,ASNS1,Alanine and Aspartate Metabolism,Alanine and Aspartate Metabolism
+29,CYSabcpp,CYSS,Transport; Inner Membrane,Cysteine Metabolism
+30,CYSabcpp,SERAT,Transport; Inner Membrane,Cysteine Metabolism
+31,CYSabcpp,SULR,Transport; Inner Membrane,Cysteine Metabolism
+32,CYSabcpp,SO4tex,Transport; Inner Membrane,Transport; Outer Membrane Porin
+33,CYSabcpp,SULabcpp,Transport; Inner Membrane,Inorganic Ion Transport and Metabolism
+34,CYSabcpp,PAPSSH,Transport; Inner Membrane,Sulfur Metabolism
+35,CYStex,CYSS,Transport; Outer Membrane Porin,Cysteine Metabolism
+36,CYStex,SERAT,Transport; Outer Membrane Porin,Cysteine Metabolism
+37,CYStex,SULR,Transport; Outer Membrane Porin,Cysteine Metabolism
+38,CYStex,SO4tex,Transport; Outer Membrane Porin,Transport; Outer Membrane Porin
+39,CYStex,SULabcpp,Transport; Outer Membrane Porin,Inorganic Ion Transport and Metabolism
+40,CYStex,PAPSSH,Transport; Outer Membrane Porin,Sulfur Metabolism
+41,DHORD2,DHORD5,Purine and Pyrimidine Biosynthesis,Purine and Pyrimidine Biosynthesis
+42,FLDR,NDPK7,Unassigned,Nucleotide Salvage Pathway
+43,FLDR,NDPK8,Unassigned,Nucleotide Salvage Pathway
+44,GLU5K,ACGK,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+45,GLU5K,ACGS,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+46,GLU5K,AGPR,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+47,GLUDy,GLUSy,Glutamate Metabolism,Glutamate metabolism
+48,FORtppi,GART,Transport; Inner Membrane,Purine and Pyrimidine Biosynthesis
+49,GLYCtpp,GLYCtex,Transport; Inner Membrane,Transport; Outer Membrane Porin
+50,LYSabcpp,ASAD,Transport; Inner Membrane,Threonine and Lysine Metabolism
+51,LYSabcpp,ASPK,Transport; Inner Membrane,Threonine and Lysine Metabolism
+52,LYSabcpp,DAPDC,Transport; Inner Membrane,Threonine and Lysine Metabolism
+53,LYSabcpp,DAPE,Transport; Inner Membrane,Threonine and Lysine Metabolism
+54,LYSabcpp,DHDPRy,Transport; Inner Membrane,Threonine and Lysine Metabolism
+55,LYSabcpp,DHDPS,Transport; Inner Membrane,Threonine and Lysine Metabolism
+56,LYSabcpp,SDPDS,Transport; Inner Membrane,Threonine and Lysine Metabolism
+57,LYSabcpp,THDPS,Transport; Inner Membrane,Threonine and Lysine Metabolism
+58,LYSabcpp,SDPTA,Transport; Inner Membrane,Threonine and Lysine Metabolism
+59,LYStex,ASAD,Transport; Outer Membrane Porin,Threonine and Lysine Metabolism
+60,LYStex,ASPK,Transport; Outer Membrane Porin,Threonine and Lysine Metabolism
+61,LYStex,DAPDC,Transport; Outer Membrane Porin,Threonine and Lysine Metabolism
+62,LYStex,DAPE,Transport; Outer Membrane Porin,Threonine and Lysine Metabolism
+63,LYStex,DHDPRy,Transport; Outer Membrane Porin,Threonine and Lysine Metabolism
+64,LYStex,DHDPS,Transport; Outer Membrane Porin,Threonine and Lysine Metabolism
+65,LYStex,SDPDS,Transport; Outer Membrane Porin,Threonine and Lysine Metabolism
+66,LYStex,THDPS,Transport; Outer Membrane Porin,Threonine and Lysine Metabolism
+67,LYStex,SDPTA,Transport; Outer Membrane Porin,Threonine and Lysine Metabolism
+68,MDH,PPC,Citric Acid Cycle,Anaplerotic Reactions
+69,MTHFC,GART,Folate Metabolism,Purine and Pyrimidine Biosynthesis
+70,MTHFC,PFL,Folate Metabolism,Pyruvate Metabolism
+71,MTHFD,GART,Folate Metabolism,Purine and Pyrimidine Biosynthesis
+72,MTHFD,PFL,Folate Metabolism,Pyruvate Metabolism
+73,NDPK1,ADK3,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+74,G5SD,ACGK,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+75,G5SD,ACGS,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+76,G5SD,AGPR,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+77,P5CR,ACGK,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+78,P5CR,ACGS,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+79,P5CR,ACODA,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+80,P5CR,ACOTA,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+81,P5CR,AGPR,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+82,PG140abcpp,PGP140abcpp,Transport; Inner Membrane,Transport; Inner Membrane
+83,PG140abcpp,PGPP140pp,Transport; Inner Membrane,Glycerophospholipid Metabolism
+84,PG160abcpp,PGP160abcpp,Transport; Inner Membrane,Transport; Inner Membrane
+85,PG160abcpp,PGPP160pp,Transport; Inner Membrane,Glycerophospholipid Metabolism
+86,PG161abcpp,PGP161abcpp,Transport; Inner Membrane,Transport; Inner Membrane
+87,PG161abcpp,PGPP161pp,Transport; Inner Membrane,Glycerophospholipid Metabolism
+88,PG181abcpp,PGP181abcpp,Transport; Inner Membrane,Transport; Inner Membrane
+89,PG181abcpp,PGPP181pp,Transport; Inner Membrane,Glycerophospholipid Metabolism
+90,PNTOt4pp,ASP1DC,Transport; Inner Membrane,Cofactor and Prosthetic Group Biosynthesis
+91,PNTOt4pp,DPR,Transport; Inner Membrane,Cofactor and Prosthetic Group Biosynthesis
+92,PNTOt4pp,MOHMT,Transport; Inner Membrane,Cofactor and Prosthetic Group Biosynthesis
+93,PNTOt4pp,PANTS,Transport; Inner Membrane,Cofactor and Prosthetic Group Biosynthesis
+94,PNTOtex,ASP1DC,Transport; Outer Membrane Porin,Cofactor and Prosthetic Group Biosynthesis
+95,PNTOtex,DPR,Transport; Outer Membrane Porin,Cofactor and Prosthetic Group Biosynthesis
+96,PNTOtex,MOHMT,Transport; Outer Membrane Porin,Cofactor and Prosthetic Group Biosynthesis
+97,PNTOtex,PANTS,Transport; Outer Membrane Porin,Cofactor and Prosthetic Group Biosynthesis
+98,PPK,PPA,Oxidative Phosphorylation,Anaplerotic Reactions
+99,PGPP140,PGP140abcpp,Glycerophospholipid Metabolism,Transport; Inner Membrane
+100,PGPP140,PGPP140pp,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+101,RNTR1c,NDPK8,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+102,PGPP160,PGP160abcpp,Glycerophospholipid Metabolism,Transport; Inner Membrane
+103,PGPP160,PGPP160pp,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+104,RNTR3c,NDPK7,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+105,PGPP161,PGP161abcpp,Glycerophospholipid Metabolism,Transport; Inner Membrane
+106,PGPP161,PGPP161pp,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+107,PGPP181,PGP181abcpp,Glycerophospholipid Metabolism,Transport; Inner Membrane
+108,PGPP181,PGPP181pp,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+109,THRA,ASAD,Threonine and Lysine Metabolism,Threonine and Lysine Metabolism
+110,THRA,ASPK,Threonine and Lysine Metabolism,Threonine and Lysine Metabolism
+111,THRA,HSDy,Threonine and Lysine Metabolism,Threonine and Lysine Metabolism
+112,THRA,HSK,Threonine and Lysine Metabolism,Threonine and Lysine Metabolism
+113,THRA,THRS,Threonine and Lysine Metabolism,Threonine and Lysine Metabolism
+114,SUCDi,SUCCtex,Oxidative Phosphorylation,Transport; Outer Membrane Porin
+115,TYRt2rpp,CHORM,Transport; Inner Membrane,Tyrosine; Tryptophan; and Phenylalanine Metabolism
+116,TYRt2rpp,PPND,Transport; Inner Membrane,Tyrosine; Tryptophan; and Phenylalanine Metabolism
+117,TYRt2rpp,TYRTA,Transport; Inner Membrane,Tyrosine; Tryptophan; and Phenylalanine Metabolism
+118,TYRtex,CHORM,Transport; Outer Membrane Porin,Tyrosine; Tryptophan; and Phenylalanine Metabolism
+119,TYRtex,PPND,Transport; Outer Membrane Porin,Tyrosine; Tryptophan; and Phenylalanine Metabolism
+120,TYRtex,TYRTA,Transport; Outer Membrane Porin,Tyrosine; Tryptophan; and Phenylalanine Metabolism
+121,TRPS1,TRPS2,Tyrosine; Tryptophan; and Phenylalanine Metabolism,Tyrosine; Tryptophan; and Phenylalanine Metabolism
+122,TRPS1,TRPS3,Tyrosine; Tryptophan; and Phenylalanine Metabolism,Tyrosine; Tryptophan; and Phenylalanine Metabolism
+123,NADS1,NADS2,,
+124,PIt2rpp,PIuabcpp,Inorganic Ion Transport and Metabolism,Inorganic Ion Transport and Metabolism
+125,ENOPH,23DK5MPPISO,,
+126,ENOPH,2OH3K5MPPISO,,
+127,EAR40x,EAR40y,,
+128,EAR60x,EAR60y,,
+129,EAR80x,EAR80y,,
+130,EAR121x,EAR121y,,
+131,EAR141x,EAR141y,,
+132,EAR161x,EAR161y,,
+133,EAR181x,EAR181y,,
+134,ADK1,ADK3,purine metabolism,Nucleotide Salvage Pathway
+135,G5SADs,ACGK,Amino acid metabolism,Arginine and Proline Metabolism
+136,G5SADs,ACGS,Amino acid metabolism,Arginine and Proline Metabolism
+137,G5SADs,ACODA,Amino acid metabolism,Arginine and Proline Metabolism
+138,G5SADs,ACOTA,Amino acid metabolism,Arginine and Proline Metabolism
+139,G5SADs,AGPR,Amino acid metabolism,Arginine and Proline Metabolism
+140,ORNCD,ACGK,,Arginine and Proline Metabolism
+141,ORNCD,ACGS,,Arginine and Proline Metabolism
+142,ORNCD,ACODA,,Arginine and Proline Metabolism
+143,ORNCD,ACOTA,,Arginine and Proline Metabolism
+144,ORNCD,AGPR,,Arginine and Proline Metabolism
+145,CYSabcpp,GHMT2r,Transport; Inner Membrane,Glycine and Serine Metabolism
+146,CYSDS,GHMT2r,Cysteine Metabolism,Glycine and Serine Metabolism
+147,CYStex,GHMT2r,Transport; Outer Membrane Porin,Glycine and Serine Metabolism
+148,CITt7pp,CS,Transport; Inner Membrane,Citric Acid Cycle
+149,CITtex,CS,Transport; Outer Membrane Porin,Citric Acid Cycle
+150,CO2tex,GAPD,Transport; Outer Membrane Porin,Glycolysis/Gluconeogenesis
+151,CO2tex,ATPS4rpp,Transport; Outer Membrane Porin,Oxidative Phosphorylation
+152,H2St1pp,GHMT2r,Transport; Inner Membrane,Glycine and Serine Metabolism
+153,H2Stex,GHMT2r,Transport; Outer Membrane Porin,Glycine and Serine Metabolism
+154,GLYt2pp,CYSabcpp,Transport; Inner Membrane,Transport; Inner Membrane
+155,GLYt2pp,CYSDS,Transport; Inner Membrane,Cysteine Metabolism
+156,GLYt2pp,CYStex,Transport; Inner Membrane,Transport; Outer Membrane Porin
+157,GLYt2pp,H2St1pp,Transport; Inner Membrane,Transport; Inner Membrane
+158,GLYt2pp,H2Stex,Transport; Inner Membrane,Transport; Outer Membrane Porin
+159,GLYtex,CYSabcpp,Transport; Outer Membrane Porin,Transport; Inner Membrane
+160,GLYtex,CYSDS,Transport; Outer Membrane Porin,Cysteine Metabolism
+161,GLYtex,CYStex,Transport; Outer Membrane Porin,Transport; Outer Membrane Porin
+162,GLYtex,H2St1pp,Transport; Outer Membrane Porin,Transport; Inner Membrane
+163,GLYtex,H2Stex,Transport; Outer Membrane Porin,Transport; Outer Membrane Porin
+164,KAS15,KAS14,Membrane Lipid Metabolism,Membrane Lipid Metabolism
+165,MTHFC,GARFT,Folate Metabolism,Purine and Pyrimidine Biosynthesis
+166,MTHFD,GARFT,Folate Metabolism,Purine and Pyrimidine Biosynthesis
+167,NDPK5,FLDR,Nucleotide Salvage Pathway,Unassigned
+168,PGK,CO2tex,Glycolysis/Gluconeogenesis,Transport; Outer Membrane Porin
+169,RNTR2c,NDPK5,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+170,RPE,GND,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+171,RPE,G6PDH2r,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+172,RPE,PGL,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+173,TALA,RPE,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+174,SUCOAS,AKGDH,Citric Acid Cycle,Citric Acid Cycle
+175,TKT1,RPE,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+176,TKT1,TALA,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+177,TKT2,GND,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+178,TKT2,G6PDH2r,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+179,TKT2,PGL,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+180,TKT2,RPE,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+181,TKT2,TALA,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+182,TKT2,TKT1,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+183,TPI,FBA,Glycolysis/Gluconeogenesis,Glycolysis/Gluconeogenesis
+184,TPI,PFK,Glycolysis/Gluconeogenesis,Glycolysis/Gluconeogenesis
+185,ADK1,NDPK1,purine metabolism,Nucleotide Salvage Pathway
+186,ORNCD,P5CR,,Arginine and Proline Metabolism
+187,ORNCD,G5SADs,,Amino acid metabolism
