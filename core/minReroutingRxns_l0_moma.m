@@ -64,7 +64,7 @@ for iLeth = 1:nLethals
     
     %fprintf('Finding minimal rerouting for pair: ( %s , %s )', Jdl(iLeth,1),Jdl(iLeth,2));
     
-    [solutionDel1, solutionDel2, solStatus] = linearMOMA_doubleKO(modelDel1, modelDel2, grWT, 'max');
+    [solutionDel1, solutionDel2, solStatus] = newsparseMOMA_doubleKO(modelDel1, modelDel2, grWT, 'max');
     
     if solStatus > 0        
         flux1 = solutionDel1.x;
@@ -74,10 +74,10 @@ for iLeth = 1:nLethals
 
         min_ids = find(diff>delta*abs(flux1) & diff>delta*abs(flux2) & diff>cutOff);
 
-        minRerouting(iLeth).rxns=model.rxns(min_ids);
-        minRerouting(iLeth).diff=diff(min_ids);
+        minRerouting(iLeth).rxns = model.rxns(min_ids);
+        minRerouting(iLeth).diff = diff(min_ids);
         % minRerouting(iLeth).totalFluxDiff=totalFluxDiff;
-        minRerouting(iLeth).solStatus=solStatus;
+        minRerouting(iLeth).solStatus = solStatus;
 
         if strcmp(Division, 'True')
             flux1Rxn = model.rxns(find(flux1));

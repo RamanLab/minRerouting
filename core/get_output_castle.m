@@ -1,14 +1,14 @@
-function get_output_from_castle(Castle, output_dir)
+function get_output_castle(Castle, output_dir)
 % get_output_from_castle(Castle, output_dir)
 % get_output_from_castle generates output files for mat object Castle
-%   Input:
+% Input:
 %   Castle : The structure with models and synthetic lethals data
 %   output_dir : path to output folder to store all the csv files
 
 % Generate Synthetic Lethal xls files in output directory
 for iModel = 1:length(Castle.data)
     model_name = Castle.data(iModel).model_name;
-    output_dir_i = horzcat(output_dir, '\', model_name);
+    output_dir_i = horzcat(output_dir, filesep, model_name);
     
     Jsl = Castle.data(iModel).Jsl;
     Jdl = Castle.data(iModel).Jdl;
@@ -17,7 +17,7 @@ for iModel = 1:length(Castle.data)
     data2 = {'Double Lethal Reactions','Rxn A', Jdl{:,1};
         '','Rxn B', Jdl{:,2}};
     
-    fname1 = horzcat(output_dir_i, '\SyntheticLethal_list.xlsx');
+    fname1 = horzcat(output_dir_i, filesep, 'SyntheticLethal_list.xlsx');
     xlswrite(fname1, transpose(data1), 1);
     xlswrite(fname1, transpose(data2), 2);
     

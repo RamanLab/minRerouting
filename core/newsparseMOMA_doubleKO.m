@@ -1,4 +1,4 @@
-function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_doubleKO(modelDel1, modelDel2, grWT, osenseStr, minFluxFlag, verbFlag)
+function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = newsparseMOMA_doubleKO(modelDel1, modelDel2, grWT, osenseStr, minFluxFlag, verbFlag)
 % Performs a linear version of the MOMA (minimization of metabolic
 % adjustment) approach upgraded for comparing double knockouts
 %
@@ -177,7 +177,14 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
 
     % Solve the linearMOMA problem
     [LPproblem.A, LPproblem.b, LPproblem.c, LPproblem.lb, LPproblem.ub, LPproblem.csense, LPproblem.osense] = deal(A, b, c, lb, ub, csense, 1);
-    LPsolution = solveCobraLP(LPproblem);
+    
+    % Previous code
+    % LPsolution = solveCobraLP(LPproblem);
+    
+    % Modified here - Added cplex_direct support (Works now)
+    changeCobraSolver('cplex_direct', 'LP');
+    LPsolution = solveCobraLP(LPproblem, 'minNorm', 0);
+    changeCobraSolver('gurobi', 'LP');
 
     if (verbFlag)
         fprintf('%f seconds\n', LPsolution.time);
@@ -228,8 +235,8 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
 
         % Construct the ub/lb
         % delta+ and delta- are in [0 10000]
-        lb = [modelDel1.lb; modelDel2.lb; zeros(2*nCommon+2*nRxns1+2*nRxns2,1)];
-        ub = [modelDel1.ub; modelDel2.ub; 10000*ones(2*nCommon+2*nRxns1+2*nRxns2,1)];
+        lb = [modelDel1.lb;modelDel2.lb; zeros(2*nCommon+2*nRxns1+2*nRxns2,1)];
+        ub = [modelDel1.ub;modelDel2.ub; 10000*ones(2*nCommon+2*nRxns1+2*nRxns2,1)];
         csense(1:(nMets1+nMets2)) = 'E';
         csense((nMets1+nMets2)+1:(nMets1+nMets2+2*nCommon+2*nRxns1+2*nRxns2)) = 'G';
         if (strcmp(osenseStr, 'max'))

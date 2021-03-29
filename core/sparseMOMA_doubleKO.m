@@ -131,7 +131,7 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
     % 4: delta- >= v2-v1
     % 5: c'v1 >= 0.9*f1 (deletion strain 1) (10 % slack on obj)
     % 6: c'v2 >= 0.9*f2 (deletion strain 2)
-    obj_slack = 0.1;
+    obj_slack = 0.05;
     A = [modelDel1.S sparse(nMets1,nRxns2+2*nCommon);
          sparse(nMets2,nRxns1) modelDel2.S sparse(nMets2,2*nCommon);
          createDeltaMatchMatrix(modelDel1.rxns,modelDel2.rxns);
