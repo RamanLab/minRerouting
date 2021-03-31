@@ -21,13 +21,15 @@ for i = 1:numel(model_names)
     fprintf('Finding Flux Variability of %s ...\n', model_names{i})
     [minFlux, maxFlux] = fluxVariability(model, [], [], [], 0, 1, '1-norm');
 
-    positions = findRxnIDs(model, data.Jdl(:,1));
-    maxFlux1 = maxFlux(positions);
-    minFlux1 = minFlux(positions);
+    % Get indices of the first reactions
+    positions1 = findRxnIDs(model, data.Jdl(:,1));
+    maxFlux1 = maxFlux(positions1);
+    minFlux1 = minFlux(positions1);
 
-    positions = findRxnIDs(model, data.Jdl(:,2));
-    maxFlux2 = maxFlux(positions);
-    minFlux2 = minFlux(positions);
+    % Get indices of the second reactions
+    positions2 = findRxnIDs(model, data.Jdl(:,2));
+    maxFlux2 = maxFlux(positions2);
+    minFlux2 = minFlux(positions2);
 
     % Convert the flux values to a tabular form
     fvaResultAnalysis = data.Jdl;
@@ -40,10 +42,8 @@ for i = 1:numel(model_names)
     
     % Get an one norm FBA solution for the model
     sol = optimizeCbModel(model, 'max', 'one');
-    positions = findRxnIDs(model, data.Jdl(:,1));
-    v1 = sol.v(positions);
-    positions = findRxnIDs(model, data.Jdl(:,2));
-    v2 = sol.v(positions);
+    v1 = sol.v(positions1);
+    v2 = sol.v(positions2);
     
     fvaResultAnalysis = [fvaResultAnalysis, array2table(v1)];
     fvaResultAnalysis = [fvaResultAnalysis, array2table(v2)];

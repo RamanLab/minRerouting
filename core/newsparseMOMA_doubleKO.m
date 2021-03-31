@@ -128,7 +128,7 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
     % 2: Sdel2*v2 = 0 for the deletion strain 2
     % 3: delta+ >= v1-v2
     % 4: delta- >= v2-v1
-    % 5: c'v1 >= 0.9*f1 (deletion strain 1) (10 % slack on obj)
+    % 5: c'v1 >= 0.9*f1 (deletion strain 1) (10% slack on obj)
     % 6: c'v2 >= 0.9*f2 (deletion strain 2)
     % OR 5,6 : c'v1 and c'v2 >= 0.05*grWT
 
