@@ -1,4 +1,4 @@
-function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_doubleKO(modelDel1, modelDel2, grWT, osenseStr, minFluxFlag, verbFlag)
+function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_doubleKO(modelDel1, modelDel2, obj_slack, osenseStr, minFluxFlag, verbFlag)
 % Performs a linear version of the MOMA (minimization of metabolic
 % adjustment) approach upgraded for comparing double knockouts
 %
@@ -7,10 +7,11 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_dou
 %    [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_doubleKO(modelDel1, modelDel2, osenseStr, minFluxFlag, verbFlab)
 %
 % INPUTS:
-%    modelDe11:         Deletion strain model for Rxn1
-%    modelDel2:         Deletion strain model for Rxn2
+%    modelDe11:        Deletion strain model for Rxn1
+%    modelDel2:        Deletion strain model for Rxn2
 %
 % OPTIONAL INPUTS:
+%    obj_slack         Permissible slack on the WT growth rate in the MoMA (Default: 0.05)
 %    osenseStr:        Maximize ('max') / minimize ('min') (Default = 'max')
 %    minFluxFlag:      Minimize the absolute value of fluxes in the optimal MOMA
 %                      solution (Default = false)
@@ -41,14 +42,20 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_dou
 %    there is at least one reaction in common
 %
 % .. Author: - Markus Herrgard 11/7/06
-% ..           Omkar Satyavan Mohite 06-08-2018
+% ..           Omkar Satyavan Mohite 06/08/2018
+
+if (nargin < 3 || isempty(obj_slack))
+    obj_slack = 0.05;
+end
 
 if (nargin < 4 || isempty(osenseStr))
     osenseStr = 'max';
 end
+
 if (nargin < 5 || isempty(minFluxFlag))
     minFluxFlag = false;
 end
+
 if (nargin < 6)
     verbFlag = false;
 end
@@ -130,17 +137,9 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
     % 4: delta- >= v2-v1
     % 5: c'v1 >= 0.9*f1 (deletion strain 1) (10 % slack on obj)
     % 6: c'v2 >= 0.9*f2 (deletion strain 2)
-    % OR 5,6 : c'v1 and c'v2 >= 0.05*grWT
-
-    % obj_slack = 0.1;
-    % A = [modelDel1.S sparse(nMets1,nRxns2+2*nCommon);
-    %      sparse(nMets2,nRxns1) modelDel2.S sparse(nMets2,2*nCommon);
-    %      createDeltaMatchMatrix(modelDel1.rxns,modelDel2.rxns);
-    %      modelDel1.c' sparse(1,nRxns2+2*nCommon); 
-    %      sparse(1,nRxns1) modelDel2.c' sparse(1,2*nCommon)];
-
-    % % Construct the RHS vector
-    % b = [zeros(nMets1+nMets2+2*nCommon,1);(1-obj_slack)*objValDel1; (1-obj_slack)*objValDel2];
+    % OR 5,6: c'v1 and c'v2 >= 0.05*grWT
+    % Conditions 3 and 4 ensure that the flux through
+    % the common reactions are minimized.
 
     A = [modelDel1.S sparse(nMets1,nRxns2+2*nCommon);
          sparse(nMets2,nRxns1) modelDel2.S sparse(nMets2,2*nCommon);
@@ -149,7 +148,7 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
          sparse(1,nRxns1) modelDel2.c' sparse(1,2*nCommon)];
 
     % Construct the RHS vector
-    b = [zeros(nMets1+nMets2+2*nCommon,1); 0.95*grWT; 0.95*grWT];
+    b = [zeros(nMets1+nMets2+2*nCommon,1); (1-obj_slack)*objValDel1; (1-obj_slack)*objValDel2];
 
     % Construct the objective (sum of all delta+ and delta-)
     c = [zeros(nRxns1+nRxns2,1); ones(2*nCommon,1)];
@@ -196,20 +195,6 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
     end
 
     if (LPsolution.stat > 0 && minFluxFlag)
-        % obj_slack = 0.1;
-        % A = [modelDel1.S sparse(nMets1,nRxns2+2*nCommon+2*nRxns1+2*nRxns2);
-        %     sparse(nMets2,nRxns1) modelDel2.S sparse(nMets2,2*nCommon+2*nRxns1+2*nRxns2);
-        %     createDeltaMatchMatrix(modelDel1.rxns,modelDel2.rxns) sparse(2*nCommon,2*nRxns1+2*nRxns2);
-        %     speye(nRxns1,nRxns1) sparse(nRxns1,nRxns2) sparse(nRxns1,2*nCommon) speye(nRxns1,nRxns1) sparse(nRxns1,nRxns1+2*nRxns2);
-        %     -speye(nRxns1,nRxns1) sparse(nRxns1,nRxns2) sparse(nRxns1,2*nCommon) sparse(nRxns1,nRxns1) speye(nRxns1,nRxns1) speye(nRxns1,2*nRxns2);
-        %     sparse(nRxns2,nRxns1) speye(nRxns2,nRxns2) sparse(nRxns2,2*nCommon) sparse(nRxns2,2*nRxns1) speye(nRxns2,nRxns2) sparse(nRxns2,nRxns2);
-        %     sparse(nRxns2,nRxns1) -speye(nRxns2,nRxns2) sparse(nRxns2,2*nCommon) sparse(nRxns2,2*nRxns1) sparse(nRxns2,nRxns2) speye(nRxns2,nRxns2);
-        %     modelDel1.c' sparse(1,nRxns2+2*nCommon+2*nRxns1+2*nRxns2);
-        %     sparse(1,nRxns1) modelDel2.c' sparse(1,2*nCommon+2*nRxns1+2*nRxns2);
-        %     sparse(1,nRxns1+nRxns2) ones(1,2*nCommon) sparse(1,2*nRxns1+2*nRxns2)];
-        % % Construct the RHS vector
-        % b = [zeros(nMets1+nMets2+2*nCommon+2*nRxns1+2*nRxns2,1);(1-obj_slack)*objValDel1;(1-obj_slack)*objValDel2;ceil(totalFluxDiff/tol)*tol];
-
         A = [modelDel1.S sparse(nMets1,nRxns2+2*nCommon+2*nRxns1+2*nRxns2);
             sparse(nMets2,nRxns1) modelDel2.S sparse(nMets2,2*nCommon+2*nRxns1+2*nRxns2);
             createDeltaMatchMatrix(modelDel1.rxns,modelDel2.rxns) sparse(2*nCommon,2*nRxns1+2*nRxns2);
@@ -220,8 +205,9 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
             modelDel1.c' sparse(1,nRxns2+2*nCommon+2*nRxns1+2*nRxns2);
             sparse(1,nRxns1) modelDel2.c' sparse(1,2*nCommon+2*nRxns1+2*nRxns2);
             sparse(1,nRxns1+nRxns2) ones(1,2*nCommon) sparse(1,2*nRxns1+2*nRxns2)];
+
         % Construct the RHS vector
-        b = [zeros(nMets1+nMets2+2*nCommon+2*nRxns1+2*nRxns2,1); 0.95*grWT; 0.95*grWT; ceil(totalFluxDiff/tol)*tol];
+        b = [zeros(nMets1+nMets2+2*nCommon+2*nRxns1+2*nRxns2,1); (1-obj_slack)*objValDel1; (1-obj_slack)*objValDel2; ceil(totalFluxDiff/tol)*tol];
 
         % Construct the objective (sum of all delta+ and delta-)
         c = [zeros(nRxns1+nRxns2+2*nCommon,1); ones(2*nRxns1+2*nRxns2,1)];

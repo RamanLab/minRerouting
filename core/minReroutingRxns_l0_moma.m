@@ -1,36 +1,43 @@
-function [minRerouting] = minReroutingRxns_l0_moma(model,Jdl,cutOff,delta,Division)
-%% [minRerouting] = minReroutingRxns(model,Jdl,cutOff)
+function [minRerouting] = minReroutingRxns_l0_moma(model, Jdl, obj_slack, cutOff, delta, Division)
+%% [minRerouting] = minReroutingRxns_l0_moma(model,Jdl,cutOff)
 % INPUT
-% model (the following fields are required - others can be supplied)
-%   S            Stoichiometric matrix
-%   b            Right hand side = dx/dt
-%   c            Objective coefficients
-%   lb           Lower bounds
-%   ub           Upper bounds
-%   rxns         Reaction Names
-% Jdl            List of reaction pairs(doJdl(uble lethals generally) for identifying the flux rerouting
+%   model (the following fields are required - others can be supplied)
+%       S            Stoichiometric matrix
+%       b            Right hand side = dx/dt
+%       c            Objective coefficients
+%       lb           Lower bounds
+%       ub           Upper bounds
+%       rxns         Reaction Names
+%   Jdl              List of reaction pairs(double lethals generally)
+%                    for identifying the flux rerouting
 % OPTIONAL
-% cutoff         cutoff flux difference value for MOMA difference.Default is 0.0001.
+%   obj_slack        Permissible slack on the WT growth rate in the MoMA (Default: 0.05)
+%   cutOff           cutoff flux difference value for MOMA difference (Default is 0.0001)
 %
 % OUTPUT
-% minRerouting   The structure with reaction sets in alternate routes
-%   rxns         List of total reactions in minimal reoruting set for each pair
-%   diff         The flux difference value obtained after L0-MOMA
-%   PathShort    List of reactions in shorter of the alternate paths
-%   PathLong     List of reactions in longer of the alternate paths
-%   PathCommon   List of reactions common in both the alternate paths
+%   minRerouting   The structure with reaction sets in alternate routes
+%       rxns         List of total reactions in minimal reoruting set for each pair
+%       diff         The flux difference value obtained after L0-MOMA
+%       PathShort    List of reactions in shorter of the alternate paths
+%       PathLong     List of reactions in longer of the alternate paths
+%       PathCommon   List of reactions common in both the alternate paths
 %
-% Omkar Mohite       13 Jul,2017.
+% Omkar Mohite       13 July, 2017.
+% N Sowmya Manojna   26 June, 2021
 
-if (nargin < 3 || isempty(cutOff))
+if (nargin < 3 || isempty(obj_slack))
+        obj_slack = 0.05;
+end
+
+if (nargin < 4 || isempty(cutOff))
         cutOff = 0.000001; 
 end
 
-if (nargin < 4 || isempty(delta))
+if (nargin < 5 || isempty(delta))
         delta = 0.05; 
 end
 
-if (nargin < 5 || isempty(Division))
+if (nargin < 6 || isempty(Division))
         Division = 'True';
 end
 
@@ -64,7 +71,7 @@ for iLeth = 1:nLethals
     
     %fprintf('Finding minimal rerouting for pair: ( %s , %s )', Jdl(iLeth,1),Jdl(iLeth,2));
     
-    [solutionDel1, solutionDel2, solStatus] = newsparseMOMA_doubleKO(modelDel1, modelDel2, grWT, 'max');
+    [solutionDel1, solutionDel2, solStatus] = newsparseMOMA_doubleKO(modelDel1, modelDel2,  obj_slack, 'max');
     
     if solStatus > 0        
         flux1 = solutionDel1.x;

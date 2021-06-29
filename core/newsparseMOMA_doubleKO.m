@@ -30,7 +30,8 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = newsparseMOMA_
 %         ~&~ S_{del2}v_{del2} = 0 \\
 %         ~&~ lb_{del2} \leq v_{del2} \leq ub_{del2}
 %         ~&~ c_{del2}^T v_{del2} = f_{del2} \\
-%
+%%
+
 % NOTE:
 %
 %    1) This formulation allows for selecting the most appropriate

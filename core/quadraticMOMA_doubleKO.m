@@ -1,4 +1,4 @@
-function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = quadraticMOMA_doubleKO(modelDel1, modelDel2, osenseStr, minFluxFlag, verbFlag)
+function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = quadraticMOMA_doubleKO(modelDel1, modelDel2, obj_slack, osenseStr, minFluxFlag, verbFlag)
 % Performs a quadratic version of the MOMA (minimization of metabolic
 % adjustment) approach upgraded for comparing double knockouts
 %
@@ -43,13 +43,17 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = quadraticMOMA_
 % .. Author: - Markus Herrgard 11/7/06
 % ..           Omkar Satyavan Mohite 06-08-2018
 
-if (nargin < 3 || isempty(osenseStr))
+if (nargin < 3 || isempty(obj_slack))
+    obj_slack = 0.05;
+end
+
+if (nargin < 4 || isempty(osenseStr))
     osenseStr = 'max';
 end
-if (nargin < 4 || isempty(minFluxFlag))
+if (nargin < 5 || isempty(minFluxFlag))
     minFluxFlag = false;
 end
-if (nargin < 5)
+if (nargin < 6)
     verbFlag = false;
 end
 
@@ -85,12 +89,14 @@ solutionDel2.stat = -1;
 if (verbFlag)
     fprintf('Solving FBA for deletion 1 strain: %d constraints %d variables ', nMets1, nRxns1);
 end
+
 % Solve wt problem
 solutionDel1 = optimizeCbModel(modelDel1,osenseStr, 'one');
 
 if (verbFlag)
     fprintf('%f seconds\n',solutionDel1.time);
 end
+
 % Round off solution to avoid numerical problems
 if (strcmp(osenseStr,'max'))
     objValDel1 = floor(solutionDel1.f/tol)*tol;
@@ -101,12 +107,14 @@ end
 if (verbFlag)
     fprintf('Solving FBA for deletion 2 strain: %d constraints %d variables ',nMets1,nRxns2);
 end
+
 % Solve wt problem
 solutionDel2 = optimizeCbModel(modelDel2,osenseStr, 'one');
 
 if (verbFlag)
     fprintf('%f seconds\n',solutionDel2.time);
 end
+
 % Round off solution to avoid numerical problems
 if (strcmp(osenseStr,'max'))
     objValDel2 = floor(solutionDel2.f/tol)*tol;
@@ -129,7 +137,7 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
     % 4: delta- >= v2-v1
     % 5: c'v1 >= 0.9*f1 (deletion strain 1) (10 % slack on obj)
     % 6: c'v2 >= 0.9*f2 (deletion strain 2)
-    obj_slack = 0.1;
+    
     deltaMat = createDeltaMatchMatrix(modelDel1.rxns,modelDel2.rxns);
     deltaMat = deltaMat(1:nCommon,1:(nRxns1+nRxns2+nCommon));
     A = [modelDel1.S sparse(nMets1,nRxns2+nCommon);
@@ -169,7 +177,7 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
     
     % Solve the quadraticMOMA problem
     [QPproblem.A,QPproblem.b,QPproblem.F,QPproblem.c,QPproblem.lb,QPproblem.ub,QPproblem.csense,QPproblem.osense] = deal(A,b,F,c,lb,ub,csense,1);
-    %QPsolution = solveCobraQP(QPproblem,[],verbFlag-1);
+    % QPsolution = solveCobraQP(QPproblem,[],verbFlag-1);
     QPsolution = solveCobraQP(QPproblem);
     
     if (verbFlag)

@@ -23,19 +23,19 @@ function [minRerouting] = minReroutingRxns(model,Jdl,cutOff,delta,Iter, Division
 % Omkar Mohite       13 Jul,2017.
 
 if (nargin < 3 || isempty(cutOff))
-        cutOff = 0.000001; 
+    cutOff = 0.000001; 
 end
 
 if (nargin < 4 || isempty(delta))
-        delta = 0.1; 
+    delta = 0.1; 
 end
 
 if (nargin < 5 || isempty(Iter))
-        Iter = 3;
+    Iter = 3;
 end
 
 if (nargin < 6 || isempty(Division))
-        Division = 'False';
+    Division = 'False';
 end
 
 [nLethals,temp] = size(Jdl);
@@ -48,6 +48,7 @@ if strcmp(Division, 'True')
     minRerouting(nLethals).PathLong = [];
     minRerouting(nLethals).pathCommon = [];
 end
+
 %%
 h = waitbar(0,'0.00','Name','Identifying minRerouitngSets...');
 modeldel_1 = model;
@@ -89,7 +90,7 @@ for iLeth = 1:nLethals
     flux2 = V2(:,Iter);
     
     diff = abs(flux1 - flux2);
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%
     min_ids = find(diff>delta*abs(flux1) & diff>delta*abs(flux2) & diff>cutOff);
 
     minRerouting(iLeth).rxns = model.rxns(min_ids);
@@ -114,27 +115,27 @@ for iLeth = 1:nLethals
         end
     end
     
-%     %% Testing Inconsistency 1 of number of iterations 
-%     Diff_mat = abs(V1-V2);
-%     minRerouting(iLeth).Diff1 = find(Diff_mat(:,1)>delta*V1(:,1) & Diff_mat(:,1)>delta*V2(:,1) & Diff_mat(:,1)>cutOff);
-%     minRerouting(iLeth).Diff2 = find(Diff_mat(:,2)>delta*V1(:,2) & Diff_mat(:,2)>delta*V2(:,2) & Diff_mat(:,2)>cutOff);
-%     minRerouting(iLeth).Diff3 = find(Diff_mat(:,3)>delta*V1(:,3) & Diff_mat(:,3)>delta*V2(:,3) & Diff_mat(:,3)>cutOff);
-%     minRerouting(iLeth).Diff4 = find(Diff_mat(:,4)>delta*V1(:,4) & Diff_mat(:,4)>delta*V2(:,4) & Diff_mat(:,4)>cutOff);
-%     minRerouting(iLeth).Diff5 = find(Diff_mat(:,5)>delta*V1(:,5) & Diff_mat(:,5)>delta*V2(:,5) & Diff_mat(:,5)>cutOff);
+    % %% Testing Inconsistency 1 of number of iterations 
+    % Diff_mat = abs(V1-V2);
+    % minRerouting(iLeth).Diff1 = find(Diff_mat(:,1)>delta*V1(:,1) & Diff_mat(:,1)>delta*V2(:,1) & Diff_mat(:,1)>cutOff);
+    % minRerouting(iLeth).Diff2 = find(Diff_mat(:,2)>delta*V1(:,2) & Diff_mat(:,2)>delta*V2(:,2) & Diff_mat(:,2)>cutOff);
+    % minRerouting(iLeth).Diff3 = find(Diff_mat(:,3)>delta*V1(:,3) & Diff_mat(:,3)>delta*V2(:,3) & Diff_mat(:,3)>cutOff);
+    % minRerouting(iLeth).Diff4 = find(Diff_mat(:,4)>delta*V1(:,4) & Diff_mat(:,4)>delta*V2(:,4) & Diff_mat(:,4)>cutOff);
+    % minRerouting(iLeth).Diff5 = find(Diff_mat(:,5)>delta*V1(:,5) & Diff_mat(:,5)>delta*V2(:,5) & Diff_mat(:,5)>cutOff);
     
-% % Check for Quadratic or L0Norm MOMA
-%  sol_11=optimizeCbModel(modeldel_1,'max','one'); %Sol_11 is MT1 Iteration 1
-%     V1(:,1)=sol_11.x;
-%     sol_21=fluxMOMA(modeldel_2,V1(:,1));   %Sol_21 is MT2 Iteration 1
-%     V2(:,1)=sol_21.x;     
-%     for j=2:3
-%         sol_1j=fluxMOMA(modeldel_1,V2(:,j-1));
-%         V1(:,j)=sol_1j.x;
+    % % Check for Quadratic or L0Norm MOMA
+    % sol_11=optimizeCbModel(modeldel_1,'max','one'); %Sol_11 is MT1 Iteration 1
+    % V1(:,1)=sol_11.x;
+    % sol_21=fluxMOMA(modeldel_2,V1(:,1));   %Sol_21 is MT2 Iteration 1
+    % V2(:,1)=sol_21.x;     
+    % for j=2:3
+    %     sol_1j=fluxMOMA(modeldel_1,V2(:,j-1));
+    %     V1(:,j)=sol_1j.x;
         
-%         sol_2j=fluxMOMA(modeldel_2,V1(:,j));        
-%         V2(:,j)=sol_2j.x;
-%     end
-% %
+    %     sol_2j=fluxMOMA(modeldel_2,V1(:,j));        
+    %     V2(:,j)=sol_2j.x;
+    % end
+
     
     modeldel_1.lb(delIdx_1) = model.lb(delIdx_1);
     modeldel_1.ub(delIdx_1) = model.ub(delIdx_1);
