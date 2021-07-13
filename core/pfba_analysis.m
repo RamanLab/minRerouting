@@ -17,6 +17,8 @@ for j = 1:numel(model_names)
     Castle.data = load(strcat(path_to_models{j}, model_names{j},'_Rxn_lethals.mat'));
 
     % Performing pFBA with geneoption as 0
+    % 0 ensures that flux is reduced through all reactions
+    % Default: 1 (only gene-associated fluxes)
     [~, RxnClasses, ~] = pFBA(model, 'geneoption', 0);
 
     % Save the list of all unique reactions in the Jdl

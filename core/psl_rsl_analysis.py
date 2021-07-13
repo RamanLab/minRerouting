@@ -19,9 +19,9 @@ def combine_results(df_pFBA, df_FVA):
     
     return df_FVA
 
-def psl_rsl(df):
+def psl_rsl(df, tol=0):
     """Function to perform PSL/RSL analysis"""
-    mask = (np.abs(df_FVA["Rxn_1_Min"])>1e-8) & (np.abs(df_FVA["Rxn_2_Min"])>1e-8)
+    mask = (np.abs(df_FVA["Rxn_1_Min"])>tol) & (np.abs(df_FVA["Rxn_2_Min"])>tol)
     df.loc[mask, "Type"] = "RSL"
     df.loc[~(mask), "Type"] = "PSL"
     
@@ -59,7 +59,8 @@ if __name__ == "__main__":
     verbosity = 0
     df_grouped_list = []
 
-    for model in ['iIT341', 'iML1515', 'iNJ661', 'iPC815', 'iYL1228', 'STM_v1_0', 'e_coli_core']:
+    # for model in ['iIT341', 'iML1515', 'iNJ661', 'iPC815', 'iYL1228', 'STM_v1_0', 'e_coli_core']:
+    for model in ['iJO1366']:
         print("PSL/RSL analysis for Organism", model, "... ", end="")
         # Obtain pFBA class of the reaction pair
         df_pFBA = pd.read_csv("../examples/" + model + "/" + model + "_pFBA.csv")

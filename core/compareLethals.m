@@ -1,11 +1,13 @@
 function [Castle] = compareLethals(Castle, leth_order)
 % compareDL compares synthetic lethals across multiple models  
 % Lethality status : Status of presence and lethality is assigned to each 
-% reactions in respective model
-% S: Single Lethal,D: Double Lethal, T: Triple Lethal, N: Not part of 
-% synthetic lethal (S,D or T), A: Absent
-% For example: If reaction 'rxnA' is single lethal in model1 and part of 
-% double in model2: String of 'S, D' is assigned to rxnA row. 
+%                    reactions in respective model
+%                    S: Single Lethal, D: Double Lethal, 
+%                    T: Triple Lethal, N: Not part of
+%                    synthetic lethal (S,D or T), A: Absent
+%                    For example: If reaction 'rxnA' is single
+%                    lethal in model1 and part of double in model2:
+%                    String of 'S, D' is assigned to rxnA row. 
 %
 % Input : 
 % Castle.data   The structure with multiple models and synthetic lethals
@@ -17,10 +19,10 @@ function [Castle] = compareLethals(Castle, leth_order)
 % leth_order   Order of highest synthetic lethals 
 %
 % Output :
-% Castle      The structure with multiple models and synthetic lethals   
-%   data        Field same as input   
-%   lethStatus  mat file with status of lethality for union of reactions in
-%   each model
+% Castle        The structure with multiple models and synthetic lethals   
+% data          Field same as input   
+% lethStatus    mat file with status of lethality for union of reactions in
+%               each model
 % 
 %
 % Omkar Mohite       10 Jul,2018.
@@ -56,10 +58,12 @@ for i = 1:length(Uniq_Rxns)
         elseif leth_order == 2 && ismember(Uniq_Rxns(i), Castle.data(j).model.rxns)
             lethStatus{i,j} = 'N';
             N_cnt = N_cnt + 1;
+
         % elseif leth_order == 3 && ismember(Uniq_Rxns(i),Castle.data(j).Jtl)
         %     lethStatus{i,j}='T';
         % elseif leth_order == 3 && ismember(Uniq_Rxns(i),Castle.data(j).model.rxns)
         %     lethStatus{i,j}='N';
+
         else
             lethStatus{i,j} = 'A';
             A_cnt = A_cnt + 1;
@@ -67,6 +71,7 @@ for i = 1:length(Uniq_Rxns)
     end
     lethCount(i,:) = [S_cnt, D_cnt, N_cnt, A_cnt];
 end
+
 Castle.lethStatus = lethStatus;
 Castle.lethCount = lethCount;
 
@@ -87,9 +92,6 @@ for i = 1:nModels
 end
 
 % Sinlge lethal similarity table of rxn
-
-
-
 % Pairwise comparison of models
 % New function
 

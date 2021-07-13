@@ -18,8 +18,8 @@ for i = 1:numel(model_names)
     model = model.(model_names{i});
 
     % Perform an FVA on the model
-    fprintf('Finding Flux Variability of %s ...\n', model_names{i})
-    [minFlux, maxFlux] = fluxVariability(model, [], [], [], 0, 1, '1-norm');
+    fprintf('Finding Flux Variability of %s ... ', model_names{i})
+    [minFlux, maxFlux] = fluxVariability(model, 100, [], [], 0, 1, '1-norm');
 
     % Get indices of the first reactions
     positions1 = findRxnIDs(model, data.Jdl(:,1));
@@ -49,9 +49,9 @@ for i = 1:numel(model_names)
     fvaResultAnalysis = [fvaResultAnalysis, array2table(v2)];
     
     % Save the table in .csv format
-    writetable(fvaResultAnalysis, strcat(model_names{i}, '_FVA_one_norm.csv'));
+    writetable(fvaResultAnalysis, strcat(model_names{i}, '_FVA_one_norm_100.csv'));
     % Move the file back to the original path of the model
-    movefile(strcat(model_names{i}, '_FVA_one_norm.csv'), path_to_models{i});
+    movefile(strcat(model_names{i}, '_FVA_one_norm_100.csv'), path_to_models{i});
     fprintf('Done!\n')
 end
 end
