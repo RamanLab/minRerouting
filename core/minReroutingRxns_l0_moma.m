@@ -15,12 +15,13 @@ function [minRerouting] = minReroutingRxns_l0_moma(model, Jdl, obj_slack, cutOff
 %   cutOff           cutoff flux difference value for MOMA difference (Default is 0.0001)
 %
 % OUTPUT
-%   minRerouting   The structure with reaction sets in alternate routes
-%       rxns         List of total reactions in minimal reoruting set for each pair
-%       diff         The flux difference value obtained after L0-MOMA
-%       PathShort    List of reactions in shorter of the alternate paths
-%       PathLong     List of reactions in longer of the alternate paths
-%       PathCommon   List of reactions common in both the alternate paths
+%   minRerouting        The structure with reaction sets in alternate routes
+%       rxns            List of total reactions in minimal reoruting set for each pair
+%       diff_flux       The flux difference value obtained after L0-MOMA
+%       diff_flux       The abs flux difference value obtained after L0-MOMA
+%       PathShort       List of reactions in shorter of the alternate paths
+%       PathLong        List of reactions in longer of the alternate paths
+%       PathCommon      List of reactions common in both the alternate paths
 %
 % Omkar Mohite       13 July, 2017.
 % N Sowmya Manojna   26 June, 2021
@@ -45,7 +46,7 @@ end
 
 % minRerouting consists information on reactions in alternate paths
 minRerouting(nLethals).rxns = [];
-minRerouting(nLethals).diff = [];
+minRerouting(nLethals).diff_flux = [];
 if strcmp(Division, 'True')
     minRerouting(nLethals).PathShort = [];
     minRerouting(nLethals).PathLong = [];
@@ -71,20 +72,29 @@ for iLeth = 1:nLethals
     
     %fprintf('Finding minimal rerouting for pair: ( %s , %s )', Jdl(iLeth,1),Jdl(iLeth,2));
     
-    [solutionDel1, solutionDel2, solStatus] = newsparseMOMA_doubleKO(modelDel1, modelDel2,  obj_slack, 'max');
+    [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = newsparseMOMA_doubleKO(modelDel1, modelDel2,  obj_slack, 'max');
     
     if solStatus > 0        
         flux1 = solutionDel1.x;
         flux2 = solutionDel2.x;
 
-        diff = abs(flux1-flux2);
+        % Track which two reactions were deleted
+        del_rxn1 = Jdl(iLeth,1);
+        del_rxn2 = Jdl(iLeth,2);
 
-        min_ids = find(diff>delta*abs(flux1) & diff>delta*abs(flux2) & diff>cutOff);
+        % Get the flux difference between the two deletions
+        diff_flux = flux1-flux2;
+        abs_diff_flux = abs(flux1-flux2);
 
-        minRerouting(iLeth).rxns = model.rxns(min_ids);
-        minRerouting(iLeth).diff = diff(min_ids);
-        % minRerouting(iLeth).totalFluxDiff=totalFluxDiff;
+        min_ids = find(diff_flux>delta*abs(flux1) & diff_flux>delta*abs(flux2) & diff_flux>cutOff);
+
+        minRerouting(iLeth).del_rxn1 = del_rxn1;
+        minRerouting(iLeth).del_rxn2 = del_rxn2;
         minRerouting(iLeth).solStatus = solStatus;
+        minRerouting(iLeth).rxns = model.rxns(min_ids);
+        minRerouting(iLeth).totalFluxDiff = totalFluxDiff;
+        minRerouting(iLeth).diff_flux = diff_flux(min_ids);
+        minRerouting(iLeth).abs_diff_flux = abs_diff_flux(min_ids);
 
         if strcmp(Division, 'True')
             flux1Rxn = model.rxns(find(flux1));
@@ -106,7 +116,8 @@ for iLeth = 1:nLethals
         end
     else
         minRerouting(iLeth).rxns = [];
-        minRerouting(iLeth).diff = [];
+        minRerouting(iLeth).diff_flux = [];
+        minRerouting(iLeth).abs_diff_flux = [];
         % minRerouting(iLeth).totalFluxDiff = [];
         if strcmp(Division, 'True')
             minRerouting(iLeth).pathCommon = [];           

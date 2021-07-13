@@ -15,12 +15,13 @@ function [minRerouting] = minReroutingRxns_l1_moma(model, Jdl, obj_slack, cutOff
 %   cutOff           cutoff flux difference value for MOMA difference (Default is 0.0001)
 %
 % OUTPUT
-%   minRerouting     The structure with reaction sets in alternate routes
-%       rxns         List of total reactions in minimal rerouting set for each pair
-%       diff_flux    The flux difference value obtained after L0-MOMA
-%       PathShort    List of reactions in shorter of the alternate paths
-%       PathLong     List of reactions in longer of the alternate paths
-%       PathCommon   List of reactions common in both the alternate paths
+%   minRerouting        The structure with reaction sets in alternate routes
+%       rxns            List of total reactions in minimal rerouting set for each pair
+%       diff_flux       The flux difference value obtained after L1-MOMA
+%       abs_diff_flux   The abs flux difference value obtained after L1-MOMA
+%       PathShort       List of reactions in shorter of the alternate paths
+%       PathLong        List of reactions in longer of the alternate paths
+%       PathCommon      List of reactions common in both the alternate paths
 %
 % Omkar Mohite       13 July, 2017
 % N Sowmya Manojna   26 June, 2021
@@ -46,6 +47,7 @@ end
 % minRerouting consists information on reactions in alternate paths
 minRerouting(nLethals).rxns = [];
 minRerouting(nLethals).diff_flux = [];
+minRerouting(nLethals).abs_diff_flux = [];
 if strcmp(Division, 'True')
     minRerouting(nLethals).PathShort = [];
     minRerouting(nLethals).PathLong = [];
@@ -76,19 +78,28 @@ for iLeth = 1:nLethals
     if solStatus > 0
         flux1 = solutionDel1.x;
         flux2 = solutionDel2.x;
+
+        % Track which two reactions were deleted
+        del_rxn1 = Jdl(iLeth,1);
+        del_rxn2 = Jdl(iLeth,2);
+        
         
         % Get the flux difference between the two deletions
-        diff_flux = abs(flux1-flux2);
+        diff_flux = flux1-flux2;
+        abs_diff_flux = abs(flux1-flux2);
 
         % Get all the locations where the fluxes differ.
         % The two delta*abs() conditions ensure that the change in flux
         % is at least greater than a factor (delta) of the original flux.
-        min_ids = find(diff_flux>delta*abs(flux1) & diff_flux>delta*abs(flux2) & diff_flux>cutOff);
+        min_ids = find(abs_diff_flux>delta*abs(flux1) & abs_diff_flux>delta*abs(flux2) & abs_diff_flux>cutOff);
 
         % Find reactions that have modified fluxes
+        minRerouting(iLeth).del_rxn1 = del_rxn1;
+        minRerouting(iLeth).del_rxn2 = del_rxn2;
         minRerouting(iLeth).rxns = model.rxns(min_ids);
-        minRerouting(iLeth).diff_flux = diff_flux(min_ids);
         minRerouting(iLeth).totalFluxDiff = totalFluxDiff;
+        minRerouting(iLeth).diff_flux = diff_flux(min_ids);
+        minRerouting(iLeth).abs_diff_flux = abs_diff_flux(min_ids);
     
         if strcmp(Division, 'True')
             % Get all active reactions in model 1 and 2
@@ -118,7 +129,7 @@ for iLeth = 1:nLethals
         end
     else
         minRerouting(iLeth).rxns = [];
-        minRerouting(iLeth).diff_flux = [];
+        minRerouting(iLeth).abs_diff_flux = [];
         minRerouting(iLeth).totalFluxDiff = [];
         if strcmp(Division, 'True')
             minRerouting(iLeth).pathCommon = [];           
