@@ -43,7 +43,7 @@ def analyse_pFBA_results(fname, opname):
 ##########################################################
 # Analysis for different models
 ##########################################################
-for model in ['iIT341', 'iML1515', 'iNJ661', 'iPC815', 'iYL1228', 'STM_v1_0', 'e_coli_core']:
+for model in ['iIT341', 'iJO1366', 'iML1515', 'iNJ661', 'iPC815', 'iSSON_1240', 'iYL1228', 'STM_v1_0', 'e_coli_core']:
     model_results, ax = analyse_pFBA_results("../examples/"+model+"/"+"/"+model+"_pFBA.csv", opname=model)
     print(model_results)
     print("\n", "="*80, sep="")
