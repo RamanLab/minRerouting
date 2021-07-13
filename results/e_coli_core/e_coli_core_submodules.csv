@@ -1,0 +1,89 @@
+,Rxn_1,Rxn_2,Rxn_1_Class,Rxn_2_Class,Subsystem 1,Subsystem 2
+0,PFK,NADTRHD,pFBAOpt_Rxns,MLE_Rxns,Glycolysis/Gluconeogenesis,Oxidative Phosphorylation
+1,PGI,NADTRHD,pFBAOpt_Rxns,MLE_Rxns,Glycolysis/Gluconeogenesis,Oxidative Phosphorylation
+2,PPC,ICL,pFBAOpt_Rxns,MLE_Rxns,Anaplerotic reactions,Anaplerotic reactions
+3,PPC,MALS,pFBAOpt_Rxns,MLE_Rxns,Anaplerotic reactions,Anaplerotic reactions
+4,TPI,NADTRHD,pFBAOpt_Rxns,MLE_Rxns,Glycolysis/Gluconeogenesis,Oxidative Phosphorylation
+5,FBA,NADTRHD,pFBAOpt_Rxns,MLE_Rxns,Glycolysis/Gluconeogenesis,Oxidative Phosphorylation
+6,GLUDy,GLUSy,pFBAOpt_Rxns,MLE_Rxns,Glutamate Metabolism,Glutamate Metabolism
+7,H2Ot,PFL,pFBAOpt_Rxns,MLE_Rxns,"Transport, Extracellular",Pyruvate Metabolism
+8,H2Ot,ACALD,pFBAOpt_Rxns,MLE_Rxns,"Transport, Extracellular",Pyruvate Metabolism
+9,H2Ot,ALCD2x,pFBAOpt_Rxns,MLE_Rxns,"Transport, Extracellular",Pyruvate Metabolism
+10,H2Ot,ETOHt2r,pFBAOpt_Rxns,MLE_Rxns,"Transport, Extracellular","Transport, Extracellular"
+11,H2Ot,FORt,pFBAOpt_Rxns,MLE_Rxns,"Transport, Extracellular","Transport, Extracellular"
+12,NADH16,PFL,pFBAOpt_Rxns,MLE_Rxns,Oxidative Phosphorylation,Pyruvate Metabolism
+13,NADH16,FORt,pFBAOpt_Rxns,MLE_Rxns,Oxidative Phosphorylation,"Transport, Extracellular"
+14,PDH,PFL,pFBAOpt_Rxns,MLE_Rxns,Glycolysis/Gluconeogenesis,Pyruvate Metabolism
+15,PDH,FORt,pFBAOpt_Rxns,MLE_Rxns,Glycolysis/Gluconeogenesis,"Transport, Extracellular"
+16,PGI,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Glycolysis/Gluconeogenesis
+17,PGL,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+18,PGL,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+19,CO2t,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Extracellular",Glycolysis/Gluconeogenesis
+20,CO2t,PPC,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Extracellular",Anaplerotic reactions
+21,RPE,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+22,RPE,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+23,RPE,PGL,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+24,CYTBD,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,Oxidative Phosphorylation,Glycolysis/Gluconeogenesis
+25,CYTBD,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Oxidative Phosphorylation,Glycolysis/Gluconeogenesis
+26,CYTBD,PPC,pFBAOpt_Rxns,pFBAOpt_Rxns,Oxidative Phosphorylation,Anaplerotic reactions
+27,SUCDi,PPC,pFBAOpt_Rxns,pFBAOpt_Rxns,Oxidative Phosphorylation,Anaplerotic reactions
+28,TALA,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+29,TALA,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+30,TALA,PGL,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+31,TALA,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+32,TKT1,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+33,TKT1,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+34,TKT1,PGL,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+35,TKT1,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+36,TKT2,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+37,TKT2,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+38,TKT2,PGL,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+39,TKT2,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+40,TKT2,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+41,TKT2,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+42,TPI,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Glycolysis/Gluconeogenesis
+43,TPI,PGL,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Pentose Phosphate Pathway
+44,TPI,CO2t,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,"Transport, Extracellular"
+45,TPI,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Pentose Phosphate Pathway
+46,TPI,CYTBD,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Oxidative Phosphorylation
+47,TPI,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Pentose Phosphate Pathway
+48,TPI,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Pentose Phosphate Pathway
+49,TPI,TKT2,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Pentose Phosphate Pathway
+50,FBA,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Glycolysis/Gluconeogenesis
+51,FBA,PGL,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Pentose Phosphate Pathway
+52,FBA,CO2t,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,"Transport, Extracellular"
+53,FBA,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Pentose Phosphate Pathway
+54,FBA,CYTBD,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Oxidative Phosphorylation
+55,FBA,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Pentose Phosphate Pathway
+56,FBA,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Pentose Phosphate Pathway
+57,FBA,TKT2,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Pentose Phosphate Pathway
+58,FUM,PPC,pFBAOpt_Rxns,pFBAOpt_Rxns,Citric Acid Cycle,Anaplerotic reactions
+59,G6PDH2r,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+60,G6PDH2r,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+61,G6PDH2r,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+62,G6PDH2r,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+63,G6PDH2r,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+64,G6PDH2r,TKT2,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+65,G6PDH2r,TPI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+66,G6PDH2r,FBA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+67,GND,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+68,GND,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+69,GND,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+70,GND,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+71,GND,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+72,GND,TKT2,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+73,GND,TPI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+74,GND,FBA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Glycolysis/Gluconeogenesis
+75,H2Ot,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Extracellular",Glycolysis/Gluconeogenesis
+76,H2Ot,TPI,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Extracellular",Glycolysis/Gluconeogenesis
+77,H2Ot,FBA,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Extracellular",Glycolysis/Gluconeogenesis
+78,MDH,PPC,pFBAOpt_Rxns,pFBAOpt_Rxns,Citric Acid Cycle,Anaplerotic reactions
+79,NADH16,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,Oxidative Phosphorylation,Glycolysis/Gluconeogenesis
+80,NADH16,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,Oxidative Phosphorylation,Glycolysis/Gluconeogenesis
+81,NADH16,TPI,pFBAOpt_Rxns,pFBAOpt_Rxns,Oxidative Phosphorylation,Glycolysis/Gluconeogenesis
+82,NADH16,FBA,pFBAOpt_Rxns,pFBAOpt_Rxns,Oxidative Phosphorylation,Glycolysis/Gluconeogenesis
+83,O2t,PFK,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Extracellular",Glycolysis/Gluconeogenesis
+84,O2t,PGI,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Extracellular",Glycolysis/Gluconeogenesis
+85,O2t,PPC,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Extracellular",Anaplerotic reactions
+86,O2t,TPI,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Extracellular",Glycolysis/Gluconeogenesis
+87,O2t,FBA,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Extracellular",Glycolysis/Gluconeogenesis

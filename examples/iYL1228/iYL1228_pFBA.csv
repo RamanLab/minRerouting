@@ -106,10 +106,12 @@ PGPP161,PLIPA1G161pp,pFBAOpt_Rxns,MLE_Rxns
 PGPP161,PGPP161pp,pFBAOpt_Rxns,MLE_Rxns
 RNTR1c,NDPK8,pFBAOpt_Rxns,ELE_Rxns
 RNTR3c,NDPK7,pFBAOpt_Rxns,pFBAOpt_Rxns
+RPE,GND,pFBAOpt_Rxns,MLE_Rxns
 RPI,KDOCT2,pFBAOpt_Rxns,MLE_Rxns
 RPI,MOAT,pFBAOpt_Rxns,MLE_Rxns
 RPI,MOAT2,pFBAOpt_Rxns,MLE_Rxns
 PPK,PPA,pFBAOpt_Rxns,MLE_Rxns
+TKT2,GND,pFBAOpt_Rxns,MLE_Rxns
 TRDR,GRXR,pFBAOpt_Rxns,ELE_Rxns
 TRDR,GTHOr,pFBAOpt_Rxns,ELE_Rxns
 TRDR,PAPSR2,pFBAOpt_Rxns,ELE_Rxns
@@ -130,7 +132,6 @@ PGK,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns
 PSERT,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns
 PSP_L,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns
 PPC,FUM,pFBAOpt_Rxns,pFBAOpt_Rxns
-RPE,GND,pFBAOpt_Rxns,MLE_Rxns
 RPI,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns
 SUCOAS,AKGDH,pFBAOpt_Rxns,pFBAOpt_Rxns
 TALA,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns
@@ -138,7 +139,6 @@ TALA,RPI,pFBAOpt_Rxns,pFBAOpt_Rxns
 TKT1,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns
 TKT1,RPI,pFBAOpt_Rxns,pFBAOpt_Rxns
 TKT1,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns
-TKT2,GND,pFBAOpt_Rxns,MLE_Rxns
 TKT2,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns
 TKT2,RPI,pFBAOpt_Rxns,pFBAOpt_Rxns
 TKT2,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns

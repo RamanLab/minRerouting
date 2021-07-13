@@ -39,6 +39,8 @@ Rxn_1,Rxn_2,Rxn_1_Class,Rxn_2_Class
 3HAD160,FACOAE160,ELE_Rxns,ELE_Rxns
 ADK1,ADK3,ELE_Rxns,ELE_Rxns
 ASNS2,ASNS1,ELE_Rxns,ELE_Rxns
+ATPM,DB4PS,pFBAOpt_Rxns,Essential_Rxns
+ATPM,RBFSa,pFBAOpt_Rxns,Essential_Rxns
 DHORD2,DHORD5,ELE_Rxns,ELE_Rxns
 EAR121x,EAR121y,ELE_Rxns,ELE_Rxns
 EAR141x,EAR141y,ELE_Rxns,ELE_Rxns
@@ -68,6 +70,7 @@ PA140abcpp,CLPNH140pp,ELE_Rxns,ELE_Rxns
 PA160abcpp,CLPNH160pp,ELE_Rxns,ELE_Rxns
 PA161abcpp,CLPNH161pp,ELE_Rxns,ELE_Rxns
 PA180abcpp,CLPNH180pp,ELE_Rxns,ELE_Rxns
+PA180abcpp,CLPNS180pp,ELE_Rxns,Essential_Rxns
 PA181abcpp,CLPNH181pp,ELE_Rxns,ELE_Rxns
 O2tex,DHORD5,pFBAOpt_Rxns,ELE_Rxns
 O2tex,FRD2,pFBAOpt_Rxns,ELE_Rxns

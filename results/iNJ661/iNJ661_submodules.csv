@@ -16,7 +16,7 @@
 14,TKT2,PGL,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
 15,TKT2,G6PDH2r,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
 16,TKT2,GND,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-17,UMPK_copy1,UMPK_copy2,pFBAOpt_Rxns,pFBAOpt_Rxns,Nucleotide Sugar Metabolism,Pyrimidine Metabolism
+17,UMPK_copy1,UMPK_copy2,pFBAOpt_Rxns,pFBAOpt_Rxns,Pyrimidine Metabolism,Pyrimidine Metabolism
 18,HSST,THRD_L,pFBAOpt_Rxns,ELE_Rxns,Other Amino Acid Metabolism,Methionine Metabolism
 19,HSK,THRD_L,pFBAOpt_Rxns,ELE_Rxns,"Glycine, Serine, and Threonine Metabolism",Methionine Metabolism
 20,GLU5K,ORNTA,pFBAOpt_Rxns,ELE_Rxns,Urea Cycle,Arginine and Proline Metabolism

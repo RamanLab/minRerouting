@@ -106,39 +106,39 @@
 104,PGPP161,PGPP161pp,pFBAOpt_Rxns,MLE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
 105,RNTR1c,NDPK8,pFBAOpt_Rxns,ELE_Rxns,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
 106,RNTR3c,NDPK7,pFBAOpt_Rxns,pFBAOpt_Rxns,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
-107,RPI,KDOCT2,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Lipopolysaccharide Biosynthesis / Recycling
-108,RPI,MOAT,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Lipopolysaccharide Biosynthesis / Recycling
-109,RPI,MOAT2,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Lipopolysaccharide Biosynthesis / Recycling
-110,PPK,PPA,pFBAOpt_Rxns,MLE_Rxns,Oxidative Phosphorylation,Anaplerotic Reactions
-111,TRDR,GRXR,pFBAOpt_Rxns,ELE_Rxns,Oxidative Phosphorylation,Unassigned
-112,TRDR,GTHOr,pFBAOpt_Rxns,ELE_Rxns,Oxidative Phosphorylation,Cofactor and Prosthetic Group Biosynthesis
-113,TRDR,PAPSR2,pFBAOpt_Rxns,ELE_Rxns,Oxidative Phosphorylation,Cysteine Metabolism
-114,TRPS1,TRPS2,pFBAOpt_Rxns,ELE_Rxns,"Tyrosine, Tryptophan, and Phenylalanine Metabolism","Tyrosine, Tryptophan, and Phenylalanine Metabolism"
-115,TRPS1,TRPS3,pFBAOpt_Rxns,ELE_Rxns,"Tyrosine, Tryptophan, and Phenylalanine Metabolism","Tyrosine, Tryptophan, and Phenylalanine Metabolism"
-116,VALTA,VPAMTr,pFBAOpt_Rxns,ELE_Rxns,"Valine, Leucine, and Isoleucine Metabolism",Alanine and Aspartate Metabolism
-117,PRPPS,R15BPK,pFBAOpt_Rxns,ELE_Rxns,Histidine Metabolism,Alternate Carbon Metabolism
-118,PRPPS,R1PK,pFBAOpt_Rxns,ELE_Rxns,Histidine Metabolism,Exchange
-119,PRPPS,PPM,pFBAOpt_Rxns,ELE_Rxns,Histidine Metabolism,Alternate Carbon Metabolism
-120,NDPK5,FLDR,pFBAOpt_Rxns,pFBAOpt_Rxns,Nucleotide Salvage Pathway,Unassigned
-121,MTHFC,GARFT,pFBAOpt_Rxns,pFBAOpt_Rxns,Folate Metabolism,Purine and Pyrimidine Biosynthesis
-122,MTHFD,GARFT,pFBAOpt_Rxns,pFBAOpt_Rxns,Folate Metabolism,Purine and Pyrimidine Biosynthesis
-123,O2tex,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane Porin",Glycolysis/Gluconeogenesis
-124,O2tpp,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,Transport,Glycolysis/Gluconeogenesis
-125,PGCD,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycerophospholipid Metabolism
-126,PGK,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,"Transport, Outer Membrane Porin"
-127,PGK,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Transport
-128,PSERT,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycerophospholipid Metabolism
-129,PSP_L,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycerophospholipid Metabolism
-130,PPC,FUM,pFBAOpt_Rxns,pFBAOpt_Rxns,Anaplerotic Reactions,Citric Acid Cycle
-131,RPE,GND,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-132,RPI,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-133,SUCOAS,AKGDH,pFBAOpt_Rxns,pFBAOpt_Rxns,Citric Acid Cycle,Citric Acid Cycle
-134,TALA,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-135,TALA,RPI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-136,TKT1,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-137,TKT1,RPI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-138,TKT1,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-139,TKT2,GND,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+107,RPE,GND,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+108,RPI,KDOCT2,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Lipopolysaccharide Biosynthesis / Recycling
+109,RPI,MOAT,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Lipopolysaccharide Biosynthesis / Recycling
+110,RPI,MOAT2,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Lipopolysaccharide Biosynthesis / Recycling
+111,PPK,PPA,pFBAOpt_Rxns,MLE_Rxns,Oxidative Phosphorylation,Anaplerotic Reactions
+112,TKT2,GND,pFBAOpt_Rxns,MLE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+113,TRDR,GRXR,pFBAOpt_Rxns,ELE_Rxns,Oxidative Phosphorylation,Unassigned
+114,TRDR,GTHOr,pFBAOpt_Rxns,ELE_Rxns,Oxidative Phosphorylation,Cofactor and Prosthetic Group Biosynthesis
+115,TRDR,PAPSR2,pFBAOpt_Rxns,ELE_Rxns,Oxidative Phosphorylation,Cysteine Metabolism
+116,TRPS1,TRPS2,pFBAOpt_Rxns,ELE_Rxns,"Tyrosine, Tryptophan, and Phenylalanine Metabolism","Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+117,TRPS1,TRPS3,pFBAOpt_Rxns,ELE_Rxns,"Tyrosine, Tryptophan, and Phenylalanine Metabolism","Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+118,VALTA,VPAMTr,pFBAOpt_Rxns,ELE_Rxns,"Valine, Leucine, and Isoleucine Metabolism",Alanine and Aspartate Metabolism
+119,PRPPS,R15BPK,pFBAOpt_Rxns,ELE_Rxns,Histidine Metabolism,Alternate Carbon Metabolism
+120,PRPPS,R1PK,pFBAOpt_Rxns,ELE_Rxns,Histidine Metabolism,Exchange
+121,PRPPS,PPM,pFBAOpt_Rxns,ELE_Rxns,Histidine Metabolism,Alternate Carbon Metabolism
+122,NDPK5,FLDR,pFBAOpt_Rxns,pFBAOpt_Rxns,Nucleotide Salvage Pathway,Unassigned
+123,MTHFC,GARFT,pFBAOpt_Rxns,pFBAOpt_Rxns,Folate Metabolism,Purine and Pyrimidine Biosynthesis
+124,MTHFD,GARFT,pFBAOpt_Rxns,pFBAOpt_Rxns,Folate Metabolism,Purine and Pyrimidine Biosynthesis
+125,O2tex,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane Porin",Glycolysis/Gluconeogenesis
+126,O2tpp,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,Transport,Glycolysis/Gluconeogenesis
+127,PGCD,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycerophospholipid Metabolism
+128,PGK,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,"Transport, Outer Membrane Porin"
+129,PGK,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Transport
+130,PSERT,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycerophospholipid Metabolism
+131,PSP_L,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycerophospholipid Metabolism
+132,PPC,FUM,pFBAOpt_Rxns,pFBAOpt_Rxns,Anaplerotic Reactions,Citric Acid Cycle
+133,RPI,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+134,SUCOAS,AKGDH,pFBAOpt_Rxns,pFBAOpt_Rxns,Citric Acid Cycle,Citric Acid Cycle
+135,TALA,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+136,TALA,RPI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+137,TKT1,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+138,TKT1,RPI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+139,TKT1,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
 140,TKT2,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
 141,TKT2,RPI,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
 142,TKT2,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway

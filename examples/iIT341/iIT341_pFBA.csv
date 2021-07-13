@@ -8,18 +8,8 @@ DHPS,HPPK,pFBAOpt_Rxns,MLE_Rxns
 CAT,CCP,pFBAOpt_Rxns,MLE_Rxns
 GARFT,FTHFD,pFBAOpt_Rxns,MLE_Rxns
 GART,FTHFLi,pFBAOpt_Rxns,ELE_Rxns
+HCO3E,H2CO3D,pFBAOpt_Rxns,ELE_Rxns
 HCO3E,H2CO3D2,pFBAOpt_Rxns,ELE_Rxns
-HEMEti,CPPPGO,ZeroFlux_Rxns,pFBAOpt_Rxns
-HEMEti,FCLT,ZeroFlux_Rxns,pFBAOpt_Rxns
-HEMEti,FE2abc,ZeroFlux_Rxns,pFBAOpt_Rxns
-HEMEti,GLUTRR,ZeroFlux_Rxns,pFBAOpt_Rxns
-HEMEti,GLUTRS,ZeroFlux_Rxns,pFBAOpt_Rxns
-HEMEti,G1SAT,ZeroFlux_Rxns,pFBAOpt_Rxns
-HEMEti,HMBS,ZeroFlux_Rxns,pFBAOpt_Rxns
-HEMEti,PPBNGS,ZeroFlux_Rxns,pFBAOpt_Rxns
-HEMEti,PPPGO,ZeroFlux_Rxns,pFBAOpt_Rxns
-HEMEti,UPP3S,ZeroFlux_Rxns,pFBAOpt_Rxns
-HEMEti,UPPDC1,ZeroFlux_Rxns,pFBAOpt_Rxns
 ME1,AKO,pFBAOpt_Rxns,MLE_Rxns
 ME1,FADOX,pFBAOpt_Rxns,MLE_Rxns
 KAS15,ACOATA,pFBAOpt_Rxns,ELE_Rxns
@@ -42,7 +32,6 @@ ATPS4r,ACKr,pFBAOpt_Rxns,pFBAOpt_Rxns
 ATPS4r,ACt2r,pFBAOpt_Rxns,pFBAOpt_Rxns
 GART,GARFT,pFBAOpt_Rxns,pFBAOpt_Rxns
 G3PD2,G3PD1ir,pFBAOpt_Rxns,pFBAOpt_Rxns
-HCO3E,H2CO3D,pFBAOpt_Rxns,ELE_Rxns
 ME1,FRD5,pFBAOpt_Rxns,pFBAOpt_Rxns
 ME1,FUM,pFBAOpt_Rxns,pFBAOpt_Rxns
 NH4t,ATPS4r,pFBAOpt_Rxns,pFBAOpt_Rxns

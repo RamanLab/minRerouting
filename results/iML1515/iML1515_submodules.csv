@@ -247,41 +247,40 @@
 245,PIt2rpp,PIuabcpp,pFBAOpt_Rxns,MLE_Rxns,Inorganic Ion Transport and Metabolism,Inorganic Ion Transport and Metabolism
 246,PAI2I,MTHTHFSs,pFBAOpt_Rxns,MLE_Rxns,Methionine Metabolism,Methionine Metabolism
 247,PAI2I,DHPTDCs2,pFBAOpt_Rxns,MLE_Rxns,Methionine Metabolism,Methionine Metabolism
-248,I2FE2SR,S2FE2SR,pFBAOpt_Rxns,ZeroFlux_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
-249,PAI2T,MTHTHFSs,pFBAOpt_Rxns,MLE_Rxns,Methionine Metabolism,Methionine Metabolism
-250,PAI2T,DHPTDCs2,pFBAOpt_Rxns,MLE_Rxns,Methionine Metabolism,Methionine Metabolism
-251,VALTA,ALATA_L,pFBAOpt_Rxns,pFBAOpt_Rxns,"Valine, Leucine, and Isoleucine Metabolism",Alanine and Aspartate Metabolism
-252,TKT1,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-253,IPDPS,DMPPS,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
-254,PRPPS,PPM,pFBAOpt_Rxns,pFBAOpt_Rxns,Histidine Metabolism,Alternate Carbon Metabolism
-255,GARFT,GART,pFBAOpt_Rxns,pFBAOpt_Rxns,Purine and Pyrimidine Biosynthesis,Purine and Pyrimidine Biosynthesis
-256,PSERT,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycine and Serine Metabolism
-257,GND,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-258,PSP_L,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycine and Serine Metabolism
-259,O2tpp,ENO,pFBAOpt_Rxns,pFBAOpt_Rxns,Inorganic Ion Transport and Metabolism,Glycolysis/Gluconeogenesis
-260,O2tpp,PGK,pFBAOpt_Rxns,pFBAOpt_Rxns,Inorganic Ion Transport and Metabolism,Glycolysis/Gluconeogenesis
-261,O2tpp,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,Inorganic Ion Transport and Metabolism,Glycolysis/Gluconeogenesis
-262,TKT2,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-263,TKT2,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-264,TKT2,GND,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-265,O2tex,ENO,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane Porin",Glycolysis/Gluconeogenesis
-266,O2tex,PGK,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane Porin",Glycolysis/Gluconeogenesis
-267,O2tex,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane Porin",Glycolysis/Gluconeogenesis
-268,PGCD,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycine and Serine Metabolism
-269,PPPGO3,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,Inorganic Ion Transport and Metabolism
-270,PPPGO3,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,"Transport, Outer Membrane Porin"
-271,PDX5PO2,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,Inorganic Ion Transport and Metabolism
-272,PDX5PO2,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,"Transport, Outer Membrane Porin"
-273,PGM,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Inorganic Ion Transport and Metabolism
-274,PGM,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,"Transport, Outer Membrane Porin"
-275,RPI,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-276,RPI,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-277,RPI,TKT2,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
-278,OPHHX3,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,Inorganic Ion Transport and Metabolism
-279,OPHHX3,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,"Transport, Outer Membrane Porin"
-280,4HTHRA,OHPBAT,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
-281,4HTHRA,E4PD,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
-282,4HTHRA,PERD,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
-283,4HTHRK,OHPBAT,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
-284,4HTHRK,E4PD,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
-285,4HTHRK,PERD,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
+248,PAI2T,MTHTHFSs,pFBAOpt_Rxns,MLE_Rxns,Methionine Metabolism,Methionine Metabolism
+249,PAI2T,DHPTDCs2,pFBAOpt_Rxns,MLE_Rxns,Methionine Metabolism,Methionine Metabolism
+250,VALTA,ALATA_L,pFBAOpt_Rxns,pFBAOpt_Rxns,"Valine, Leucine, and Isoleucine Metabolism",Alanine and Aspartate Metabolism
+251,TKT1,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+252,IPDPS,DMPPS,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+253,PRPPS,PPM,pFBAOpt_Rxns,pFBAOpt_Rxns,Histidine Metabolism,Alternate Carbon Metabolism
+254,GARFT,GART,pFBAOpt_Rxns,pFBAOpt_Rxns,Purine and Pyrimidine Biosynthesis,Purine and Pyrimidine Biosynthesis
+255,PSERT,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycine and Serine Metabolism
+256,GND,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+257,PSP_L,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycine and Serine Metabolism
+258,O2tpp,ENO,pFBAOpt_Rxns,pFBAOpt_Rxns,Inorganic Ion Transport and Metabolism,Glycolysis/Gluconeogenesis
+259,O2tpp,PGK,pFBAOpt_Rxns,pFBAOpt_Rxns,Inorganic Ion Transport and Metabolism,Glycolysis/Gluconeogenesis
+260,O2tpp,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,Inorganic Ion Transport and Metabolism,Glycolysis/Gluconeogenesis
+261,TKT2,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+262,TKT2,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+263,TKT2,GND,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+264,O2tex,ENO,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane Porin",Glycolysis/Gluconeogenesis
+265,O2tex,PGK,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane Porin",Glycolysis/Gluconeogenesis
+266,O2tex,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane Porin",Glycolysis/Gluconeogenesis
+267,PGCD,GHMT2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Glycine and Serine Metabolism
+268,PPPGO3,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,Inorganic Ion Transport and Metabolism
+269,PPPGO3,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,"Transport, Outer Membrane Porin"
+270,PDX5PO2,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,Inorganic Ion Transport and Metabolism
+271,PDX5PO2,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,"Transport, Outer Membrane Porin"
+272,PGM,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Inorganic Ion Transport and Metabolism
+273,PGM,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,"Transport, Outer Membrane Porin"
+274,RPI,RPE,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+275,RPI,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+276,RPI,TKT2,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+277,OPHHX3,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,Inorganic Ion Transport and Metabolism
+278,OPHHX3,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,"Transport, Outer Membrane Porin"
+279,4HTHRA,OHPBAT,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
+280,4HTHRA,E4PD,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
+281,4HTHRA,PERD,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
+282,4HTHRK,OHPBAT,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
+283,4HTHRK,E4PD,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
+284,4HTHRK,PERD,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycine and Serine Metabolism,Cofactor and Prosthetic Group Biosynthesis
