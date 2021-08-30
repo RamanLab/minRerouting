@@ -1,6 +1,9 @@
 import os
 import numpy as np
 import pandas as pd
+import seaborn as sns
+from tqdm import tqdm
+from scipy.io import loadmat
 from joypy import joyplot
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
@@ -112,47 +115,53 @@ def get_net_diff(val):
         
     return list_value
 
-def get_dataframes0(name, models, columns, norm='L0'):
-    df = pd.DataFrame()
-    for i in columns:
-        fname = '../examples/' + name + '/' + name + '_' + i + '_L0.csv'
-        fin = open(fname)
-        data = fin.read().splitlines()
-        fin.close()
+# def get_dataframes0(name, models, columns, norm='L0'):
+#     """
+#     L0 norm results
+#     """
+#     df = pd.DataFrame()
+#     for i in columns:
+#         fname = '../examples/' + name + '/' + name + '_' + i + '_L0.csv'
+#         fin = open(fname)
+#         data = fin.read().splitlines()
+#         fin.close()
         
-        df[i] = data[1:]
-        df['num_'+i] = df[i].str.split(',').apply(len)
+#         df[i] = data[1:]
+#         df['num_'+i] = df[i].str.split(',').apply(len)
         
-    df.loc[df['PathShort']=="", 'num_PathShort'] = 0
-    df.loc[df['PathLong']=="", 'num_PathLong'] = 0
-    df.loc[df['pathCommon']=="", 'num_pathCommon'] = 0
-    df = df.drop(['num_solStatus', 'num_diff'], axis=1)
-    df = df.rename(columns={'num_PathShort':'L0_num_PathShort', 
-                            'num_PathLong':'L0_num_PathLong', 
-                            'num_pathCommon':'L0_num_pathCommon',
-                            'num_rxns':'L0_num_rxns'})
-    return df
+#     df.loc[df['PathShort']=="", 'num_PathShort'] = 0
+#     df.loc[df['PathLong']=="", 'num_PathLong'] = 0
+#     df.loc[df['pathCommon']=="", 'num_pathCommon'] = 0
+#     df = df.drop(['num_solStatus', 'num_diff'], axis=1)
+#     df = df.rename(columns={'num_PathShort':'L0_num_PathShort', 
+#                             'num_PathLong':'L0_num_PathLong', 
+#                             'num_pathCommon':'L0_num_pathCommon',
+#                             'num_rxns':'L0_num_rxns'})
+#     return df
 
-def get_dataframes1(name, models, columns, norm='L0'):
-    df = pd.DataFrame()
-    for i in columns:
-        fname = '../examples/' + name + '/' + name + '_' + i + '_L1.csv'
-        fin = open(fname)
-        data = fin.read().splitlines()
-        fin.close()
+# def get_dataframes1(name, models, columns, norm='L1'):
+#     """
+#     L1 norm results
+#     """
+#     df = pd.DataFrame()
+#     for i in columns:
+#         fname = '../examples/' + name + '/' + name + '_' + i + '_L1.csv'
+#         fin = open(fname)
+#         data = fin.read().splitlines()
+#         fin.close()
         
-        df[i] = data[1:]
-        df['num_'+i] = df[i].str.split(',').apply(len)
+#         df[i] = data[1:]
+#         df['num_'+i] = df[i].str.split(',').apply(len)
         
-    df.loc[df['PathShort']=="", 'num_PathShort'] = 0
-    df.loc[df['PathLong']=="", 'num_PathLong'] = 0
-    df.loc[df['pathCommon']=="", 'num_pathCommon'] = 0
-    df = df.drop(['num_solStatus', 'num_diff'], axis=1)
-    df = df.rename(columns={'num_PathShort':'L1_num_PathShort', 
-                            'num_PathLong':'L1_num_PathLong', 
-                            'num_pathCommon':'L1_num_pathCommon',
-                            'num_rxns':'L1_num_rxns'})
-    return df
+#     df.loc[df['PathShort']=="", 'num_PathShort'] = 0
+#     df.loc[df['PathLong']=="", 'num_PathLong'] = 0
+#     df.loc[df['pathCommon']=="", 'num_pathCommon'] = 0
+#     df = df.drop(['num_solStatus', 'num_diff'], axis=1)
+#     df = df.rename(columns={'num_PathShort':'L1_num_PathShort', 
+#                             'num_PathLong':'L1_num_PathLong', 
+#                             'num_pathCommon':'L1_num_pathCommon',
+#                             'num_rxns':'L1_num_rxns'})
+#     return df
 
 def preprocess(data):
     df = pd.DataFrame(data, columns=["rxns", "diff_flux", "abs_diff_flux", \
@@ -299,3 +308,94 @@ def plot_ridge_lines(df, y, means, figname="", title="", xlabel="", ylabel="", m
     plt.grid()
     plt.savefig(figname)
     plt.show()
+
+
+def consolidate_results(model_list, norm):
+    psl_df_main = pd.DataFrame()
+    df_main = pd.DataFrame()
+    # print(model_list)
+
+    for model in tqdm(model_list):
+        mat = loadmat("../results/" + model + "/Castle_" + norm + "_norm.mat")
+        # Get the minRe data
+        data = mat["data"][0][0][-1][0]
+        df = preprocess(data)
+        df["Organism"] = model
+        
+        df_new = pd.read_csv("../results/" + model + "/" + model + "_PSL_RSL_one_norm_100.csv", index_col=0)
+        df["Type"] = df_new["Type"]
+        df["Rxn_1_Active"] = np.abs(df_new["Rxn_1_Min"]) > 0
+        df["Rxn_2_Active"] = np.abs(df_new["Rxn_2_Min"]) > 0
+        df["Rxn_1_Min"] = df_new["Rxn_1_Min"]
+        df["Rxn_2_Min"] = df_new["Rxn_2_Min"]
+        df["v1"] = df_new["v1"]
+        df["v2"] = df_new["v2"]
+        
+        # Same for psl_rsl dataframe
+        psl_df = df.loc[df["Type"]=="PSL",:].copy()
+        psl_rxn1_mask = (psl_df["Rxn_1_Active"] == True)   
+        psl_df.loc[psl_rxn1_mask, "num_diff"] = psl_df.loc[psl_rxn1_mask, "num_diff"]*-1
+        psl_df.loc[psl_rxn1_mask, "net_diff"] = psl_df.loc[psl_rxn1_mask, "net_diff"]*-1
+        psl_df_main = psl_df_main.append(psl_df)
+            
+        # Get the PSL, rxn1 active and invert sign when rxn1 is active    
+        # Because diff = flux1 - flux2 (< 0 => flux2 > flux 1)
+        df_psl_rxn1 = ((df["Type"]=="PSL")&(df["Rxn_1_Active"]==True))
+        df.loc[df_psl_rxn1, "num_diff"] = df.loc[df_psl_rxn1, "num_diff"]*-1
+        df.loc[df_psl_rxn1, "net_diff"] = df.loc[df_psl_rxn1, "net_diff"]*-1
+        
+        # psl_df["Active_Reaction"] = np.select([rxn1_mask, rxn2_mask], [psl_df["Rxn_1"], psl_df["Rxn_2"]], default=np.nan)    
+        # grouped_psl = psl_df.groupby(["Active_Reaction"])["Active_Reaction"].count()
+        # psl_counts[model] = list(grouped_psl)
+        
+        df_select = df[["Organism", "sl_size", "common_sl_size", "num_diff", "net_diff"]]
+        df_main = df_main.append(df_select)
+        # display(df_new)
+        # display(psl_df)
+
+    return df_main, df_select, psl_df_main
+
+def consolidate_results_print_dfs(df_main, norm):
+    from matplotlib.lines import Line2D
+    line1 = Line2D([0], [0], label='Mean', color='k')
+    line2 = Line2D([0], [0], label='Median', color='k', ls="--")
+
+    columns_of_interest = ["sl_size", "common_sl_size", "num_diff", "net_diff"]
+    fname_list = ["sl_cluster_size", "common_sl_size", "num_diff", "net_diff"]
+    title_list = ["Distribution of SL cluster size", "Distribution of Common SL cluster size", \
+                  "Distribution of number of fluxes with difference", "Distribution of total flux increase"]
+    xlabel_list = ["# Reactions", "# Reactions", "# Reactions with different fluxes", "Total flux increase"]
+
+    for col, fname, title, xlabel in zip(columns_of_interest, fname_list, title_list, xlabel_list):  
+        df_select = df_main[[col, "Organism"]]
+
+        plt.figure(figsize=(20,10))
+        ax = sns.violinplot(x=col, y="Organism", data=df_main, color="0.8")
+                            # palette=sns.color_palette("bright"), 
+        ax = sns.stripplot(x=col, y="Organism", data=df_main, 
+                        palette=sns.color_palette("bright"), jitter=True)
+
+        ax = sns.pointplot(x=col, y='Organism', ci=None, data=df_main, 
+                        color="k", estimator=np.mean, label="mean", scale=0.5) 
+        ax = sns.pointplot(x=col, y='Organism', ci=None, data=df_main, color="k", 
+                        linestyles='--', estimator=np.median, label="mean", scale=0.5) 
+
+        plt.grid()
+        ax.set_title(title)
+        ax.set_ylabel("Organisms")
+        ax.set_xlabel(xlabel)
+        plt.legend(handles=[line1, line2])
+        plt.savefig("../results/images/" + norm + "_norm_violin_"+fname+".png")
+        plt.show()
+
+        mean_df = df_main[[col, "Organism"]].groupby("Organism").mean()
+        median_df = df_main[[col, "Organism"]].groupby("Organism").median()
+
+        consolidated_df = mean_df.copy()
+        mean_name = "mean_" + col
+        median_name = "median_" + col
+        consolidated_df[median_name] = median_df[col]
+        consolidated_df.rename(columns={col:mean_name})
+
+        consolidated_df.to_csv("../results/csv/" + norm + "_norm_" + fname + ".csv")
+        display(consolidated_df)
