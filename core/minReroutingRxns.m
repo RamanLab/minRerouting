@@ -63,7 +63,7 @@ for iLeth = 1:nLethals
     modeldel_2.lb(delIdx_2) = 0;
     modeldel_2.ub(delIdx_2) = 0;
 
-%% Run 3 iterations of MOMA
+    %% Run 3 iterations of MOMA
     V1 = zeros(length(model.rxns), Iter);
     V2 = zeros(length(model.rxns), Iter);
 

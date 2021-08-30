@@ -1,4 +1,4 @@
-function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = newsparseMOMA_doubleKO(modelDel1, modelDel2, grWT, osenseStr, minFluxFlag, verbFlag)
+function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = newsparseMOMA_doubleKO(modelDel1, modelDel2, obj_slack, osenseStr, minFluxFlag, verbFlag)
 % Performs a linear version of the MOMA (minimization of metabolic
 % adjustment) approach upgraded for comparing double knockouts
 %
@@ -150,7 +150,7 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
          sparse(1,nRxns1) modelDel2.c' sparse(1,2*nCommon)];
 
     % Construct the RHS vector
-    b = [zeros(nMets1+nMets2+2*nCommon,1); 0.95*grWT; 0.95*grWT];
+    b = [zeros(nMets1+nMets2+2*nCommon,1); (1-obj_slack)*objValDel1; (1-obj_slack)*objValDel2];
 
     % Construct the objective (sum of all delta+ and delta-)
     c = [zeros(nRxns1+nRxns2,1); ones(2*nCommon,1)];
@@ -229,7 +229,7 @@ if (solutionDel1.stat > 0 && solutionDel2.stat > 0)
             sparse(1,nRxns1) modelDel2.c' sparse(1,2*nCommon+2*nRxns1+2*nRxns2);
             sparse(1,nRxns1+nRxns2) ones(1,2*nCommon) sparse(1,2*nRxns1+2*nRxns2)];
         % Construct the RHS vector
-        b = [zeros(nMets1+nMets2+2*nCommon+2*nRxns1+2*nRxns2,1); 0.95*grWT; 0.95*grWT; ceil(totalFluxDiff/tol)*tol];
+        b = [zeros(nMets1+nMets2+2*nCommon+2*nRxns1+2*nRxns2,1); (1-obj_slack)*grWT; (1-obj_slack)*grWT; ceil(totalFluxDiff/tol)*tol];
 
         % Construct the objective (sum of all delta+ and delta-)
         c = [zeros(nRxns1+nRxns2+2*nCommon,1); ones(2*nRxns1+2*nRxns2,1)];

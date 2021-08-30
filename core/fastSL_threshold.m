@@ -83,20 +83,20 @@ switch order
     case 1
         [Jsl] = singleSL_threshold(model, threshold, cutoff, eliList, atpm);
        
-        fprintf('\n Saving Single Lethal Reactions List...\n');
+        fprintf('\nSaving Single Lethal Reactions List... ');
         save(fname,'Jsl');
         fprintf('Done. \n');
     case 2
         [Jsl,Jdl] = doubleSL_threshold(model, threshold, cutoff, eliList, atpm);
      
-        fprintf('\n Saving Single and Double Lethal Reactions List...\n');
+        fprintf('\nSaving Single and Double Lethal Reactions List... ');
         save(fname,'Jsl');
         save(fname,'Jdl','-append');
         fprintf('Done. \n');
     case 3
         [Jsl,Jdl,Jtl]=tripleSL_threshold(model, threshold, cutoff, eliList, atpm);
       
-        fprintf('\n Saving Single, Double and Triple Lethal Reactions List...\n');
+        fprintf('\nSaving Single, Double and Triple Lethal Reactions List... ');
         save(fname,'Jsl');
         save(fname,'Jdl','-append');
         save(fname,'Jtl','-append');
