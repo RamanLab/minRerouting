@@ -15,8 +15,8 @@ Here we explain the example of some of the models of pathogenic organims downloa
 	addpath('core')
 	
 	% Recommneded to rename model.mat file to modelNames.mat file
-	% model_names = {'iIT341', 'iML1515', 'iNJ661', 'iPC815', 'iYL1228', 'STM_v1_0', 'e_coli_core', 'iJO1366', 'iSSON_1240'};
-	model_names = {'iML1515'};
+	model_names = {'iIT341', 'iML1515', 'iNJ661', 'iPC815', 'iYL1228', 'STM_v1_0', 'e_coli_core', 'iJO1366', 'iSSON_1240'};
+	% model_names = {'iML1515'};
 	% path_to_models = {'examples/iIT341/', 'examples/iML1515/', 'examples/iNJ661/','examples/iPC815/', 'examples/iYL1228/', 'examples/STM_v1_0/', 'examples/e_coli_core/', 'examples/iJO1366', 'examples/iSSON_1240'};
 	path_to_models = {'examples/iML1515/'};
 	
