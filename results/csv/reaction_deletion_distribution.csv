@@ -1,0 +1,10 @@
+organism,model_name,total_reactions,sl,dl
+Helicobacter pylori,iIT341,554,226,43
+Escherichia coli,iJO1366,2583,254,266
+Escherichia coli,iML1515,2712,235,285
+Mycobacterium tuberculosis,iNJ661,1025,309,75
+Yersinia pestis,iPC815,1961,203,189
+Shigella sonnei,iSSON_1240,2693,245,266
+Klebsiella pneumoniae,iYL1228,2262,199,144
+Salmonella enterica,STM_v1_0,2545,319,169
+Escherichia coli,e_coli_core,95,14,88
