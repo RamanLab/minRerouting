@@ -13,13 +13,22 @@ function pfba_analysis(model_names, path_to_models)
 for j = 1:numel(model_names)
     fprintf('Performing pFBA analysis for %s ...\n', model_names{j});
     model = load(strcat(path_to_models{j}, model_names{j},'.mat'));
-    model = model.(model_names{j});
+    model = model.model;
     Castle.data = load(strcat(path_to_models{j}, model_names{j},'_Rxn_lethals.mat'));
 
     % Performing pFBA with geneoption as 0
     % 0 ensures that flux is reduced through all reactions
     % Default: 1 (only gene-associated fluxes)
     [~, RxnClasses, ~] = pFBA(model, 'geneoption', 0);
+    try
+        save(strcat('results/', model_names{j}, '/pfba/RxnClasses.mat'), 'RxnClasses')
+    catch
+        try
+            mkdir(strcat('results/', model_names{j}, '/pfba/'))
+        catch 
+        end
+        save(strcat('results/', model_names{j}, '/pfba/RxnClasses.mat'), 'RxnClasses')
+    end
 
     % Save the list of all unique reactions in the Jdl
     % containers.Map is used to map the reactions to their
@@ -58,7 +67,8 @@ for j = 1:numel(model_names)
     % Saving the table in .csv format
     writetable(pfba_table, strcat(model_names{j}, '_pFBA.csv'));
     % Move the file back to the original path of the model
-    movefile(strcat(model_names{j}, '_pFBA.csv'), path_to_models{j});
+    save_path = strcat('results/', model_names{j});
+    movefile(strcat(model_names{j}, '_pFBA.csv'), save_path);
     
 end
 end
