@@ -6,7 +6,7 @@ function [Castle] = getFastSL(model_names, path_to_models, leth_order, threshold
 % path_to_models    List of path to directory of model files. Files
 %                   relevant to each model will be stored in this path
 % leth_order        Order of highest synthetic lethals 
-% threshold      threshold flux for active/non-zero reaction. Default is 1e-5.
+% threshold      threshold flux for active/non-zero reaction. Default is 1e-6.
 %
 % Output:
 % Castle.data   The structure with multiple models and synthetic lethals
@@ -21,10 +21,10 @@ function [Castle] = getFastSL(model_names, path_to_models, leth_order, threshold
 
 if exist('threshold', 'var')
     if isempty(threshold)
-        threshold = 1e-5;
+        threshold = 1e-6;
     end
 else
-    threshold = 1e-5;
+    threshold = 1e-6;
 end
 
 disp("Models to find synthetic lethals for: " + length(model_names))
@@ -32,7 +32,7 @@ disp("Models to find synthetic lethals for: " + length(model_names))
 for j = 1:length(path_to_models)
     model = load(strcat(path_to_models{j}, model_names{j},'.mat'));
     Castle.data(j).model_name = model_names{j};
-    Castle.data(j).model = model.(model_names{j});
+    Castle.data(j).model = model.model;
     clear model;
     
     disp('Eliminating exchange reactions from synthetic lethal search space...')
