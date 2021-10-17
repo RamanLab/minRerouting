@@ -69,6 +69,5 @@ for j = 1:numel(model_names)
     % Move the file back to the original path of the model
     save_path = strcat('results/', model_names{j});
     movefile(strcat(model_names{j}, '_pFBA.csv'), save_path);
-    
 end
 end
