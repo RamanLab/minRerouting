@@ -5,7 +5,7 @@ function [Castle] = getFastSL(model_names, path_to_models, leth_order, threshold
 %                   in path with modelID.mat name
 % path_to_models    List of path to directory of model files. Files
 %                   relevant to each model will be stored in this path
-% leth_order        Order of highest synthetic lethals 
+% leth_order        Order of highest synthetic lethals
 % threshold      threshold flux for active/non-zero reaction. Default is 1e-6.
 %
 % Output:

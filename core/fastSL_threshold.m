@@ -20,8 +20,8 @@ function fastSL_threshold(model, threshold, cutoff, order, eliList, atpm)
 % atpm           ATPM Reaction Id in model.rxns if other than 'ATPM'
 % 
 %
-% Aditya Pratapa        6/26/14. 
-% N Sowmya Manojna      3 July, 2021
+% Aditya Pratapa        06/26/14. 
+% N Sowmya Manojna      06/03/21.
 
     %%
     %initCobraToolbox

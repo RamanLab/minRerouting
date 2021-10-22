@@ -29,4 +29,4 @@ save('results/Castle2.mat', 'Castle2');
 
 % Final pFBA and PSL-RSL Analysis
 pfba_analysis(model_names, path_to_models)
-psl_rsl_analysis(model_names, path_to_models)
+fva_analysis(model_names, path_to_models)
