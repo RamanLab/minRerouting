@@ -1,5 +1,0 @@
-,Rxn_1_Class,Rxn_2_Class,Count,Fraction,Types
-0,ZeroFlux_Rxns,pFBAOpt_Rxns,11,0.2037037037037037,"ZeroFlux_Rxns, pFBAOpt_Rxns"
-1,pFBAOpt_Rxns,ELE_Rxns,7,0.12962962962962962,"pFBAOpt_Rxns, ELE_Rxns"
-2,pFBAOpt_Rxns,MLE_Rxns,21,0.3888888888888889,"pFBAOpt_Rxns, MLE_Rxns"
-3,pFBAOpt_Rxns,pFBAOpt_Rxns,15,0.2777777777777778,"pFBAOpt_Rxns, pFBAOpt_Rxns"

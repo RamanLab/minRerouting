@@ -1,4 +1,3 @@
-Type,Rxn_1_Type,Rxn_2_Type,Count,Fraction
-PSL,pFBAOpt_Rxns,MLE_Rxns,10,0.11363636363636363
-RSL,pFBAOpt_Rxns,MLE_Rxns,6,0.06818181818181818
-RSL,pFBAOpt_Rxns,pFBAOpt_Rxns,72,0.8181818181818182
+Type,Rxn_1_Type,Rxn_2_Type,Count,Fraction,Rxn_1_Prod,Rxn_2_Prod
+PSL,pFBAOpt_Rxns,MLE_Rxns,16,0.18181818181818182,16,16
+RSL,pFBAOpt_Rxns,pFBAOpt_Rxns,72,0.8181818181818182,72,72
