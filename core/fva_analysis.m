@@ -23,7 +23,8 @@ for i = 1:numel(model_names)
     % Exclude exchange reactions
     rxnList = model.rxns(~findExcRxns(model));
     % Increase the level of verbosity and make the optimization as 1-norm
-    [minFlux, maxFlux] = fluxVariability(model, 100, 'max', rxnList, 1, 1, '1-norm');
+    % Changing the grWT percentage to 5
+    [minFlux, maxFlux] = fluxVariability(model, 5, 'max', rxnList, 1, 1, '1-norm');
     
     % Get indices of the first reactions
     [~,positions1] = ismember(data.Jdl(:,1), rxnList);
@@ -52,8 +53,8 @@ for i = 1:numel(model_names)
     fvaResultAnalysis = [fvaResultAnalysis, array2table(v2)];
     
     % Get the product too
-    fvaResultAnalysis.Rxn1_Prod = maxFlux1.*minFlux1;
-    fvaResultAnalysis.Rxn2_Prod = maxFlux2.*minFlux2;
+    fvaResultAnalysis.Rxn1_Prod = sign(maxFlux1).*sign(minFlux1);
+    fvaResultAnalysis.Rxn2_Prod = sign(maxFlux2).*sign(minFlux2);
     
     % Save the table in .csv format
     writetable(fvaResultAnalysis, strcat(model_names{i}, '_FVA_one_norm_100.csv'));

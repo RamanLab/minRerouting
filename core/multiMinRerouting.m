@@ -64,7 +64,7 @@ function [minRerouting] = minReroutingRxns(model, Jdl, p_norm, obj_slack, cutOff
 % OPTIONAL
 %   p_norm           Norm of optimization to be carried out (Default: 1)
 %   obj_slack        Permissible slack on the WT growth rate in the MoMA (Default: 0.05)
-%   cutOff           cutoff flux difference value for MOMA difference (Default is 0.0001)
+%   cutOff           cutoff flux difference value for MOMA difference (Default is 1e-6)
 %
 % OUTPUT
 %   minRerouting        The structure with reaction sets in alternate routes
@@ -158,7 +158,11 @@ function [minRerouting] = minReroutingRxns(model, Jdl, p_norm, obj_slack, cutOff
             % The two delta*abs() conditions ensure that the change in flux
             % is at least greater than a factor (delta) of the original flux.
             % default: delta = 0.05;
-            min_ids = find(diff_flux>delta*abs(flux1) & diff_flux>delta*abs(flux2) & diff_flux>cutOff);
+            % max_flux = max(flux1, flux2);
+            % min_flux = min(abs(flux1), abs(flux2));
+            % min_ids = find((abs(abs_diff_flux./min_flux)>delta) & abs_diff_flux>cutOff);
+            % min_ids = find(diff_flux>delta*abs(flux1) & diff_flux>delta*abs(flux2) & diff_flux>cutOff);
+            min_ids = find(abs_diff_flux>delta*abs(flux1) & abs_diff_flux>delta*abs(flux2) & abs_diff_flux>cutOff);
 
             minRerouting(iLeth).del_rxn1 = del_rxn1;
             minRerouting(iLeth).del_rxn2 = del_rxn2;
@@ -354,8 +358,8 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = sparseMOMA_dou
         % Rows:
         % 1: Sdel1*v1 = 0 for the deletion strain 1
         % 2: Sdel2*v2 = 0 for the deletion strain 2
-        % 3: delta+ >= v1-v2
-        % 4: delta- >= v2-v1
+        % 3: delta+ >= 0
+        % 4: delta- >= 0
         % 5: c'v1 >= 0.9*f1 (deletion strain 1) (10% slack on obj)
         % 6: c'v2 >= 0.9*f2 (deletion strain 2)
         % OR 5,6 : c'v1 and c'v2 >= 0.05*grWT
@@ -375,13 +379,14 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = sparseMOMA_dou
 
         % Construct the ub/lb
         % delta+ and delta- are in [0 10000]
-        lb = [modelDel1.lb; modelDel2.lb; zeros(2*nCommon,1)];
+        lb = [modelDel1.lb; modelDel2.lb; -10000*ones(2*nCommon,1)];
         ub = [modelDel1.ub; modelDel2.ub; 10000*ones(2*nCommon,1)];
 
         % Construct the constraint direction vector (G for delta's, E for
-        % everything else)
+        % the Sv constraints)
         csense(1:(nMets1+nMets2)) = 'E';
         csense((nMets1+nMets2)+1:(nMets1+nMets2+2*nCommon)) = 'G';
+        % For the c'v constraints
         if (strcmp(osenseStr,'max'))
             csense(end+1) = 'G';
             csense(end+1) = 'G';
@@ -569,11 +574,10 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_dou
         % Rows:
         % 1: Sdel1*v1 = 0 for the deletion strain 1
         % 2: Sdel2*v2 = 0 for the deletion strain 2
-        % 3: delta+ >= v1-v2
-        % 4: delta- >= v2-v1
+        % 3: delta+ >= 0
+        % 4: delta- >= 0
         % 5: c'v1 >= 0.9*f1 (deletion strain 1) (10 % slack on obj)
         % 6: c'v2 >= 0.9*f2 (deletion strain 2)
-        % OR 5,6: c'v1 and c'v2 >= 0.05*grWT
         % Conditions 3 and 4 ensure that the flux through
         % the common reactions are minimized.
 
@@ -591,7 +595,7 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_dou
 
         % Construct the ub/lb
         % delta+ and delta- are in [0 10000]
-        lb = [modelDel1.lb; modelDel2.lb; zeros(2*nCommon,1)];
+        lb = [modelDel1.lb; modelDel2.lb; -10000*ones(2*nCommon,1)];
         ub = [modelDel1.ub; modelDel2.ub; 10000*ones(2*nCommon,1)];
 
         % Construct the constraint direction vector (G for delta's, E for
@@ -776,8 +780,8 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = quadraticMOMA_
         % Rows:
         % 1: Sdel1*v1 = 0 for the deletion strain 1
         % 2: Sdel2*v2 = 0 for the deletion strain 2
-        % 3: delta+ >= v1-v2
-        % 4: delta- >= v2-v1
+        % 3: delta+ >= 0
+        % 4: delta- >= 0
         % 5: c'v1 >= 0.9*f1 (deletion strain 1) (10 % slack on obj)
         % 6: c'v2 >= 0.9*f2 (deletion strain 2)
 

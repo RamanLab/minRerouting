@@ -144,7 +144,9 @@ function [serrano] = fba_solution(model, Jdl, p_norm, obj_slack, cutOff, delta, 
             % The two delta*abs() conditions ensure that the change in flux
             % is at least greater than a factor (delta) of the original flux.
             % default: delta = 0.05;
-            min_ids = find(diff_flux>delta*abs(flux1) & diff_flux>delta*abs(flux2) & diff_flux>cutOff);
+            % min_ids = find(diff_flux>delta*abs(flux1) & diff_flux>delta*abs(flux2) & diff_flux>cutOff);
+            min_flux = min(abs(flux1), abs(flux2));
+            min_ids = find((abs(abs_diff_flux./min_flux)>delta) & abs_diff_flux>cutOff);
 
             serrano(iLeth).del_rxn1 = del_rxn1;
             serrano(iLeth).del_rxn2 = del_rxn2;
