@@ -12,6 +12,7 @@ function convert_xml_to_mat(path_to_models, model_names)
 
     for j = 1:length(path_to_models)
         model = readCbModel(strcat(path_to_models{j}, model_names{j},'.xml'));
+        fprintf('Model: %s\n', model_names{j})
         strcat(path_to_models{j}, model_names{j}, '.mat');
         save(strcat(path_to_models{j}, model_names{j}, '.mat'), 'model');
     end
