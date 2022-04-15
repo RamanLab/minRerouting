@@ -1,0 +1,16 @@
+,Combination,Count,Same,Percentage
+0,Glycolysis/Gluconeogenesis & Pentose Phosphate Pathway,28,False,0.3181818181818182
+1,Pentose Phosphate Pathway & Pentose Phosphate Pathway,17,True,0.19318181818181818
+2,Glycolysis/Gluconeogenesis & Oxidative Phosphorylation,12,False,0.13636363636363635
+3,"Glycolysis/Gluconeogenesis & Transport, Extracellular",11,False,0.125
+4,Glycolysis/Gluconeogenesis & Glycolysis/Gluconeogenesis,3,True,0.03409090909090909
+5,"Pyruvate Metabolism & Transport, Extracellular",3,False,0.03409090909090909
+6,Anaplerotic reactions & Anaplerotic reactions,2,True,0.022727272727272728
+7,Anaplerotic reactions & Citric Acid Cycle,2,False,0.022727272727272728
+8,Anaplerotic reactions & Oxidative Phosphorylation,2,False,0.022727272727272728
+9,"Anaplerotic reactions & Transport, Extracellular",2,False,0.022727272727272728
+10,"Transport, Extracellular & Transport, Extracellular",2,True,0.022727272727272728
+11,Glutamate Metabolism & Glutamate Metabolism,1,True,0.011363636363636364
+12,Glycolysis/Gluconeogenesis & Pyruvate Metabolism,1,False,0.011363636363636364
+13,Oxidative Phosphorylation & Pyruvate Metabolism,1,False,0.011363636363636364
+14,"Oxidative Phosphorylation & Transport, Extracellular",1,False,0.011363636363636364

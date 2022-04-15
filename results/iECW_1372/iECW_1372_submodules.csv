@@ -1,0 +1,267 @@
+,Rxn_1,Rxn_2,Rxn_1_Class,Rxn_2_Class,Subsystem 1,Subsystem 2
+0,ACACT1r,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+1,ACACT1r,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+2,ACACT1r,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+3,ACACT1r,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+4,ACACT1r,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+5,ACACT1r,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+6,ACACT1r,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+7,ACACT1r,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+8,ACACT1r,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+9,ACACT1r,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+10,ACACT1r,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+11,ACACT2r,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+12,ACACT2r,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+13,ACACT2r,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+14,ACACT2r,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+15,ACACT2r,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+16,ACACT2r,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+17,ACACT2r,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+18,ACACT2r,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+19,ACACT2r,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+20,ACACT2r,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+21,ACACT2r,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+22,ACACT3r,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+23,ACACT3r,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+24,ACACT3r,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+25,ACACT3r,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+26,ACACT3r,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+27,ACACT3r,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+28,ACACT3r,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+29,ACACT3r,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+30,ACACT3r,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+31,ACACT3r,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+32,ACACT3r,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+33,ACACT4r,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+34,ACACT4r,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+35,ACACT4r,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+36,AACPS3,3HAD160,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+37,AACPS3,3OAR160,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+38,AACPS3,3OAS160,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+39,AACPS4,3HAD161,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+40,AACPS4,3OAR161,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+41,AACPS4,3OAS161,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+42,AACPS7,3HAD120,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+43,AACPS7,3OAR120,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+44,AACPS7,3OAS120,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+45,ACOAD1f,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+46,ACOAD1f,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+47,ACOAD1f,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+48,ACOAD1f,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+49,ACOAD1f,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+50,ACOAD1f,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+51,ACOAD1f,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+52,ACOAD1f,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+53,ACOAD1f,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+54,ACOAD1f,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+55,ACOAD1f,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+56,ACOAD2f,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+57,ACOAD2f,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+58,ACOAD2f,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+59,ACOAD2f,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+60,ACOAD2f,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+61,ACOAD2f,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+62,ACOAD2f,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+63,ACOAD2f,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+64,ACOAD2f,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+65,ACOAD2f,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+66,ACOAD2f,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+67,ACOAD3f,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+68,ACOAD3f,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+69,ACOAD3f,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+70,ACOAD3f,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+71,ACOAD3f,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+72,ACOAD3f,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+73,ACOAD3f,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+74,ACOAD3f,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+75,ACOAD3f,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+76,ACOAD3f,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+77,ACOAD3f,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+78,ACOAD4f,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+79,ACOAD4f,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+80,ACOAD4f,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+81,ALATA_L,VPAMTr_copy1,ELE_Rxns,ELE_Rxns,Alanine and Aspartate Metabolism,Alanine and Aspartate Metabolism
+82,ASNS2,ASNS1,ELE_Rxns,ELE_Rxns,Alanine and Aspartate Metabolism,Alanine and Aspartate Metabolism
+83,CPPPGO,CPPPGO2,ELE_Rxns,ELE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+84,CTECOAI7_copy1,3HAD161,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+85,CTECOAI7_copy1,3OAR161,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+86,CTECOAI7_copy1,3OAS161,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+87,DALAt2pp,DALAtex,ELE_Rxns,ELE_Rxns,"Transport, Inner Membrane","Transport, Outer Membrane Porin"
+88,DMPPS,IPDDI,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+89,FACOAE120,3HAD120,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+90,FACOAE120,3OAR120,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+91,FACOAE120,3OAS120,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+92,ECOAH1,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+93,ECOAH1,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+94,ECOAH1,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+95,ECOAH1,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+96,ECOAH1,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+97,ECOAH1,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+98,ECOAH1,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+99,ECOAH1,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+100,ECOAH1,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+101,ECOAH1,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+102,ECOAH1,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+103,FACOAE160,3HAD160,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+104,FACOAE160,3OAR160,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+105,FACOAE160,3OAS160,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+106,FACOAE161,3HAD161,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+107,FACOAE161,3OAR161,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+108,FACOAE161,3OAS161,ELE_Rxns,ELE_Rxns,Cell Envelope Biosynthesis,Cell Envelope Biosynthesis
+109,ECOAH2,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+110,ECOAH2,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+111,ECOAH2,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+112,ECOAH2,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+113,ECOAH2,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+114,ECOAH2,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+115,ECOAH2,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+116,ECOAH2,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+117,ECOAH2,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+118,ECOAH2,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+119,ECOAH2,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+120,ECOAH3,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+121,ECOAH3,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+122,ECOAH3,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+123,ECOAH3,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+124,ECOAH3,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+125,ECOAH3,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+126,ECOAH3,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+127,ECOAH3,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+128,ECOAH3,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+129,ECOAH3,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+130,ECOAH3,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+131,ECOAH4,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+132,ECOAH4,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+133,ECOAH4,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+134,FUM,SUCCtex,pFBAOpt_Rxns,ELE_Rxns,Citric Acid Cycle,"Transport, Outer Membrane Porin"
+135,G3PAT160,ACPPAT160,ELE_Rxns,ELE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+136,G3PAT160,APG3PAT160,ELE_Rxns,ELE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+137,G3PAT161,ACPPAT161,ELE_Rxns,ELE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+138,G3PAT161,APG3PAT161,ELE_Rxns,ELE_Rxns,Glycerophospholipid Metabolism,Glycerophospholipid Metabolism
+139,G5SD,NACODA,ELE_Rxns,ELE_Rxns,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+140,GLCtex,GLCtex,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane","Transport, Outer Membrane"
+141,GLU5K,NACODA,ELE_Rxns,ELE_Rxns,Arginine and Proline Metabolism,Arginine and Proline Metabolism
+142,GLUDy,GLUSy,ELE_Rxns,ELE_Rxns,Glutamate Metabolism,Glutamate Metabolism
+143,HACD1,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+144,HACD1,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+145,HACD1,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+146,HACD1,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+147,HACD1,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+148,HACD1,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+149,HACD1,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+150,HACD1,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+151,HACD1,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+152,HACD1,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+153,HACD1,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+154,HACD2,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+155,HACD2,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+156,HACD2,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+157,HACD2,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+158,HACD2,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+159,HACD2,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+160,HACD2,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+161,HACD2,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+162,HACD2,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+163,HACD2,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+164,HACD2,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+165,HACD3,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+166,HACD3,3HAD40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+167,HACD3,3HAD60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+168,HACD3,3HAD80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+169,HACD3,3OAR40,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+170,HACD3,3OAR60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+171,HACD3,3OAR80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+172,HACD3,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+173,HACD3,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+174,HACD3,3OAS60,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+175,HACD3,3OAS80,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+176,HACD4,3HAD100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+177,HACD4,3OAS100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+178,HACD4,3OAR100,ELE_Rxns,ELE_Rxns,Membrane Lipid Metabolism,Cell Envelope Biosynthesis
+179,I2FE2SR,S2FE2SR,ZeroFlux_Rxns,ZeroFlux_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+180,I2FE2SS,S2FE2SS,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+181,I2FE2SS,S2FE2SS2,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+182,I2FE2SS,S2FE2ST,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+183,I2FE2SS,S4FE4SR,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+184,I2FE2SS,S4FE4ST,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+185,I2FE2SS,SCYSDS,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+186,I2FE2SS2,S2FE2SS,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+187,I2FE2SS2,S2FE2SS2,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+188,I2FE2SS2,S4FE4SR,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+189,I2FE2SS2,S4FE4ST,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+190,I2FE2SS2,SCYSDS,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+191,I2FE2ST,S2FE2SS,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+192,I2FE2ST,S2FE2ST,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+193,I2FE2ST,SCYSDS,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+194,I4FE4SR,S2FE2SS,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+195,I4FE4SR,S2FE2SS2,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+196,I4FE4SR,S4FE4SR,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+197,I4FE4SR,S4FE4ST,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+198,I4FE4SR,SCYSDS,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+199,I4FE4ST,S2FE2SS,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+200,I4FE4ST,S2FE2SS2,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+201,I4FE4ST,S4FE4SR,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+202,I4FE4ST,S4FE4ST,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+203,I4FE4ST,SCYSDS,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+204,IMPD,HXAND,ELE_Rxns,ELE_Rxns,Purine and Pyrimidine Biosynthesis,Nucleotide Salvage Pathway
+205,IMPD,XPPT,ELE_Rxns,ELE_Rxns,Purine and Pyrimidine Biosynthesis,Nucleotide Salvage Pathway
+206,IPDPS,IPDDI,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+207,Kt2pp,Kabcpp,ELE_Rxns,ELE_Rxns,Inorganic Ion Transport and Metabolism,Inorganic Ion Transport and Metabolism
+208,MN2tpp,MNt2pp,ELE_Rxns,ELE_Rxns,Inorganic Ion Transport and Metabolism,"Transport, Inner Membrane"
+209,NDPK1,ADK3,ELE_Rxns,ELE_Rxns,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+210,NI2tpp,NI2uabcpp,ELE_Rxns,ELE_Rxns,Inorganic Ion Transport and Metabolism,Inorganic Ion Transport and Metabolism
+211,O2tex,CPPPGO2,pFBAOpt_Rxns,ELE_Rxns,"Transport, Outer Membrane Porin",Cofactor and Prosthetic Group Biosynthesis
+212,O2tex,OPHHX3,pFBAOpt_Rxns,MLE_Rxns,"Transport, Outer Membrane Porin",Cofactor and Prosthetic Group Biosynthesis
+213,O2tex,SUCCtex,pFBAOpt_Rxns,ELE_Rxns,"Transport, Outer Membrane Porin","Transport, Outer Membrane Porin"
+214,O2tpp,CPPPGO2,pFBAOpt_Rxns,ELE_Rxns,Inorganic Ion Transport and Metabolism,Cofactor and Prosthetic Group Biosynthesis
+215,O2tpp,OPHHX3,pFBAOpt_Rxns,MLE_Rxns,Inorganic Ion Transport and Metabolism,Cofactor and Prosthetic Group Biosynthesis
+216,O2tpp,SUCCtex,pFBAOpt_Rxns,ELE_Rxns,Inorganic Ion Transport and Metabolism,"Transport, Outer Membrane Porin"
+217,OPHHX,OPHHX3,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+218,PAPSR,GRXR,ELE_Rxns,ELE_Rxns,Cysteine Metabolism,Unassigned
+219,PAPSR,GTHOr,ELE_Rxns,ELE_Rxns,Cysteine Metabolism,Cofactor and Prosthetic Group Biosynthesis
+220,PAPSR,PAPSR2,ELE_Rxns,ELE_Rxns,Cysteine Metabolism,Cysteine Metabolism
+221,PDX5PO2,PDX5POi,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+222,PIt2rpp,PIuabcpp,ELE_Rxns,ELE_Rxns,Inorganic Ion Transport and Metabolism,Inorganic Ion Transport and Metabolism
+223,PPK,PPA,ELE_Rxns,ELE_Rxns,Oxidative Phosphorylation,Anaplerotic Reactions
+224,PPPGO3,PPPGO,ELE_Rxns,ELE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+225,RNTR1c2,NDPK8,ELE_Rxns,ELE_Rxns,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+226,RNTR2c2,NDPK5,ELE_Rxns,ELE_Rxns,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+227,RNTR3c2,NDPK7,ELE_Rxns,ELE_Rxns,Nucleotide Salvage Pathway,Nucleotide Salvage Pathway
+228,RPI,TALA,ELE_Rxns,ELE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+229,PRPPS,R15BPK,ELE_Rxns,ELE_Rxns,Histidine Metabolism,Alternate Carbon Metabolism
+230,PRPPS,R1PK,ELE_Rxns,ELE_Rxns,Histidine Metabolism,Alternate Carbon Metabolism
+231,SO4t2pp,SULabcpp,ELE_Rxns,ELE_Rxns,Inorganic Ion Transport and Metabolism,Inorganic Ion Transport and Metabolism
+232,TRPS3,TRPS1,ELE_Rxns,ELE_Rxns,"Tyrosine, Tryptophan, and Phenylalanine Metabolism","Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+233,TRDR,GRXR,ELE_Rxns,ELE_Rxns,Oxidative Phosphorylation,Unassigned
+234,TRDR,GTHOr,ELE_Rxns,ELE_Rxns,Oxidative Phosphorylation,Cofactor and Prosthetic Group Biosynthesis
+235,TRDR,PAPSR2,ELE_Rxns,ELE_Rxns,Oxidative Phosphorylation,Cysteine Metabolism
+236,ZN2tpp,ZNabcpp,ELE_Rxns,ELE_Rxns,Inorganic Ion Transport and Metabolism,Inorganic Ion Transport and Metabolism
+237,MECDPDH2,MECDPDH5,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+238,PRASCSi_copy2,PRASCSi_copy1,ELE_Rxns,ELE_Rxns,Purine and Pyrimidine Biosynthesis,Purine and Pyrimidine Biosynthesis
+239,GART,GARFT,ELE_Rxns,ELE_Rxns,Purine and Pyrimidine Biosynthesis,Purine and Pyrimidine Biosynthesis
+240,IPDPS,DMPPS,MLE_Rxns,MLE_Rxns,Cofactor and Prosthetic Group Biosynthesis,Cofactor and Prosthetic Group Biosynthesis
+241,O2tex,ENO,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane Porin",Glycolysis/Gluconeogenesis
+242,O2tex,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,"Transport, Outer Membrane Porin",Glycolysis/Gluconeogenesis
+243,O2tpp,ENO,pFBAOpt_Rxns,pFBAOpt_Rxns,Inorganic Ion Transport and Metabolism,Glycolysis/Gluconeogenesis
+244,O2tpp,GAPD,pFBAOpt_Rxns,pFBAOpt_Rxns,Inorganic Ion Transport and Metabolism,Glycolysis/Gluconeogenesis
+245,PGCD,GHMT2r,ELE_Rxns,ELE_Rxns,Glycine and Serine Metabolism,Glycine and Serine Metabolism
+246,PGK,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,"Transport, Outer Membrane Porin"
+247,PGK,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Inorganic Ion Transport and Metabolism
+248,PGM,O2tex,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,"Transport, Outer Membrane Porin"
+249,PGM,O2tpp,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycolysis/Gluconeogenesis,Inorganic Ion Transport and Metabolism
+250,PPC,FUM,ELE_Rxns,pFBAOpt_Rxns,Anaplerotic Reactions,Citric Acid Cycle
+251,PPC,MALS,ELE_Rxns,ELE_Rxns,Anaplerotic Reactions,Anaplerotic Reactions
+252,PPPGO3,O2tex,ELE_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,"Transport, Outer Membrane Porin"
+253,PPPGO3,O2tpp,ELE_Rxns,pFBAOpt_Rxns,Cofactor and Prosthetic Group Biosynthesis,Inorganic Ion Transport and Metabolism
+254,RPE,GND,ELE_Rxns,ELE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+255,RPI,RPE,ELE_Rxns,ELE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+256,PRPPS,PPM,ELE_Rxns,ELE_Rxns,Histidine Metabolism,Alternate Carbon Metabolism
+257,PSERT,GHMT2r,ELE_Rxns,ELE_Rxns,Glycine and Serine Metabolism,Glycine and Serine Metabolism
+258,PSP_L,GHMT2r,ELE_Rxns,ELE_Rxns,Glycine and Serine Metabolism,Glycine and Serine Metabolism
+259,TKT1,RPE,ELE_Rxns,ELE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+260,TKT1,RPI,ELE_Rxns,ELE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+261,TKT2,GND,ELE_Rxns,ELE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+262,TKT2,RPE,ELE_Rxns,ELE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+263,TKT2,RPI,ELE_Rxns,ELE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+264,TKT2,TKT1,ELE_Rxns,ELE_Rxns,Pentose Phosphate Pathway,Pentose Phosphate Pathway
+265,VALTA,ALATA_L,ELE_Rxns,ELE_Rxns,"Valine, Leucine, and Isoleucine Metabolism",Alanine and Aspartate Metabolism

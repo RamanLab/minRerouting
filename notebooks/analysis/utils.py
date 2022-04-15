@@ -117,7 +117,7 @@ def plot_results(df_full, model_list):
                              hole=0.4, marker_colors=rsl_df["Colors"]), row=1, col=2)
 
         fig.update_layout(title_text="Model: "+model)
-        image_name = "../results/images/"+model+"_PSL_RSL_dist.png"
+        image_name = "../results/images/"+model+"_PSL_RSL_dist.pdf"
         
         try:
             path = "../results/images/"
@@ -320,6 +320,16 @@ def consolidate_results(model_list, norm):
         # display(df_new)
         # display(psl_df)
 
+        fname = "../results/" + model + "/consolidated_" + norm + "_norm.csv"
+        df.to_csv(fname)
+
+        fname = "../results/" + model + "/analysis_" + norm + "_norm.csv"
+        df_main.to_csv(fname)
+
+        fname = "../results/" + model + "/psl_analysis_" + norm + "_norm.csv"
+        psl_df_main.to_csv(fname)
+
+
     return df_main, df_select, psl_df_main
 
 def fba_consolidate_results(model_list, norm):
@@ -362,6 +372,17 @@ def fba_consolidate_results(model_list, norm):
         
         df_select = df[["Organism", "sl_size", "common_sl_size", "num_diff", "net_diff"]]
         df_main = df_main.append(df_select)
+
+        fname = "../results/" + model + "/fba_consolidated_" + norm + "_norm.csv"
+        df.to_csv(fname)
+
+        fname = "../results/" + model + "/fba_analysis_" + norm + "_norm.csv"
+        df_main.to_csv(fname)
+
+
+        fname = "../results/" + model + "/psl_fba_analysis_" + norm + "_norm.csv"
+        psl_df_main.to_csv(fname)
+
 
     return df_main, df_select, psl_df_main
 
@@ -614,9 +635,18 @@ def get_data(model):
     rxn1_temp = df["Rxn_1"].str.split("_copy").str[0]
     rxn2_temp = df["Rxn_2"].str.split("_copy").str[0]
     
-    subsystems1 = [types[i] for i in rxn1_temp]
+    subsystems1 = [types[i] for i in rxn1_temp]       
     subsystems2 = [types[i] for i in rxn2_temp]
     df["Subsystem 1"] = subsystems1
     df["Subsystem 2"] = subsystems2
     
     return df
+
+def convert_csv_to_tex(fname, column_headings):
+    text_in_tex = "\\begin{table}[ht]\n\\centering\n\\begin{tabular}{l c c c}\n\\hline\n\\hline"
+    for i in column_headings[:-1]:
+        text_in_tex += "\\textbf{"+i+"} & "
+    text_in_tex += "\\etxtbf{"+column_headings[-1]+"}\\\\"
+
+    text_in_tex += "\n\\hline\n\\hline\n"
+    

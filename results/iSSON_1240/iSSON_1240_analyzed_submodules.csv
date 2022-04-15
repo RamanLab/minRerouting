@@ -1,0 +1,34 @@
+,Combination,Count,Same,Percentage
+0,Cell Envelope Biosynthesis & Membrane Lipid Metabolism,147,False,0.550561797752809
+1,Cofactor and Prosthetic Group Biosynthesis & Cofactor and Prosthetic Group Biosynthesis,33,True,0.12359550561797752
+2,Cell Envelope Biosynthesis & Cell Envelope Biosynthesis,18,True,0.06741573033707865
+3,Pentose Phosphate Pathway & Pentose Phosphate Pathway,9,True,0.033707865168539325
+4,Inorganic Ion Transport and Metabolism & Inorganic Ion Transport and Metabolism,5,True,0.018726591760299626
+5,Nucleotide Salvage Pathway & Nucleotide Salvage Pathway,5,True,0.018726591760299626
+6,Glycerophospholipid Metabolism & Glycerophospholipid Metabolism,4,True,0.0149812734082397
+7,Glycolysis/Gluconeogenesis & Inorganic Ion Transport and Metabolism,4,False,0.0149812734082397
+8,"Glycolysis/Gluconeogenesis & Transport, Outer Membrane Porin",4,False,0.0149812734082397
+9,Alternate Carbon Metabolism & Histidine Metabolism,3,False,0.011235955056179775
+10,Cofactor and Prosthetic Group Biosynthesis & Inorganic Ion Transport and Metabolism,3,False,0.011235955056179775
+11,"Cofactor and Prosthetic Group Biosynthesis & Transport, Outer Membrane Porin",3,False,0.011235955056179775
+12,Glycine and Serine Metabolism & Glycine and Serine Metabolism,3,True,0.011235955056179775
+13,Anaplerotic Reactions & Anaplerotic Reactions,2,True,0.00749063670411985
+14,Anaplerotic Reactions & Oxidative Phosphorylation,2,False,0.00749063670411985
+15,Arginine and Proline Metabolism & Arginine and Proline Metabolism,2,True,0.00749063670411985
+16,Nucleotide Salvage Pathway & Purine and Pyrimidine Biosynthesis,2,False,0.00749063670411985
+17,Purine and Pyrimidine Biosynthesis & Purine and Pyrimidine Biosynthesis,2,True,0.00749063670411985
+18,"Tyrosine, Tryptophan, and Phenylalanine Metabolism & Tyrosine, Tryptophan, and Phenylalanine Metabolism",2,True,0.00749063670411985
+19,Alanine and Aspartate Metabolism & Alanine and Aspartate Metabolism,1,True,0.003745318352059925
+20,Anaplerotic Reactions & Citric Acid Cycle,1,False,0.003745318352059925
+21,Anaplerotic Reactions & Inorganic Ion Transport and Metabolism,1,False,0.003745318352059925
+22,"Anaplerotic Reactions & Transport, Outer Membrane Porin",1,False,0.003745318352059925
+23,Arginine and Proline Metabolism & Unassigned,1,False,0.003745318352059925
+24,Cofactor and Prosthetic Group Biosynthesis & Cysteine Metabolism,1,False,0.003745318352059925
+25,Cofactor and Prosthetic Group Biosynthesis & Oxidative Phosphorylation,1,False,0.003745318352059925
+26,Cysteine Metabolism & Cysteine Metabolism,1,True,0.003745318352059925
+27,Cysteine Metabolism & Oxidative Phosphorylation,1,False,0.003745318352059925
+28,Cysteine Metabolism & Unassigned,1,False,0.003745318352059925
+29,Glutamate Metabolism & Glutamate Metabolism,1,True,0.003745318352059925
+30,Oxidative Phosphorylation & Unassigned,1,False,0.003745318352059925
+31,"Transport, Inner Membrane & Transport, Outer Membrane Porin",1,False,0.003745318352059925
+32,"Transport, Outer Membrane & Transport, Outer Membrane",1,True,0.003745318352059925

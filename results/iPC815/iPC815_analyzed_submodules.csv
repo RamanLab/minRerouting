@@ -1,0 +1,52 @@
+,Combination,Count,Same,Percentage
+0,Cell Envelope Biosynthesis & Cell Envelope Biosynthesis,14,True,0.07407407407407407
+1,Pentose Phosphate Pathway & Pentose Phosphate Pathway,12,True,0.06349206349206349
+2,Arginine and Proline Metabolism & Arginine and Proline Metabolism,11,True,0.0582010582010582
+3,None & None,10,True,0.05291005291005291
+4,Cell Envelope Biosynthesis & Membrane Lipid Metabolism,9,False,0.047619047619047616
+5,Threonine and Lysine Metabolism & Transport; Inner Membrane,9,False,0.047619047619047616
+6,Threonine and Lysine Metabolism & Transport; Outer Membrane Porin,9,False,0.047619047619047616
+7,Glycerophospholipid Metabolism & Transport; Inner Membrane,8,False,0.042328042328042326
+8,Arginine and Proline Metabolism & None,6,False,0.031746031746031744
+9,Transport; Inner Membrane & Transport; Inner Membrane,6,True,0.031746031746031744
+10,Transport; Inner Membrane & Transport; Outer Membrane Porin,6,False,0.031746031746031744
+11,Amino acid metabolism & Arginine and Proline Metabolism,5,False,0.026455026455026454
+12,Threonine and Lysine Metabolism & Threonine and Lysine Metabolism,5,True,0.026455026455026454
+13,Cofactor and Prosthetic Group Biosynthesis & Transport; Inner Membrane,4,False,0.021164021164021163
+14,Cofactor and Prosthetic Group Biosynthesis & Transport; Outer Membrane Porin,4,False,0.021164021164021163
+15,Cysteine Metabolism & Transport; Inner Membrane,4,False,0.021164021164021163
+16,Cysteine Metabolism & Transport; Outer Membrane Porin,4,False,0.021164021164021163
+17,Folate Metabolism & Purine and Pyrimidine Biosynthesis,4,False,0.021164021164021163
+18,Glycerophospholipid Metabolism & Glycerophospholipid Metabolism,4,True,0.021164021164021163
+19,Nucleotide Salvage Pathway & Nucleotide Salvage Pathway,4,True,0.021164021164021163
+20,Transport; Outer Membrane Porin & Transport; Outer Membrane Porin,4,True,0.021164021164021163
+21,Glycine and Serine Metabolism & Glycine and Serine Metabolism,3,True,0.015873015873015872
+22,Nucleotide Salvage Pathway & Unassigned,3,False,0.015873015873015872
+23,Transport; Inner Membrane & Tyrosine; Tryptophan; and Phenylalanine Metabolism,3,False,0.015873015873015872
+24,Transport; Outer Membrane Porin & Tyrosine; Tryptophan; and Phenylalanine Metabolism,3,False,0.015873015873015872
+25,Folate Metabolism & Pyruvate Metabolism,2,False,0.010582010582010581
+26,Glycine and Serine Metabolism & Transport; Inner Membrane,2,False,0.010582010582010581
+27,Glycine and Serine Metabolism & Transport; Outer Membrane Porin,2,False,0.010582010582010581
+28,Glycolysis/Gluconeogenesis & Glycolysis/Gluconeogenesis,2,True,0.010582010582010581
+29,Glycolysis/Gluconeogenesis & Transport; Outer Membrane Porin,2,False,0.010582010582010581
+30,Nucleotide Salvage Pathway & purine metabolism,2,False,0.010582010582010581
+31,Oxidative Phosphorylation & Transport; Outer Membrane Porin,2,False,0.010582010582010581
+32,Purine and Pyrimidine Biosynthesis & Purine and Pyrimidine Biosynthesis,2,True,0.010582010582010581
+33,Tyrosine; Tryptophan; and Phenylalanine Metabolism & Tyrosine; Tryptophan; and Phenylalanine Metabolism,2,True,0.010582010582010581
+34,Alanine and Aspartate Metabolism & Alanine and Aspartate Metabolism,1,True,0.005291005291005291
+35,Amino acid metabolism & None,1,False,0.005291005291005291
+36,Anaplerotic Reactions & Citric Acid Cycle,1,False,0.005291005291005291
+37,Anaplerotic Reactions & Oxidative Phosphorylation,1,False,0.005291005291005291
+38,Citric Acid Cycle & Citric Acid Cycle,1,True,0.005291005291005291
+39,Citric Acid Cycle & Transport; Inner Membrane,1,False,0.005291005291005291
+40,Citric Acid Cycle & Transport; Outer Membrane Porin,1,False,0.005291005291005291
+41,Cysteine Metabolism & Glycine and Serine Metabolism,1,False,0.005291005291005291
+42,Glutamate Metabolism & Glutamate metabolism,1,False,0.005291005291005291
+43,Inorganic Ion Transport and Metabolism & Inorganic Ion Transport and Metabolism,1,True,0.005291005291005291
+44,Inorganic Ion Transport and Metabolism & Transport; Inner Membrane,1,False,0.005291005291005291
+45,Inorganic Ion Transport and Metabolism & Transport; Outer Membrane Porin,1,False,0.005291005291005291
+46,Membrane Lipid Metabolism & Membrane Lipid Metabolism,1,True,0.005291005291005291
+47,Purine and Pyrimidine Biosynthesis & Pyruvate Metabolism,1,False,0.005291005291005291
+48,Purine and Pyrimidine Biosynthesis & Transport; Inner Membrane,1,False,0.005291005291005291
+49,Sulfur Metabolism & Transport; Inner Membrane,1,False,0.005291005291005291
+50,Sulfur Metabolism & Transport; Outer Membrane Porin,1,False,0.005291005291005291
