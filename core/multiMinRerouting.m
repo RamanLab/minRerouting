@@ -364,10 +364,16 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = sparseMOMA_dou
         % 6: c'v2 >= 0.9*f2 (deletion strain 2)
         % OR 5,6 : c'v1 and c'v2 >= 0.05*grWT
         % obj_slack = 0.1;
+        
+        deltaMatrix = speye(nCommon);
+        model1Rxns = deltaMatrix;
+        model2Rxns = deltaMatrix;
 
         A = [modelDel1.S sparse(nMets1,nRxns2+2*nCommon);
              sparse(nMets2,nRxns1) modelDel2.S sparse(nMets2,2*nCommon);
-             createDeltaMatchMatrix(modelDel1.rxns,modelDel2.rxns);
+             % createDeltaMatchMatrix(modelDel1.rxns,modelDel2.rxns);
+             model1Rxns,-model2Rxns,deltaMatrix,sparse(nCommon,nCommon);
+             -model1Rxns,model2Rxns,sparse(nCommon,nCommon),deltaMatrix;
              modelDel1.c' sparse(1,nRxns2+2*nCommon);
              sparse(1,nRxns1) modelDel2.c' sparse(1,2*nCommon)];
 
@@ -379,7 +385,7 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = sparseMOMA_dou
 
         % Construct the ub/lb
         % delta+ and delta- are in [0 10000]
-        lb = [modelDel1.lb; modelDel2.lb; -10000*ones(2*nCommon,1)];
+        lb = [modelDel1.lb; modelDel2.lb; zeros(2*nCommon,1)];
         ub = [modelDel1.ub; modelDel2.ub; 10000*ones(2*nCommon,1)];
 
         % Construct the constraint direction vector (G for delta's, E for
@@ -581,11 +587,18 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_dou
         % Conditions 3 and 4 ensure that the flux through
         % the common reactions are minimized.
 
+        deltaMatrix = speye(nCommon);
+        model1Rxns = deltaMatrix;
+        model2Rxns = deltaMatrix;
+
         A = [modelDel1.S sparse(nMets1,nRxns2+2*nCommon);
              sparse(nMets2,nRxns1) modelDel2.S sparse(nMets2,2*nCommon);
-             createDeltaMatchMatrix(modelDel1.rxns,modelDel2.rxns);
+             % createDeltaMatchMatrix(modelDel1.rxns,modelDel2.rxns);
+             model1Rxns,-model2Rxns,deltaMatrix,sparse(nCommon,nCommon);
+             -model1Rxns,model2Rxns,sparse(nCommon,nCommon),deltaMatrix;
              modelDel1.c' sparse(1,nRxns2+2*nCommon);
              sparse(1,nRxns1) modelDel2.c' sparse(1,2*nCommon)];
+
 
         % Construct the RHS vector
         b = [zeros(nMets1+nMets2+2*nCommon,1); (1-obj_slack)*objValDel1; (1-obj_slack)*objValDel2];
@@ -595,7 +608,7 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = linearMOMA_dou
 
         % Construct the ub/lb
         % delta+ and delta- are in [0 10000]
-        lb = [modelDel1.lb; modelDel2.lb; -10000*ones(2*nCommon,1)];
+        lb = [modelDel1.lb; modelDel2.lb; zeros(2*nCommon,1)];
         ub = [modelDel1.ub; modelDel2.ub; 10000*ones(2*nCommon,1)];
 
         % Construct the constraint direction vector (G for delta's, E for
@@ -799,7 +812,6 @@ function [solutionDel1, solutionDel2, totalFluxDiff, solStatus] = quadraticMOMA_
         c = [zeros(nRxns1+nRxns2+nCommon,1)];
 
         % Construct the ub/lb
-        % delta [-10000 10000]
         lb = [modelDel1.lb;modelDel2.lb;-10000*ones(nCommon,1)];
         ub = [modelDel1.ub;modelDel2.ub;10000*ones(nCommon,1)];
 
