@@ -32,7 +32,7 @@ disp("Models to find synthetic lethals for: " + length(model_names))
 for j = 1:length(path_to_models)
     model = load(strcat(path_to_models{j}, model_names{j},'.mat'));
     Castle.data(j).model_name = model_names{j};
-    Castle.data(j).model = model.model;
+    Castle.data(j).model = model.(model_names{j});
     clear model;
     
     disp('Eliminating exchange reactions from synthetic lethal search space...')
