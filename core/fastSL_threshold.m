@@ -74,7 +74,7 @@ function fastSL_threshold(model, threshold, cutoff, order, eliList, atpm)
         eliList = model.rxns(ismember(model.rxns,atpm));
     end
 
-    fname = strcat(model.modelID,'_Rxn_lethals.mat');
+    fname = strcat(model.description,'_Rxn_lethals.mat');
 
     switch order
         case 1
