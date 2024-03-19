@@ -329,10 +329,9 @@ ggplot(df, aes(x = species, y = Mean, shape = Characteristic, colour = Character
 all_df = data.frame()
 for (i in 1:length(models)){
   
-  setwd(paste0(dir, models[i]))
-  setwd(paste0("/home/kramanlab/Tanisha/examplesss/","results/",  models[i]))
-  every = read.csv(list.files(pattern = "Compiled"))
-  df = every
+  setwd(paste0(dir,"/results/",models[i]))
+  
+  df = read.csv(list.files(pattern = "Compiled"))
   #colnames(df) = c("Rxn_1", "Rxn_2", "Size", "Flux_diff", "common", "SynA", "Rxn_1_class", "Rxn_2_class", "Class","slsize")
   df$species = models[i]
   df$syna = as.numeric(df$syna)/as.numeric(df$size)
@@ -355,33 +354,32 @@ for (i in 1:length(models)){
   write.csv(dat,paste0(models[i],"_outliers.csv"))
 }
 
+iPC_PSL = all_df[which(all_df$class== "PSL" & all_df$species== "iPC815"),"size"]
+iPC_RSL = all_df[which(all_df$class== "RSL" & all_df$species== "iPC815"),"size"]
+t.test(iPC_PSL,iPC_RSL)$p.value
 
 # Finding out the relevant significant interactions
-anno <- all_df %>% group_by(species)
-anno = anno %>% mutate(pvalue = t.test(
-  all_df[class == "PSL", "flux"],
-  all_df[class == "RSL", "flux"]
-)$p.value)
+anno = as.data.frame(models)
+for(i in 1:length(models)){
+  sub = all_df[which(all_df$species == models[i]),]
+  anno[i,2] = t.test(syna ~class, data= sub)$p.value
+}
 
-anno = unique(anno[,c("species","pvalue")])
-# Representing the numbers as corresponding asterisks
-anno1 = c("NS", "NS","***","***","***","***","***","***")
-
+anno$stars = stars.pval(anno$V2)
+anno$stars = gsub(" ", "NS", anno$stars)
 # Fixing the position and ranges of the significance levels
 annotation_df = as.data.frame(models)
 colnames(annotation_df)[1] = "species"
 annotation_df$start = "PSL"
 annotation_df$end = "RSL"
-annotation_df$y = c(75,400,500,500,500,500,550,550)
+annotation_df$y = c(rep(1.25,8))
 blank_data <- data.frame(species = c("e_coli_core", "e_coli_core","iIT341", "iIT341","iML1515","iML1515","iPC815","iPC815",
-                                     "iSSON_1240","iSSON_1240","iYL1228","iYL1228","STM_v1_0","STM_v1_0", "iEK1008", "iEK1008" ), x = c("PSL","RSL"), y = c(-10, 
-                                                                                                                                                            100, -10,550,-10,700,-10,600,-10,700,-10,600,-10,700,-10,700))
+                                     "iSSON_1240","iSSON_1240","iYL1228","iYL1228","STM_v1_0","STM_v1_0", "iEK1008", "iEK1008" ), x = c("PSL","RSL"), y = c(rep(c(-0.25,1.6),8)))
 
-
-p = ggplot(all_df, aes(y=as.numeric(size),x = class)) + 
+ggplot(all_df, aes(y=as.numeric(syna),x = class)) + 
   geom_boxplot(aes(fill=class))+
   geom_signif(data = annotation_df,
-              aes(xmin = start, xmax = end, annotations = anno1, y_position = y),
+              aes(xmin = start, xmax = end, annotations = anno$stars, y_position = y),
               textsize = 10, vjust = 0.0001,
               manual = TRUE)+
   guides(fill = guide_legend(title = "Class"))+
@@ -393,6 +391,27 @@ p = ggplot(all_df, aes(y=as.numeric(size),x = class)) +
   facet_wrap(~species, scales = "free")+
   theme_minimal(base_size = 15) + 
   ggtitle("SL Cluster Size of PSL and RSL Clusters for all species")+
+  # Add a border around each facet
+  theme(panel.border=element_rect(fill=NA, colour="grey40"),text =  element_text(size = 20))+
+  theme(text = element_text(size = 24, face = "bold"), legend.text = element_text(size = 24), legend.title = element_text(size = 26),title = element_text(size = 28), legend.key.size = unit(1.5, 'cm'))
+
+
+
+p = ggplot(all_df, aes(y=as.numeric(syna),x = class)) + 
+  geom_boxplot(aes(fill=class))+
+  geom_signif(data = annotation_df,
+              aes(xmin = start, xmax = end, annotations = anno$stars, y_position = y),
+              textsize = 10, vjust = 0.0001,
+              manual = TRUE)+
+  guides(fill = guide_legend(title = "Class"))+
+  xlab("")+
+  ylab("Synthetic Accessibility")+
+  theme(strip.text.x = element_text( margin = margin( b = 0, t = 0) ) )+
+  geom_blank(data = blank_data, aes(x = x, y = y))+
+  expand_limits(y = 0) + scale_y_continuous(expand = c(0, 0))+
+  facet_wrap(~species, scales = "free")+
+  theme_minimal(base_size = 15) + 
+  ggtitle("Synthteic Accessibility of PSL and RSL Clusters for all species")+
   # Add a border around each facet
   theme(panel.border=element_rect(fill=NA, colour="grey40"),text =  element_text(size = 20))+
   theme(text = element_text(size = 24, face = "bold"), legend.text = element_text(size = 24), legend.title = element_text(size = 26),title = element_text(size = 28), legend.key.size = unit(1.5, 'cm'))

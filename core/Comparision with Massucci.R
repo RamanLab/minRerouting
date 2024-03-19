@@ -5,10 +5,10 @@ library(dplyr)
 # set wd to where results are saved
 #Read in the file from Massucci et al. supplementary data
 pcbi_1005949_s001_1_ = read_excel(list.files(pattern = "pcbi"))
-
+pcbi_1005949_s001_1_ = pcbi_1005949_s002
 # Read in minRerouting results file
 minre = read_excel("one_minReroutingSets.xlsx")
-
+minre = one_minReroutingSets
 Rxn1 = which(pcbi_1005949_s001_1_$`React. type` == "Switch")
 SL = list()
 
@@ -24,7 +24,7 @@ flux_diff = list()
 for (j in 1:length(Rxn1)){
   zero = 0
   for (i in Rxn1[j]:(SL[[j]]+Rxn1[j])){
-    zero = zero + abs(pcbi_1005949_s001_1_[i,10]- pcbi_1005949_s001_1_[i,11])
+    zero = zero + abs(pcbi_1005949_s001_1_[i,9]- pcbi_1005949_s001_1_[i,10])
   }
   flux_diff[[j]] = as.numeric(zero)
 }
@@ -71,29 +71,32 @@ d2$Property = "Cluster Size"
 
 df = rbind(d1,d2)
 
+anno = as.data.frame(c( "Cluster Size","Flux Difference"))
+for(i in 1:nrow(anno)){
+
+  sub = df[which(df$Property == anno[i,1]),]
+  anno[i,2] = t.test(as.numeric(Value) ~as.factor(type), data= sub)$p.value
+}
+
+anno$stars = stars.pval(anno$V2)
+anno$stars = gsub(" ", "NS", anno$stars)
+
 annotation_df = as.data.frame(c("Cluster Size", "Flux Difference"))
 colnames(annotation_df)[1] = "Property"
 annotation_df$start = "Minrerouting"
 annotation_df$end = "Massucci"
-annotation_df$y = c(500,16000)
+annotation_df$y = c(500,17000)
 blank_data <- data.frame(type = c("Cluster Size", "Cluster Size","Flux Difference", "Flux Difference"), x = c("Minrerouting","Massucci"), y = c(0, 
-                                                                                                                  600, 0,17000))
+                                                                                                                                                600, 0,19000))
 
-# Calculate annotation
-anno <- t.test(
-  iris[iris$Petal.Width > 1 & iris$Species == "versicolor", "Sepal.Width"],
-  iris[iris$Species == "virginica", "Sepal.Width"]
-)$p.value
-
-anno1 = c("*", "***")
 
 ggplot(df, aes(x = type,y = Value, fill = Property)) + 
   geom_boxplot(aes(fill=Property))+
   geom_signif(data = annotation_df,
-              aes(xmin = start, xmax = end, annotations = anno1, y_position = y),
+              aes(xmin = start, xmax = end, annotations = anno$stars, y_position = y),
               textsize = 10, vjust = 0.0001,
               manual = TRUE)+
-  ggtitle(bquote("Synthetic Lethal Comparison for "~italic("E. coli")))+
+  ggtitle(bquote("Synthetic Lethal Comparison for "~italic("S. sonnei")))+
   facet_wrap(~Property,scales="free")+
   theme(axis.title = element_text(face="bold"), plot.title = element_text(face = "bold"))+
   xlab("Data")+
