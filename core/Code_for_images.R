@@ -267,16 +267,18 @@ for (k in 1:length(models)){
 
 # Image for ri vs reaction ty[es]
 all_df = data_frame()
-
-for (i in 1:length(models)){
+i = 8
+for (i in 1:7){
   setwd(paste0(dir, "results/", models[i], "/pfba/"))
-  
   df = read.csv(list.files(pattern = "_Centrality"))
   
   colnames(df) = c("Rxn", "Centrality", "Class", "RCI", "RI")
   
   setwd(paste0(dir, models[i]))
   trial = read_excel(list.files(pattern = "one_minRerout"))
+  ndiv = (nrow(trial)-1)/2
+  df$RCI = df$RCI/ndiv
+  df$RI = df$RI/ndiv
 
   df$species = models[i]
   all_df =rbind( all_df, df)
@@ -341,12 +343,8 @@ for (i in 1:length(models)){
 # Outlier identification:
 
 for (i in 1:length(models)){
-  # setwd(paste0(fva, "/models/", models[i]))
-  # SL_dl <- read_csv("SL_dl.csv",   col_names = FALSE)
-  # SLs = na.omit(SL_dl[4:nrow(SL_dl),1:2])
-  # subclass = SL_dl[,4:5]
-  
-  setwd(paste0(dir,"/results",models[i]))
+
+  setwd(paste0(dir,"/results/",models[i]))
   Combined_everything <- read.csv(list.files(pattern = "Compiled"))
 
   out <- boxplot.stats(Combined_everything$flux)$out
@@ -356,6 +354,8 @@ for (i in 1:length(models)){
   setwd(paste0(dir,"/results"))
   write.csv(dat,paste0(models[i],"_outliers.csv"))
 }
+
+
 # Finding out the relevant significant interactions
 anno <- all_df %>% group_by(species)
 anno = anno %>% mutate(pvalue = t.test(
