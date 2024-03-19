@@ -1,0 +1,32 @@
+,Combination,Count,Same,Percentage
+0,Pentose Phosphate Pathway & Pentose Phosphate Pathway,11,True,0.14666666666666667
+1,Membrane Metabolism & Polyprenyl Metabolism,9,False,0.12
+2,Fatty Acid Metabolism & Fatty Acid Metabolism,7,True,0.09333333333333334
+3,Glycolysis & Glycolysis,4,True,0.05333333333333334
+4,Glycolysis & Transport,3,False,0.04
+5,Membrane Metabolism & Membrane Metabolism,3,True,0.04
+6,Pyrimidine Metabolism & Pyrimidine Metabolism,3,True,0.04
+7,Alanine and Aspartate Metabolism & Alanine and Aspartate Metabolism,2,True,0.02666666666666667
+8,Alanine and Aspartate Metabolism & Arginine and Proline Metabolism,2,False,0.02666666666666667
+9,Citric Acid Cycle & Transport,2,False,0.02666666666666667
+10,Cofactor Metabolism & Polyprenyl Metabolism,2,False,0.02666666666666667
+11,"Glycine, Serine, and Threonine Metabolism & Methionine Metabolism",2,False,0.02666666666666667
+12,"Glycine, Serine, and Threonine Metabolism & Other Amino Acid Metabolism",2,False,0.02666666666666667
+13,Nucleotide Sugar Metabolism & Purine Metabolism,2,False,0.02666666666666667
+14,Nucleotide Sugar Metabolism & Pyrimidine Metabolism,2,False,0.02666666666666667
+15,Phenylalanine Tyrosine Tryptophan Metabolism & Phenylalanine Tyrosine Tryptophan Metabolism,2,True,0.02666666666666667
+16,Purine Metabolism & Purine Metabolism,2,True,0.02666666666666667
+17,Transport & Transport,2,True,0.02666666666666667
+18,Alanine and Aspartate Metabolism & Sugar Metabolism,1,False,0.013333333333333334
+19,Arginine and Proline Metabolism & Arginine and Proline Metabolism,1,True,0.013333333333333334
+20,Arginine and Proline Metabolism & Urea Cycle,1,False,0.013333333333333334
+21,Cofactor Metabolism & Sugar Metabolism,1,False,0.013333333333333334
+22,Cysteine Metabolism & Other Amino Acid Metabolism,1,False,0.013333333333333334
+23,"Glycine, Serine, and Threonine Metabolism & Glycine, Serine, and Threonine Metabolism",1,True,0.013333333333333334
+24,Methionine Metabolism & Other Amino Acid Metabolism,1,False,0.013333333333333334
+25,Nucleotide Sugar Metabolism & Nucleotide Sugar Metabolism,1,True,0.013333333333333334
+26,Other Amino Acid Metabolism & Purine Metabolism,1,False,0.013333333333333334
+27,Other Amino Acid Metabolism & Urea Cycle,1,False,0.013333333333333334
+28,Polyprenyl Metabolism & Polyprenyl Metabolism,1,True,0.013333333333333334
+29,Sugar Metabolism & Sugar Metabolism,1,True,0.013333333333333334
+30,Urea Cycle & Urea Cycle,1,True,0.013333333333333334

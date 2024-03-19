@@ -1,0 +1,1226 @@
+2AGPEAT160,Fatty Acid Metabolism
+2AGPEAT180,Fatty Acid Metabolism
+5DGLCNR,Pantothenate and CoA Metabolism
+AACPS10,Fatty Acid Metabolism
+AACPS11,Membrane Metabolism
+AACPS3,Fatty Acid Metabolism
+ABTA,"Alanine, Aspartate, and Glutamate Metabolism"
+ACACT1r,Pyruvate Metabolism
+ACALD,Pyruvate Metabolism
+ACBIPGT,Cofactor and Prosthetic Group Biosynthesis
+AGPAT160,Glycerophospholipid metabolism
+ACCC_1,Fatty Acid Metabolism
+AGPAT160190,Glycerophospholipid metabolism
+AGPAT190,Glycerophospholipid metabolism
+AGPR,Arginine and Proline Metabolism
+ACChex,Fatty Acid Metabolism
+ACGAMPM,Arabinogalactan biosynthesis
+AHCi,Cysteine and methionine metabolism
+CHLabc,Transport
+ACGAMT,Arabinogalactan biosynthesis
+CHOLD,Other Amino Acid Metabolism
+CHORM,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+AHCYSNS,Cysteine and methionine metabolism
+ACGK,Arginine and Proline Metabolism
+AHMMPS,Cofactor and Prosthetic Group Biosynthesis
+AICART,Purine and Pyrimidine Biosynthesis
+CHORS,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+CHRPL,Membrane Metabolism
+ACGS,Urea Cycle
+CIGAMS,Redox Metabolism
+CITL,Citric Acid Cycle
+AIRCr,Purine and Pyrimidine Biosynthesis
+ACHBS,"Valine, Leucine, and Isoleucine Metabolism"
+AKGDb,Citric Acid Cycle
+ALAALAD,Membrane Metabolism
+ALAALAr,Arabinogalactan biosynthesis
+ALAD_L,"Alanine, Aspartate, and Glutamate Metabolism"
+ALAR,Arabinogalactan biosynthesis
+ALAt2r,Transport
+CITabc,Transport
+CLPNS160190,Glycerophospholipid metabolism
+CMCBTFL,Redox Metabolism
+CMCBTFU,Redox Metabolism
+CMLDC,Miscellaneous
+CO2t,Transport
+COAt,Transport
+COBALTt5,Transport
+ALDD1,Redox Metabolism
+ACKr,Pyruvate Metabolism
+ACLS,"Valine, Leucine, and Isoleucine Metabolism"
+ALDD19xr,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+ACODA,Other Amino Acid Metabolism
+ALDD2x,Glycolysis/Gluconeogenesis
+COCHL,Cofactor and Prosthetic Group Biosynthesis
+COt,Transport
+AMAOTr,Cofactor and Prosthetic Group Biosynthesis
+CPC6R,Cofactor and Prosthetic Group Biosynthesis
+ACONT,Citric Acid Cycle
+CPPPGO,Cofactor and Prosthetic Group Biosynthesis
+ACOTA,Arginine and Proline Metabolism
+CRNabc,Transport
+ACP1_FMN,Riboflavin Metabolism
+CS,Citric Acid Cycle
+CTPS1,Purine and Pyrimidine Biosynthesis
+CTPS2,Purine and Pyrimidine Biosynthesis
+CYANST,Cysteine and methionine metabolism
+CYO1a,Oxidative Phosphorylation
+CYO1b,Oxidative Phosphorylation
+CYRDAAT,Cofactor and Prosthetic Group Biosynthesis
+AMID4,Other Amino Acid Metabolism
+AMMQT8,Cofactor and Prosthetic Group Biosynthesis
+ACPS1,Pantothenate and CoA Metabolism
+CYRDAR2,Cofactor and Prosthetic Group Biosynthesis
+CYSS,Cysteine and methionine metabolism
+CYSTL,Cysteine and methionine metabolism
+ACS,Glycolysis/Gluconeogenesis
+CYSTS,Cysteine and methionine metabolism
+CYTBD,Redox Metabolism
+AMMQT8_2,Oxidative Phosphorylation
+CYTBD2,Redox Metabolism
+ACS2,Alternate Carbon Metabolism
+CYTD,Purine and Pyrimidine Biosynthesis
+AMPTASECG,Other Amino Acid Metabolism
+ANPRT,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+ANS,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+CYTDK2,Nucleotide Salvage Pathway
+ACYSBMNt,Transport
+CYTDt2,Transport
+CYTK1,Purine and Pyrimidine Biosynthesis
+AOXSr,Cofactor and Prosthetic Group Biosynthesis
+APRAUR,Riboflavin Metabolism
+CYTK2,Purine and Pyrimidine Biosynthesis
+ADA,Purine and Pyrimidine Biosynthesis
+ARACHTA,Membrane Metabolism
+ARB_Dabc,Transport
+Clt,Transport
+ADCL,Folate Metabolism
+Cuabc,Transport
+Cut1,Transport
+ARBabc,Transport
+ARBt2r,Transport
+DADA,Nucleotide Salvage Pathway
+ARGDC,"Alanine, Aspartate, and Glutamate Metabolism"
+ADCPS1,Cofactor and Prosthetic Group Biosynthesis
+ARGDr,Arginine and Proline Metabolism
+ARGSL,"Alanine, Aspartate, and Glutamate Metabolism"
+ARGSS,"Alanine, Aspartate, and Glutamate Metabolism"
+ARGt5r,Transport
+DADK,Nucleotide Salvage Pathway
+DAGK160,Glycerophospholipid metabolism
+DALAOX,Other Amino Acid Metabolism
+DALAt2r,Transport
+DAPDC,Threonine and Lysine Metabolism
+DAPE,Threonine and Lysine Metabolism
+DASYN160,Glycerophospholipid metabolism
+ASAD,Glycolysis/Gluconeogenesis
+ASNN,"Alanine, Aspartate, and Glutamate Metabolism"
+DASYN160190,Glycerophospholipid metabolism
+ASNS1,"Alanine, Aspartate, and Glutamate Metabolism"
+ADCPS2,Cofactor and Prosthetic Group Biosynthesis
+DASYN190190,Glycerophospholipid metabolism
+DB4PS,Cofactor and Prosthetic Group Biosynthesis
+ASNt2r,Transport
+DBTS,Cofactor and Prosthetic Group Biosynthesis
+ASP1DC,"Alanine, Aspartate, and Glutamate Metabolism"
+ADCS,Folate Metabolism
+ASPCT,Purine and Pyrimidine Biosynthesis
+ASPK,Glycolysis/Gluconeogenesis
+DCPDP,Polyprenyl Metabolism
+DCPDPP,Arabinogalactan biosynthesis
+ADCYRS,Cofactor and Prosthetic Group Biosynthesis
+DCPDPS,Polyprenyl Metabolism
+DCPE,Arabinogalactan biosynthesis
+ASPO5,"Alanine, Aspartate, and Glutamate Metabolism"
+ASPTA,"Alanine, Aspartate, and Glutamate Metabolism"
+ASPt2r,Transport
+DCPT,Arabinogalactan biosynthesis
+ADK1,Purine and Pyrimidine Biosynthesis
+DCTPD,Purine and Pyrimidine Biosynthesis
+AST,Arginine and Proline Metabolism
+ADK2,Purine and Pyrimidine Biosynthesis
+ATPPRT,Histidine Metabolism
+ATPS4r,Oxidative Phosphorylation
+BACCL,Cofactor and Prosthetic Group Biosynthesis
+BALAt2r,Transport
+DCTPD2,Purine and Pyrimidine Biosynthesis
+DCYTD,Purine and Pyrimidine Biosynthesis
+DDPA,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+ADMDC,Cysteine and methionine metabolism
+DESAT16,Fatty Acid Metabolism
+DESAT18,Fatty Acid Metabolism
+DGC3D,Alternate Carbon Metabolism
+BDH,Pyruvate Metabolism
+BETALDHx,Other Amino Acid Metabolism
+BMNMSHS,Redox Metabolism
+ADNCYC,Purine and Pyrimidine Biosynthesis
+BMNt,Transport
+BPNT,Other Amino Acid Metabolism
+DGK1,Purine and Pyrimidine Biosynthesis
+DHAD1,"Valine, Leucine, and Isoleucine Metabolism"
+DHAD2,"Valine, Leucine, and Isoleucine Metabolism"
+BTS2,Cofactor and Prosthetic Group Biosynthesis
+DHDPRy,Threonine and Lysine Metabolism
+ADNK1,Nucleotide Salvage Pathway
+DHDPS,Threonine and Lysine Metabolism
+DHFR_copy1,Folate Metabolism
+DHFS,Folate Metabolism
+BTS3r,Cofactor and Prosthetic Group Biosynthesis
+CAATPS,Transport
+CAT,Redox Metabolism
+ADNK3,Nucleotide Salvage Pathway
+CAt4,Transport
+DHNAOT,Cofactor and Prosthetic Group Biosynthesis
+CBIAT,Cofactor and Prosthetic Group Biosynthesis
+ADNK4,Nucleotide Salvage Pathway
+CBLAT,Cofactor and Prosthetic Group Biosynthesis
+CBPS,Purine and Pyrimidine Biosynthesis
+CDAPPA160,Glycerophospholipid metabolism
+ADOCBIK,Cofactor and Prosthetic Group Biosynthesis
+CDAPPA160190,Glycerophospholipid metabolism
+ADOCBLS,Cofactor and Prosthetic Group Biosynthesis
+CDAPPA190,Glycerophospholipid metabolism
+CDPMEK,Polyprenyl Metabolism
+ADPT,Purine and Pyrimidine Biosynthesis
+CDPPT160,Glycerophospholipid metabolism
+CDPPT160190,Glycerophospholipid metabolism
+DHNPA_1,Folate Metabolism
+ADSK,Sulfur metabolism
+DHNPA2r,Folate Metabolism
+ADSL1r,Purine and Pyrimidine Biosynthesis
+DHORTS,Purine and Pyrimidine Biosynthesis
+ADSL2r,Purine and Pyrimidine Biosynthesis
+DHPPDA,Riboflavin Metabolism
+DHPPDA2,Riboflavin Metabolism
+EX_lac__L_e,Extracellular exchange
+DHPS2,Folate Metabolism
+ADSS,Purine and Pyrimidine Biosynthesis
+DHQTi,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+AFTA,Arabinogalactan biosynthesis
+DHQS,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+DMATT,Cofactor and Prosthetic Group Biosynthesis
+DMPPS,Cofactor and Prosthetic Group Biosynthesis
+EX_lcts_e,Extracellular exchange
+EX_leu__L_e,Extracellular exchange
+EX_lys__L_e,Extracellular exchange
+AGDC,Alternate Carbon Metabolism
+EX_mal__L_e,Extracellular exchange
+DNMPPA,Folate Metabolism
+DNTPPA,Folate Metabolism
+EX_malt_e,Extracellular exchange
+AGMT,"Alanine, Aspartate, and Glutamate Metabolism"
+EX_malthp_e,Extracellular exchange
+DPCOAK,Pantothenate and CoA Metabolism
+DPPS,Polyprenyl Metabolism
+DPR,Pantothenate and CoA Metabolism
+DRPA,Pentose Phosphate Pathway
+EX_meoh_e,Extracellular exchange
+EX_met__L_e,Extracellular exchange
+EX_mg2_e,Extracellular exchange
+DSERt2,Transport
+EX_na1_e,Extracellular exchange
+FACOAL200,Membrane Metabolism
+EX_nh4_e,Extracellular exchange
+EX_no2_e,Extracellular exchange
+EX_no3_e,Extracellular exchange
+EX_no_e,Extracellular exchange
+DTMPK,Purine and Pyrimidine Biosynthesis
+DURIK1,Purine and Pyrimidine Biosynthesis
+DURIPP,Purine and Pyrimidine Biosynthesis
+DUTPDP,Purine and Pyrimidine Biosynthesis
+DXPRIi,Polyprenyl Metabolism
+DXPS,Polyprenyl Metabolism
+EX_o2_e,Extracellular exchange
+EX_ocdca_e,Extracellular exchange
+FACOAL80,Fatty Acid Metabolism
+EX_orn_e,Extracellular exchange
+EX_pac_e,Extracellular exchange
+ENO,Glycolysis/Gluconeogenesis
+FACOALPHDCA,Membrane Metabolism
+EX_pdima_e,Extracellular exchange
+FACOALPREPH,Membrane Metabolism
+EX_phdca_e,Extracellular exchange
+ETHAt,Transport
+EX_acysbmn_e,Extracellular exchange
+EX_phe__L_e,Extracellular exchange
+FAH4,Membrane Metabolism
+EX_pi_e,Extracellular exchange
+EX_ala_B_e,Extracellular exchange
+FAMPL1,Mycolic Acid Biosynthesis
+EX_ala__D_e,Extracellular exchange
+EX_ala__L_e,Extracellular exchange
+EX_arab__D_e,Extracellular exchange
+EX_arab__L_e,Extracellular exchange
+EX_ppa_e,Extracellular exchange
+EX_ppdima_e,Extracellular exchange
+EX_pro__L_e,Extracellular exchange
+EX_pyr_e,Extracellular exchange
+EX_rib__D_e,Extracellular exchange
+EX_ser__D_e,Extracellular exchange
+EX_ser__L_e,Extracellular exchange
+EX_arg__L_e,Extracellular exchange
+EX_asn__L_e,Extracellular exchange
+EX_asp__L_e,Extracellular exchange
+EX_skm_e,Extracellular exchange
+FAMPL2,Mycolic Acid Biosynthesis
+EX_so4_e,Extracellular exchange
+EX_succ_e,Extracellular exchange
+EX_tartr__L_e,Extracellular exchange
+EX_atp_e,Extracellular exchange
+EX_bmn_e,Extracellular exchange
+EX_ca2_e,Extracellular exchange
+FAMPL3,Mycolic Acid Biosynthesis
+EX_chol_e,Extracellular exchange
+EX_cit_e,Extracellular exchange
+EX_thr__L_e,Extracellular exchange
+EX_tre_e,Extracellular exchange
+EX_trp__L_e,Extracellular exchange
+EX_cl_e,Extracellular exchange
+EX_co2_e,Extracellular exchange
+EX_tsul_e,Extracellular exchange
+FAMPL4,Mycolic Acid Biosynthesis
+EX_ttdca_e,Extracellular exchange
+EX_tyr__L_e,Extracellular exchange
+EX_val__L_e,Extracellular exchange
+EX_coa_e,Extracellular exchange
+EX_cobalt2_e,Extracellular exchange
+EX_crn_e,Extracellular exchange
+EX_cu2_e,Extracellular exchange
+FAMPL5,Mycolic Acid Biosynthesis
+EX_cytd_e,Extracellular exchange
+EX_ac_e,Extracellular exchange
+EX_4abz_e,Extracellular exchange
+EX_for_e,Extracellular exchange
+EX_etha_e,Extracellular exchange
+EX_fe2_e,Extracellular exchange
+EX_fe3_e,Extracellular exchange
+EX_akg_e,Extracellular exchange
+EX_gua_e,Extracellular exchange
+EX_fum_e,Extracellular exchange
+FAO1,Fatty Acid Metabolism
+EX_gal_e,Extracellular exchange
+EX_glc__D_e,Extracellular exchange
+EX_ad_e,Extracellular exchange
+ADtr,Transport
+EX_urea_e,Extracellular exchange
+FAO10,Fatty Acid Metabolism
+EX_glu__L_e,Extracellular exchange
+EX_gly_e,Extracellular exchange
+EX_glyb_e,Extracellular exchange
+FAO11,Fatty Acid Metabolism
+EX_glyc3p_e,Extracellular exchange
+EX_glyc_e,Extracellular exchange
+FACOAE140,Fatty Acid Metabolism
+EX_gthrd_e,Extracellular exchange
+FAO2,Fatty Acid Metabolism
+FACOAE160,Fatty Acid Metabolism
+EX_h2_e,Extracellular exchange
+FACOAE180,Fatty Acid Metabolism
+FAO3,Fatty Acid Metabolism
+EX_h2co3_e,Extracellular exchange
+EX_h2o_e,Extracellular exchange
+FAS100,Fatty Acid Metabolism
+EX_h2s_e,Extracellular exchange
+EX_h_e,Extracellular exchange
+FACOAL140,Fatty Acid Metabolism
+FACOAL160,Fatty Acid Metabolism
+FACOAL161,Fatty Acid Metabolism
+FACOAL180,Fatty Acid Metabolism
+EX_hdca_e,Extracellular exchange
+EX_his__L_e,Extracellular exchange
+EX_id3acald_e,Extracellular exchange
+EX_ile__L_e,Extracellular exchange
+EX_k_e,Extracellular exchange
+FACOAL181,Fatty Acid Metabolism
+FAS120,Fatty Acid Metabolism
+FAS140,Fatty Acid Metabolism
+GLUR,"Alanine, Aspartate, and Glutamate Metabolism"
+FDH,Other Amino Acid Metabolism
+FAS160,Fatty Acid Metabolism
+GLUSy,"Alanine, Aspartate, and Glutamate Metabolism"
+FE3Ri,Redox Metabolism
+FAS161,Fatty Acid Metabolism
+FETRANS,Redox Metabolism
+GLUt2r,Transport
+FAS180,Fatty Acid Metabolism
+GLXO1,Glyoxylate Metabolism
+FHL,Redox Metabolism
+FAS181,Fatty Acid Metabolism
+FMNAT,Riboflavin Metabolism
+GLYBabc,Transport
+GLYC3Pabc,Transport
+FOLD3,Folate Metabolism
+FAS200,Fatty Acid Metabolism
+GLYCK,Glycolysis/Gluconeogenesis
+GLYCL,Folate Metabolism
+GLYCTO1,Glyoxylate Metabolism
+DHFR_copy2,Folate Metabolism
+FOMETRi,Cofactor and Prosthetic Group Biosynthesis
+FORMCOAL,Redox Metabolism
+FRD,Citric Acid Cycle
+FRD2,Citric Acid Cycle
+GLYCTO2,Glyoxylate Metabolism
+GLYCTO3,Glyoxylate Metabolism
+GLYCTO4,Glyoxylate Metabolism
+FRD3,Citric Acid Cycle
+FAS240_L,Fatty Acid Metabolism
+FRRPPDIMAS,Phenolic glycolipid biosynthesis
+GLYCt,Transport
+GLYK,Alternate Carbon Metabolism
+GLYt2r,Transport
+FAS260,Fatty Acid Metabolism
+GMAND,Fructose and mannose metabolism
+GMPS2,Purine and Pyrimidine Biosynthesis
+FTHFCL,Cofactor and Prosthetic Group Biosynthesis
+FTHFD,Folate Metabolism
+FUM,Citric Acid Cycle
+FUMt2r,Transport
+GMT1,Membrane Metabolism
+FAS80_L,Fatty Acid Metabolism
+GND,Pentose Phosphate Pathway
+GPDDA2,Glycerophospholipid metabolism
+G16MTM1,Fatty Acid Metabolism
+G16MTM10,Fatty Acid Metabolism
+G16MTM2,Glycerophospholipid metabolism
+GRTT,Polyprenyl Metabolism
+GSNK,Nucleotide Salvage Pathway
+G16MTM4,Fatty Acid Metabolism
+FASPHDCA,Membrane Metabolism
+G16MTM5,Fatty Acid Metabolism
+G16MTM6,Fatty Acid Metabolism
+G16MTM7,Fatty Acid Metabolism
+G16MTM8,Fatty Acid Metabolism
+G16MTM9,Fatty Acid Metabolism
+GTHOr,"Alanine, Aspartate, and Glutamate Metabolism"
+GTHRDt2_1,Transport
+GTHS,Redox Metabolism
+GTMLT,Other Amino Acid Metabolism
+G1PACT,Alternate Carbon Metabolism
+FASm1601,Membrane Metabolism
+G1PTT,Arabinogalactan biosynthesis
+G1SAT,Cofactor and Prosthetic Group Biosynthesis
+G3PAT160,Glycerophospholipid metabolism
+GTPCI,Folate Metabolism
+GTPCII,Riboflavin Metabolism
+GTPCII2,Cofactor and Prosthetic Group Biosynthesis
+GTPDPK,Purine and Pyrimidine Biosynthesis
+G3PAT190,Glycerophospholipid metabolism
+GTPH1,Purine and Pyrimidine Biosynthesis
+FASm180,Fatty Acid Metabolism
+GUACYC,Purine and Pyrimidine Biosynthesis
+GUAD,Nucleotide Salvage Pathway
+G5SADs,Arginine and Proline Metabolism
+G5SD,Urea Cycle
+GUAPRT,Nucleotide Salvage Pathway
+G5SD2,Urea Cycle
+FASm1801,Membrane Metabolism
+G6PDH2r,Pentose Phosphate Pathway
+GALFT,Arabinogalactan biosynthesis
+H2CO3D,Miscellaneous
+GALKr,Alternate Carbon Metabolism
+FASm2001,Membrane Metabolism
+GALT,Nucleotide Salvage Pathway
+GALUi,Alternate Carbon Metabolism
+H2CO3TP,Transport
+H2Ot,Transport
+GALt2,Transport
+GAPD,Glycolysis/Gluconeogenesis
+GARFT,Purine and Pyrimidine Biosynthesis
+H2St1,Transport
+H2td,Transport
+FASm2002,Fatty Acid Metabolism
+HCO3E,Miscellaneous
+GCCa,Glycolysis/Gluconeogenesis
+GCCb,Glycolysis/Gluconeogenesis
+GCCc,Citric Acid Cycle
+HCYSMT,Cysteine and methionine metabolism
+HDCAt2,Transport
+FASm220,Membrane Metabolism
+HEX1,Glycolysis/Gluconeogenesis
+GF6PTA,"Alanine, Aspartate, and Glutamate Metabolism"
+FASm2201,Membrane Metabolism
+GFUCS,Fructose and mannose metabolism
+HISTD,Histidine Metabolism
+HISTP,Histidine Metabolism
+GGLUCT2,Membrane Metabolism
+FASm2202,Fatty Acid Metabolism
+GHMT2r,Glycolysis/Gluconeogenesis
+FASm240,Membrane Metabolism
+GK1,Purine and Pyrimidine Biosynthesis
+HISt2r,Transport
+GLCabc,Transport
+FASm2401,Membrane Metabolism
+HMBS,Cofactor and Prosthetic Group Biosynthesis
+FASm2402,Fatty Acid Metabolism
+HMPK1,Cofactor and Prosthetic Group Biosynthesis
+HMPK2,Cofactor and Prosthetic Group Biosynthesis
+GLGC,Alternate Carbon Metabolism
+GLNS,"Alanine, Aspartate, and Glutamate Metabolism"
+GLNSP1,Peptidoglycan Metabolism
+HMPK3,Cofactor and Prosthetic Group Biosynthesis
+FASm260,Membrane Metabolism
+HMPK4,Cofactor and Prosthetic Group Biosynthesis
+HOPNTAL,Pyruvate Metabolism
+HPPK,Folate Metabolism
+HPPK2,Folate Metabolism
+GLNSP2,Peptidoglycan Metabolism
+GLNSP3,Peptidoglycan Metabolism
+GLU5K,Urea Cycle
+GLUCYS,"Alanine, Aspartate, and Glutamate Metabolism"
+GLUDC,"Alanine, Aspartate, and Glutamate Metabolism"
+GLUDxi,"Alanine, Aspartate, and Glutamate Metabolism"
+HSDy,Glycolysis/Gluconeogenesis
+GLUPRT,Purine and Pyrimidine Biosynthesis
+FASm2601,Membrane Metabolism
+HSERTA,Cysteine and methionine metabolism
+HSK,Glycolysis/Gluconeogenesis
+HSST,Other Amino Acid Metabolism
+FASm2602,Membrane Metabolism
+HSTPT,Histidine Metabolism
+IMPC,Purine and Pyrimidine Biosynthesis
+FASm280,Membrane Metabolism
+IMPD,Purine and Pyrimidine Biosynthesis
+HXPRT,Purine and Pyrimidine Biosynthesis
+ICDHyr,Citric Acid Cycle
+ICHORS,Oxidative Phosphorylation
+FASm2801,Membrane Metabolism
+ICL,Glyoxylate Metabolism
+INDPYRD,Pyruvate Metabolism
+INSH,Purine and Pyrimidine Biosynthesis
+ID3ACALDt,Transport
+FASm2802,Membrane Metabolism
+IG3PS,Histidine Metabolism
+INSK,Nucleotide Salvage Pathway
+IPDDI,Polyprenyl Metabolism
+IGAMD,Sulfur metabolism
+FASm300,Membrane Metabolism
+IGPDH,Histidine Metabolism
+IPDPS,Polyprenyl Metabolism
+IPMD,"Valine, Leucine, and Isoleucine Metabolism"
+IPPMIa,"Valine, Leucine, and Isoleucine Metabolism"
+IPPMIb,"Valine, Leucine, and Isoleucine Metabolism"
+IPPS,"Valine, Leucine, and Isoleucine Metabolism"
+IGPS,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+ILETA,"Valine, Leucine, and Isoleucine Metabolism"
+ILEt2r,Transport
+KARA1,"Valine, Leucine, and Isoleucine Metabolism"
+KARA2,"Valine, Leucine, and Isoleucine Metabolism"
+FASm3001,Membrane Metabolism
+Kabc,Transport
+MI1PS,Inositol phosphate metabolism
+FASm320,Membrane Metabolism
+MI3PP,Inositol phosphate metabolism
+FASm340,Membrane Metabolism
+MMCD,Fatty Acid Metabolism
+Kt1,Transport
+FBA,Glycolysis/Gluconeogenesis
+LACZ,Alternate Carbon Metabolism
+FBP,Glycolysis/Gluconeogenesis
+LCTSabc,Transport
+LDH_L,Glycolysis/Gluconeogenesis
+MME,Fatty Acid Metabolism
+MMM2,Fatty Acid Metabolism
+FCLPA,Fructose and mannose metabolism
+MMSAD1,Alternate Carbon Metabolism
+MMSAD2,Cholesterol degradation
+LEUTA,"Valine, Leucine, and Isoleucine Metabolism"
+LEUt2r,Transport
+FCLT,Cofactor and Prosthetic Group Biosynthesis
+LO,Pyruvate Metabolism
+MN6PP,Alternate Carbon Metabolism
+MNDNS1,Oxidative Phosphorylation
+FCLT2,Cofactor and Prosthetic Group Biosynthesis
+MNDNS2,Oxidative Phosphorylation
+MOHMT,Pantothenate and CoA Metabolism
+LPLIPAL2E160,Fatty Acid Metabolism
+LPLIPAL2E180,Fatty Acid Metabolism
+LYSt5r,Transport
+L_LACD,Pyruvate Metabolism
+MPML,Cofactor and Prosthetic Group Biosynthesis
+MSHAMID,Sulfur metabolism
+MSHOXH,Redox Metabolism
+MSHS,Sulfur metabolism
+FCOAH2,Redox Metabolism
+L_LACD2,Pyruvate Metabolism
+L_LACD3,Pyruvate Metabolism
+MTAN,Cysteine and methionine metabolism
+Mn2t,Transport
+MTHFC,Folate Metabolism
+MTHFD,Folate Metabolism
+MTHFR2,Folate Metabolism
+MTI,Alternate Carbon Metabolism
+MYC1CYC1,Mycolic Acid Biosynthesis
+L_LACt2r,Transport
+L_LACt3,Transport
+MALS,Pyruvate Metabolism
+MALT,Alternate Carbon Metabolism
+MYC1CYC2,Mycolic Acid Biosynthesis
+NDPK7,Purine and Pyrimidine Biosynthesis
+MYC1CYC3,Mycolic Acid Biosynthesis
+MYC1CYC4,Mycolic Acid Biosynthesis
+MYC1CYC5,Mycolic Acid Biosynthesis
+MYC1M1,Mycolic Acid Biosynthesis
+MYC1M2,Mycolic Acid Biosynthesis
+MALTHPabc,Transport
+MALTabc,Transport
+MALt2r,Transport
+MAN1PT,Fructose and mannose metabolism
+MAN1PT2,Fructose and mannose metabolism
+MYC2CYC1,Mycolic Acid Biosynthesis
+MYC2CYC2,Mycolic Acid Biosynthesis
+MAN6PI,Fructose and mannose metabolism
+MANAT1,Fatty Acid Metabolism
+MANAT2,Fatty Acid Metabolism
+MANAT3,Fatty Acid Metabolism
+MCBTS,Membrane Metabolism
+MCBTS2,Membrane Metabolism
+MYC2CYC3,Mycolic Acid Biosynthesis
+MYCON1,Mycolic Acid Biosynthesis
+MYCON2,Mycolic Acid Biosynthesis
+MYCON3,Mycolic Acid Biosynthesis
+MYCON4,Mycolic Acid Biosynthesis
+MCBTS3,Membrane Metabolism
+NDPK8,Purine and Pyrimidine Biosynthesis
+MCD,Fatty Acid Metabolism
+MCOATA,Fatty Acid Metabolism
+MDFDH,Sulfur metabolism
+MYCON5,Mycolic Acid Biosynthesis
+MYCSacp50,Mycolic Acid Biosynthesis
+MYCSacp56,Mycolic Acid Biosynthesis
+MYCSacp58,Mycolic Acid Biosynthesis
+MYCTR,Redox Metabolism
+MYCTR2,Redox Metabolism
+MDH,Citric Acid Cycle
+ME1,Pyruvate Metabolism
+NH4OHDs,Other Amino Acid Metabolism
+MECDPDH,Polyprenyl Metabolism
+NADH10,Oxidative Phosphorylation
+NADH2r,Oxidative Phosphorylation
+NADH5,Oxidative Phosphorylation
+MECDPS,Polyprenyl Metabolism
+MEOHt2,Transport
+NADH9,Oxidative Phosphorylation
+NADK,Pantothenate and CoA Metabolism
+MEPCT,Polyprenyl Metabolism
+METAT,Cysteine and methionine metabolism
+NH4t,Transport
+METOX1s,Cysteine and methionine metabolism
+METOX2s,Cysteine and methionine metabolism
+METS,Cysteine and methionine metabolism
+NADS2,"Alanine, Aspartate, and Glutamate Metabolism"
+NNAM,Pantothenate and CoA Metabolism
+NADTRHD,Cofactor and Prosthetic Group Biosynthesis
+NAKtr,Transport
+METSOXR1,Other Amino Acid Metabolism
+METSOXR2,Other Amino Acid Metabolism
+METabc,Transport
+MGt5,Transport
+NAPRT,Pantothenate and CoA Metabolism
+NNATr,Pantothenate and CoA Metabolism
+NARK,Transport
+MHPGLUT,Cysteine and methionine metabolism
+MI1PP,Inositol phosphate metabolism
+NNDMBRT,Riboflavin Metabolism
+NNDPR,Pantothenate and CoA Metabolism
+NO,Redox Metabolism
+NO3R1,Cofactor and Prosthetic Group Biosynthesis
+PDH,Glycolysis/Gluconeogenesis
+NAt,Transport
+NDPK1,Purine and Pyrimidine Biosynthesis
+NDPK2,Purine and Pyrimidine Biosynthesis
+NO3R2,Cofactor and Prosthetic Group Biosynthesis
+NDPK3,Purine and Pyrimidine Biosynthesis
+NDPK4,Purine and Pyrimidine Biosynthesis
+NOt,Transport
+NPHS,Cofactor and Prosthetic Group Biosynthesis
+NDPK5,Purine and Pyrimidine Biosynthesis
+NDPK6,Purine and Pyrimidine Biosynthesis
+PDHa,Glycolysis/Gluconeogenesis
+PDHbr,Glycolysis/Gluconeogenesis
+NTD1,Purine and Pyrimidine Biosynthesis
+PDHcr,Citric Acid Cycle
+PDIMAS,Membrane Metabolism
+PRAIS,Purine and Pyrimidine Biosynthesis
+PRAIi,Histidine Metabolism
+PRAMPC,Histidine Metabolism
+PDIMAT,Transport
+NTD10,Nucleotide Salvage Pathway
+PDX5POi,Pantothenate and CoA Metabolism
+NTD11,Nucleotide Salvage Pathway
+PEAMNO,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+PRASCSi,Purine and Pyrimidine Biosynthesis
+PRATPP,Histidine Metabolism
+PEPCK_re,Citric Acid Cycle
+NTD2,Purine and Pyrimidine Biosynthesis
+PFK,Glycolysis/Gluconeogenesis
+PRDX,Redox Metabolism
+PREPHACPH,Membrane Metabolism
+PFL,Pyruvate Metabolism
+NTD3,Nucleotide Salvage Pathway
+PGAMT,Other Amino Acid Metabolism
+PGCD,Glycolysis/Gluconeogenesis
+PGI,Glycolysis/Gluconeogenesis
+PREPPACPH,Membrane Metabolism
+PREPTHS,Membrane Metabolism
+PREPTHS2,Membrane Metabolism
+NTD4,Purine and Pyrimidine Biosynthesis
+PREPTTA,Membrane Metabolism
+PRFGS,Purine and Pyrimidine Biosynthesis
+PGK,Glycolysis/Gluconeogenesis
+PGL,Pentose Phosphate Pathway
+PGLS,Membrane Metabolism
+PGLYCP,Glyoxylate Metabolism
+PRMICI,Histidine Metabolism
+PROD2,Arginine and Proline Metabolism
+PROabc,Transport
+PGM,Glycolysis/Gluconeogenesis
+PGMT,Glycolysis/Gluconeogenesis
+NTD5,Nucleotide Salvage Pathway
+PGPP160,Membrane Metabolism
+PGPP160190,Membrane Metabolism
+PROt2r,Transport
+PRPPS,Pentose Phosphate Pathway
+PGPP190,Membrane Metabolism
+NTD6,Nucleotide Salvage Pathway
+PGPPT3,Peptidoglycan Metabolism
+PSCVT,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+PSD160,Glycerophospholipid metabolism
+PSERT,Glycolysis/Gluconeogenesis
+PGSA160,Glycerophospholipid metabolism
+PGSA160190,Glycerophospholipid metabolism
+NTD7,Nucleotide Salvage Pathway
+PGSA190,Glycerophospholipid metabolism
+PHDCATA,Fatty Acid Metabolism
+PSP_L,Glycolysis/Gluconeogenesis
+PSSA160,Glycerophospholipid metabolism
+NTD8,Nucleotide Salvage Pathway
+PTAr,Pyruvate Metabolism
+PHDCAt,Transport
+NTD9,Nucleotide Salvage Pathway
+PHETA1,Other Amino Acid Metabolism
+PTPATi,Pantothenate and CoA Metabolism
+PUNP1,Purine and Pyrimidine Biosynthesis
+PHEt2r,Transport
+NTPP2,Nucleotide Salvage Pathway
+PHTHDLS,Membrane Metabolism
+PHTHDLS2,Membrane Metabolism
+PUNP2,Purine and Pyrimidine Biosynthesis
+PUNP3,Purine and Pyrimidine Biosynthesis
+PHTHS,Membrane Metabolism
+PUNP4,Purine and Pyrimidine Biosynthesis
+PUNP5,Purine and Pyrimidine Biosynthesis
+PUNP6,Purine and Pyrimidine Biosynthesis
+PUNP7,Purine and Pyrimidine Biosynthesis
+PHTHS2,Membrane Metabolism
+PHYCBOXL,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+PIabc,Transport
+PLCD,Fatty Acid Metabolism
+PYAM5PO,Pantothenate and CoA Metabolism
+PYDXNO,Cofactor and Prosthetic Group Biosynthesis
+NTPP3,Nucleotide Salvage Pathway
+PYDXO,Cofactor and Prosthetic Group Biosynthesis
+PYK,Glycolysis/Gluconeogenesis
+PLIPA1E160,Fatty Acid Metabolism
+PLIPA1E180,Fatty Acid Metabolism
+NTPP4,Purine and Pyrimidine Biosynthesis
+PMANM,Fructose and mannose metabolism
+PMDPHT,Cofactor and Prosthetic Group Biosynthesis
+PYRDC,Glycolysis/Gluconeogenesis
+PMPK,Thiamine Metabolism
+PYRt2,Transport
+NTPP5,Nucleotide Salvage Pathway
+QRr,Oxidative Phosphorylation
+PNCDC,Cofactor and Prosthetic Group Biosynthesis
+PNTK,Pantothenate and CoA Metabolism
+NTPP7,Nucleotide Salvage Pathway
+PPA,Oxidative Phosphorylation
+QULNS,Pantothenate and CoA Metabolism
+NTPP8,Nucleotide Salvage Pathway
+R05217,Cofactor and Prosthetic Group Biosynthesis
+R05219,Cofactor and Prosthetic Group Biosynthesis
+PPAtr,Transport
+NTPTP1,Purine and Pyrimidine Biosynthesis
+PPBNGS,Cofactor and Prosthetic Group Biosynthesis
+R05224,Cofactor and Prosthetic Group Biosynthesis
+RBFK,Riboflavin Metabolism
+PPCDC,Pantothenate and CoA Metabolism
+PPCOAC,Propanoate metabolism
+PPDIMAS,Membrane Metabolism
+RBFSa,Riboflavin Metabolism
+RBFSb,Riboflavin Metabolism
+RBK,Pentose Phosphate Pathway
+RIBabc,Transport
+RNDR1,Purine and Pyrimidine Biosynthesis
+PPDIMAT,Transport
+PPDK,Pyruvate Metabolism
+G6PP,Glycolysis/Gluconeogenesis
+NTPTP2,Purine and Pyrimidine Biosynthesis
+PPK2,Purine and Pyrimidine Biosynthesis
+RNDR2,Purine and Pyrimidine Biosynthesis
+RNDR3,Purine and Pyrimidine Biosynthesis
+RNDR4,Purine and Pyrimidine Biosynthesis
+PPNCL3,Cofactor and Prosthetic Group Biosynthesis
+PPND,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+NTRIR2x,Redox Metabolism
+PPNDH,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+RNTR4,Purine and Pyrimidine Biosynthesis
+PPPGO,Cofactor and Prosthetic Group Biosynthesis
+NTRIRx,Cofactor and Prosthetic Group Biosynthesis
+PPTGS,Peptidoglycan Metabolism
+RPE,Pentose Phosphate Pathway
+RPI,Pentose Phosphate Pathway
+PPTGS_TB1,Peptidoglycan Metabolism
+RPPDIMAS,Phenolic glycolipid biosynthesis
+PPTGS_TB2,Peptidoglycan Metabolism
+RRPPDIMAS,Phenolic glycolipid biosynthesis
+NTRIRy,Redox Metabolism
+RZ5PP,Cofactor and Prosthetic Group Biosynthesis
+PRAGSr,Purine and Pyrimidine Biosynthesis
+SADH,Arginine and Proline Metabolism
+O16RHAT,Arabinogalactan biosynthesis
+SADT,Purine and Pyrimidine Biosynthesis
+SDPDS,Threonine and Lysine Metabolism
+SDPTA,Threonine and Lysine Metabolism
+SERD_L,Cysteine and methionine metabolism
+SERAT,Cysteine and methionine metabolism
+O2t,Transport
+SERD_D,Glycolysis/Gluconeogenesis
+TSULabc,Transport
+SERt2r,Transport
+SGDS,Arginine and Proline Metabolism
+SGSAD,Arginine and Proline Metabolism
+SHCHD2,Cofactor and Prosthetic Group Biosynthesis
+OCBT,Arginine and Proline Metabolism
+SHCHD3,Cofactor and Prosthetic Group Biosynthesis
+SHCHF,Cofactor and Prosthetic Group Biosynthesis
+TTDCAt2,Transport
+TYRTA,Other Amino Acid Metabolism
+OCDCAt2,Transport
+SHK3Dr,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+SHKK,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+OCOAT1,Fatty Acid Metabolism
+SHSL1,Cysteine and methionine metabolism
+SHSL4r,Cysteine and methionine metabolism
+TYRt2r,Transport
+UAAGDS,Peptidoglycan Metabolism
+OMCDC,"Valine, Leucine, and Isoleucine Metabolism"
+UAAGLS1,Peptidoglycan Metabolism
+UAAGLS2,Peptidoglycan Metabolism
+SKMt2,Transport
+SOTA,Arginine and Proline Metabolism
+OMPDC,Purine and Pyrimidine Biosynthesis
+SPMS,Urea Cycle
+SPODM,Cofactor and Prosthetic Group Biosynthesis
+UAGCVT,Alternate Carbon Metabolism
+UAGDP,Alternate Carbon Metabolism
+UAGPT1,Peptidoglycan Metabolism
+UAGPT2,Peptidoglycan Metabolism
+UAGPT3,Peptidoglycan Metabolism
+SSALx,"Alanine, Aspartate, and Glutamate Metabolism"
+SSALy,"Alanine, Aspartate, and Glutamate Metabolism"
+SUCBZL,Cofactor and Prosthetic Group Biosynthesis
+SUCBZS,Cofactor and Prosthetic Group Biosynthesis
+UAMAGS,Peptidoglycan Metabolism
+UAMAS,Peptidoglycan Metabolism
+SUCCt2r,Transport
+OPAH,"Alanine, Aspartate, and Glutamate Metabolism"
+SUCD1,Citric Acid Cycle
+SUCOAS,Citric Acid Cycle
+UAMRH,Membrane Metabolism
+UAPGR,Alternate Carbon Metabolism
+SULabc,Transport
+UDCPDP,Cofactor and Prosthetic Group Biosynthesis
+ORNTA,Arginine and Proline Metabolism
+UDCPDPS,Cofactor and Prosthetic Group Biosynthesis
+UDPDPS,Polyprenyl Metabolism
+UDPDPS2,Polyprenyl Metabolism
+TALA,Pentose Phosphate Pathway
+TARTD,Other Amino Acid Metabolism
+TARTRt7,Transport
+TATS,Membrane Metabolism
+TDMS1,Fatty Acid Metabolism
+UDPG4E,Nucleotide Salvage Pathway
+TDMS2,Fatty Acid Metabolism
+UDPGALM,Arabinogalactan biosynthesis
+ORNTAC,Arginine and Proline Metabolism
+UDPGD,Nucleotide Salvage Pathway
+TDMS3,Fatty Acid Metabolism
+UGAGDS,Peptidoglycan Metabolism
+TDMS4,Fatty Acid Metabolism
+ORNt,Transport
+TDPDRE,Arabinogalactan biosynthesis
+TDPDRR,Arabinogalactan biosynthesis
+TDPGDH,Arabinogalactan biosynthesis
+THDPS,Threonine and Lysine Metabolism
+UGGPT3,Peptidoglycan Metabolism
+UGLDDS1,Peptidoglycan Metabolism
+UGLDDS2,Peptidoglycan Metabolism
+UGMAGS,Peptidoglycan Metabolism
+UGMAS,Peptidoglycan Metabolism
+UGMDDS,Peptidoglycan Metabolism
+UGMDDS2,Peptidoglycan Metabolism
+THFGLUS,Folate Metabolism
+THMDP,Cofactor and Prosthetic Group Biosynthesis
+UMPK,Purine and Pyrimidine Biosynthesis
+ORPT,Purine and Pyrimidine Biosynthesis
+UPP3MT,Cofactor and Prosthetic Group Biosynthesis
+UPP3S,Cofactor and Prosthetic Group Biosynthesis
+UPPDC1,Cofactor and Prosthetic Group Biosynthesis
+THRD_L,Cysteine and methionine metabolism
+THRS,Glycolysis/Gluconeogenesis
+THRt2r,Transport
+UPPDC2,Cofactor and Prosthetic Group Biosynthesis
+OXACOAL,Glyoxylate Metabolism
+UPPRT,Purine and Pyrimidine Biosynthesis
+THZPSN,Alternate Carbon Metabolism
+OXCDC,Glyoxylate Metabolism
+TKT1,Pentose Phosphate Pathway
+TKT2,Pentose Phosphate Pathway
+UREA,Purine and Pyrimidine Biosynthesis
+OXGDC,Citric Acid Cycle
+URIDK2r,Purine and Pyrimidine Biosynthesis
+URIK2,Purine and Pyrimidine Biosynthesis
+TMDK1,Nucleotide Salvage Pathway
+TMDPP,Purine and Pyrimidine Biosynthesis
+TMDS,Purine and Pyrimidine Biosynthesis
+VALTA,"Valine, Leucine, and Isoleucine Metabolism"
+VALt2r,Transport
+XPPT,Nucleotide Salvage Pathway
+TMHAS1,Fatty Acid Metabolism
+TMHAS2,Fatty Acid Metabolism
+TMHAS3,Fatty Acid Metabolism
+TMHAS4,Fatty Acid Metabolism
+XYLK,Alternate Carbon Metabolism
+P5CD,"Alanine, Aspartate, and Glutamate Metabolism"
+YUMPS,Purine and Pyrimidine Biosynthesis
+S7PI,Membrane Metabolism
+GMHEPK,Membrane Metabolism
+TMHAS5,Lipid metabolism
+TMHAS6,Lipid metabolism
+TMN,Cofactor and Prosthetic Group Biosynthesis
+TMPK,Thiamine Metabolism
+HMEDS,Polyprenyl Metabolism
+HMEDR,Polyprenyl Metabolism
+P5CR,Arginine and Proline Metabolism
+FRTT,Polyprenyl Metabolism
+MCITD,Propanoate Metabolism
+TMPPP,Thiamine Metabolism
+TPI,Glycolysis/Gluconeogenesis
+TRDR,Purine and Pyrimidine Biosynthesis
+TRE6PP,Membrane Metabolism
+TRE6PS,Membrane Metabolism
+MCITS,Propanoate Metabolism
+P5CRx,Arginine and Proline Metabolism
+MICITDr,Propanoate Metabolism
+MCITL2,Propanoate Metabolism
+TRESULT,Membrane Metabolism
+TREabc,Transport
+TRIATS,Membrane Metabolism
+GLNabc,Transport
+TRPS1,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+TREP,Alternate Carbon Metabolism
+PACt2r,Transport
+HDECH,Fatty Acid Metabolism
+DTBTST,Cofactor and Prosthetic Group Biosynthesis
+TRPS2,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+TRPS3,"Tyrosine, Tryptophan, and Phenylalanine Metabolism"
+TRPTA,Other Amino Acid Metabolism
+TRPt2r,Transport
+IPDPUDCT,Polyprenyl Metabolism
+AHSERL2,Cysteine and methionine metabolism
+PANTS,Pantothenate and CoA Metabolism
+PYDXS,Cofactor and Prosthetic Group Biosynthesis
+2O4EH,Pyruvate Metabolism
+G6PDH3,Pentose Phosphate Pathway
+PLPS,Cofactor and Prosthetic Group Biosynthesis
+PAPA160,Fatty Acid Metabolism
+PDBL_3,Cofactor and Prosthetic Group Biosynthesis
+PDBL_4,Cofactor and Prosthetic Group Biosynthesis
+PAPPT1,Peptidoglycan Metabolism
+EX_ni2_e,Extracellular exchange
+PAPPT2,Peptidoglycan Metabolism
+PAPPT3,Peptidoglycan Metabolism
+2PLS,Cofactor and Prosthetic Group Biosynthesis
+PAPSR,Other Amino Acid Metabolism
+PATS,Fatty Acid Metabolism
+PC,Citric Acid Cycle
+PC11M,Cofactor and Prosthetic Group Biosynthesis
+PC17M,Cofactor and Prosthetic Group Biosynthesis
+PC20M,Cofactor and Prosthetic Group Biosynthesis
+PC6AR,Cofactor and Prosthetic Group Biosynthesis
+PC6YM,Cofactor and Prosthetic Group Biosynthesis
+PC8XM,Cofactor and Prosthetic Group Biosynthesis
+PDE1,Purine and Pyrimidine Biosynthesis
+PDE4,Purine and Pyrimidine Biosynthesis
+FAD_5,Fatty Acid Metabolism
+FAD_6,Fatty Acid Metabolism
+FAD_7,Fatty Acid Metabolism
+FAD_8,Fatty Acid Metabolism
+FAD_9,Fatty Acid Metabolism
+HIPB,Cholesterol degradation
+HIPA,Cholesterol degradation
+CHOLCOA,Cholesterol degradation
+ECHA191,Cholesterol degradation
+FADE30,Cholesterol degradation
+FAD_10,Fatty Acid Metabolism
+FAD_11,Fatty Acid Metabolism
+FAD_12,Fatty Acid Metabolism
+FAD_13,Fatty Acid Metabolism
+FAD_14,Beta oxidation of unsaturated fatty acids
+CYP3,Cholesterol degradation
+CYP2,Cholesterol degradation
+PRCOA1,Cholesterol degradation
+NIt5,Transport
+EX_mn2_e,Extracellular exchange
+LPPGS,Cofactor and Prosthetic Group Biosynthesis
+DMHDRFS_1,Cofactor and Prosthetic Group Biosynthesis
+LPFPLT,Cofactor and Prosthetic Group Biosynthesis
+FADE281,Cholesterol degradation
+GF4GL_0,Cofactor and Prosthetic Group Biosynthesis
+FAD_15,Beta oxidation of unsaturated fatty acids
+GF4GL_1,Cofactor and Prosthetic Group Biosynthesis
+FAD_16,Beta oxidation of unsaturated fatty acids
+CPMPS,Cofactor and Prosthetic Group Biosynthesis
+FAD_17,Beta oxidation of unsaturated fatty acids
+FAD_20,Fatty Acid Metabolism
+FAD_18,Beta oxidation of unsaturated fatty acids
+FAD_19,Beta oxidation of unsaturated fatty acids
+FADD3,Cholesterol degradation
+KSTD,Cholesterol degradation
+FADD17,Cholesterol degradation
+FAD_1,Fatty Acid Metabolism
+FAD_2,Fatty Acid Metabolism
+FAD_3,Fatty Acid Metabolism
+FAD_4,Fatty Acid Metabolism
+HSAC,Cholesterol degradation
+HSAE,Cholesterol degradation
+HIAA,Cholesterol degradation
+IPDAB,Cholesterol degradation
+FAD_25,Fatty Acid Metabolism
+FAD_26,Fatty Acid Metabolism
+FAD_27,Fatty Acid Metabolism
+KSH,Cholesterol degradation
+ECHA193,Cholesterol degradation
+CYP1,Cholesterol degradation
+HIBD,Alternate Carbon Metabolism
+FAD_21,Fatty Acid Metabolism
+ALDR,Arabinogalactan biosynthesis
+AL4D,Arabinogalactan biosynthesis
+MACCOAT,"Valine, Leucine, and Isoleucine Metabolism"
+FAD_22,Fatty Acid Metabolism
+ACCOAC,Pyruvate Metabolism
+MANT1,Arabinogalactan biosynthesis
+ARABT,Arabinogalactan bioynthesis
+HOAS,"Alanine, Aspartate, and Glutamate Metabolism"
+SR1,"Alanine, Aspartate, and Glutamate Metabolism"
+CHSTEROLt_1,Transport
+FAD_23,Fatty Acid Metabolism
+MGSA,Pyruvate Metabolism
+EX_chsterol_e,Extracellular exchange
+FAD_24,Fatty Acid Metabolism
+MOEA1,Cofactor and Prosthetic Group Biosynthesis
+MPTAT,Cofactor and Prosthetic Group Biosynthesis
+MOBA,Cofactor and Prosthetic Group Biosynthesis
+ALCD22_L,Pyruvate Metabolism
+GLYCS_I,Pyruvate Metabolism
+GLYCS_II,Pyruvate Metabolism
+MOAE1,Cofactor and Prosthetic Group Biosynthesis
+FADE51,Cholesterol degradation
+MOEB1,Cofactor and Prosthetic Group Biosynthesis
+LCADi,Pyruvate Metabolism
+CYST_II,Cysteine and methionine metabolism
+MOBDabc,Transport
+FADE52,Cholesterol degradation
+MOBDabc_rev,Transport
+NTP3,Miscellaneous
+ISCS,Cofactor and Prosthetic Group Biosynthesis
+PHBADA,p-HBAD biosynthesis
+HIAt,Transport
+PHBADB,p-HBAD biosynthesis
+PHBADC,p-HBAD biosynthesis
+GLYTRS,tRNA Charging
+SELCYSS,tRNA Charging
+TYRTRS,tRNA Charging
+PHBADD,p-HBAD biosynthesis
+PAPA1,Sulfur metabolism
+BIOMASS__2,Biomass and maintenance functions
+ECHA20,Cholesterol degradation
+CHOL1,Cholesterol degradation
+PAPA2,Sulfur metabolism
+FADE282,Cholesterol degradation
+HOPNTAL2,Cholesterol degradation
+ECHA192,Cholesterol degradation
+HSA,Cholesterol degradation
+FADB3,Cholesterol degradation
+FADB2,Cholesterol degradation
+CHCD,Cholesterol degradation
+HDAD,Cholesterol degradation
+CHOD,Cholesterol degradation
+MI3PS,Inositol phosphate metabolism
+NAGINSP,Inositol phosphate metabolism
+NAGINS,Redox Metabolism
+LAT,L-alpha-aminoadipic acid (L-AAA) biosynthesis
+KGD2,Citric Acid Cycle
+ASPO6,"Alanine, Aspartate, and Glutamate Metabolism"
+ECOAH12,"Valine, Leucine, and Isoleucine Metabolism"
+FADE233,Lipid metabolism
+BKDC,Lipid metabolism
+BKDA2,Lipid metabolism
+3HSA,Cholesterol degradation
+GGTT,Lipid metabolism
+MMPL8,Sulfur metabolism
+ACYP_2,Pyruvate Metabolism
+GTPDPDP,Purine and Pyrimidine Biosynthesis
+PPGPPDP,Purine and Pyrimidine Biosynthesis
+3HBCOAHL,"Valine, Leucine, and Isoleucine Metabolism"
+AKGDa,Citric Acid Cycle
+AKGDH,Citric Acid Cycle
+ACt2r_1,Transport
+PKS2,Lipid metabolism
+MAS3,Lipid metabolism
+EX_nodcoa_e,Extracellular exchange
+EX_gln__L_e,Extracellular exchange
+NODCOAt,Transport
+EX_4hba_e,Extracellular exchange
+4HBAt,Transport
+EX_octscoa_e,Extracellular exchange
+OCTSCOAt,Transport
+SIRA2,Redox Metabolism
+ATPM,Biomass and maintenance functions
+VPAMTr,"Valine, Leucine, and Isoleucine Metabolism"
+4ABZt,Transport
+CHLabc_rev,Transport
+GCALDD,Glyoxylate Metabolism
+EGTB,Ergothioneine biosynthesis
+EGTC,Ergothioneine biosynthesis
+EGTE,Ergothioneine biosynthesis
+APSR,Sulfur metabolism
+PYDXNtr,Transport
+EX_pydxn_e,Extracellular exchange
+TMDS3,Purine and Pyrimidine Biosynthesis
+SHSL2r,Cysteine and methionine metabolism
+MHUD1,Cofactor
+OTSB1,Mycolic acid pathway
+GLYALDDr,Glycerolipid metabolism
+FORt,Transport
+MYCOPP,Mycolic acid pathway
+CYSK2_I,Cysteine and methionine metabolism
+TMMYCO,Mycolic acid pathway
+MYCOE,Mycolic acid pathway
+CYSM_I,Cysteine and methionine metabolism
+PPM1,Mycolic acid pathway
+CYSM_II,Cysteine and methionine metabolism
+PEPA,Starch and sucrose metabolism
+NADDP,Nicotinate and nicotinamide metabolism
+GLYCLTt,Transport
+EX_glyclt_e,Extracellular exchange
+NMNAT,Nicotinate and nicotinamide metabolism
+CYSO_I,Cysteine and methionine metabolism
+EGTD,
+NO3t3,Transport
+ROSFE,Others
+CYSO_II,Cysteine and methionine metabolism
+MNabc_rev,Transport
+ACONMT,Unassigned
+MANPGH,Alternate Carbon Metabolism
+ADOCBIAH,Cofactor and Prosthetic Group Biosynthesis
+THMP,Cofactor and Prosthetic Group Biosynthesis
+ADOCBLabc,Transport
+COB2,Cofactor and Prosthetic Group Biosynthesis
+EPH,Degradation/Utilization/Assimilation
+FBPA,Mycolic acid pathway
+DGTP8DETOX,
+DGTP8OXO,
+GTP8OXO,
+TAG,Fatty acid biosynthesis
+LIPY,Lipid metabolism
+LIPW,Glycerophospholipid metabolism
+CBL2OR,Cofactor and Prosthetic Group Biosynthesis
+VIUB,Transport
+DRBK,Pentose Phosphate Pathway
+5DOAN,Pentose Phosphate Pathway
+CHOLK,Glycerophospholipid metabolism
+PC_TBt,Transport
+AKGt2r_1,Transport
+BIRA,Mycolic acid pathway
+MBTK3,Mycobactin biosynthesis
+ACCD3,Mycolic acid pathway
+EX_co_e,Extracellular exchange
+MBTG,Mycobactin biosynthesis
+PHEMEt,Cofactor and Prosthetic Group Biosynthesis
+EX_pheme_e,Extracellular exchange
+ACCA3,Mycolic acid pathway
+MBTA3,Mycobactin biosynthesis
+GMHEPPA,Lipopolysaccharide Biosynthesis / Recycling
+ALCD19y,Glycerolipid metabolism
+EX_pc_TB_e,Extracellular exchange
+HEMEOS,Cofactor and Prosthetic Group Biosynthesis
+HEMEAS,Cofactor and Prosthetic Group Biosynthesis
+GSEALD,Cofactor and Prosthetic Group Biosynthesis
+ALCD2ir,Glycolysis/Gluconeogenesis
+CPPPGO2,Cofactor and Prosthetic Group Biosynthesis
+DM_ergoth_c,Intracellular demand
+DM_tbsinol_c,Intracellular demand
+DM_isotbsinol_13S_c,Intracellular demand
+DM_isotbsinol_13R_c,Intracellular demand
+DM_psd5p_c,Intracellular demand
+EX_hia_e,Extracellular exchange
+FPRA,Cofactor and Prosthetic Group Biosynthesis
+COCO2,Carbon metabolism
+ACALDt,Transport
+EX_acald_e,Extracellular exchange
+DM_cpppg1_c,Intracellular demand
+DM_scys__L_c,Intracellular demand
+DM_gmhep1p_c,Intracellular demand
+NMO,Redox Metabolism
+ETOHt3,Transport
+OCDCEAt,Transport
+EX_ocdcea_e,Extracellular exchange
+UREAt_2,Transport
+EX_etoh_e,Extracellular exchange
+MTAP,Cysteine and methionine metabolism
+PKS122,Lipid metabolism
+PKS121,Lipid metabolism
+ORNDC,Spermidine biosynthesis
+MBTA1,Mycobactin biosynthesis
+HACD9,"Valine, Leucine, and Isoleucine Metabolism"
+ECOAH9ir,"Valine, Leucine, and Isoleucine Metabolism"
+ACOADH1,Lipid metabolism
+BKDC1,Lipid metabolism
+MAK,Others
+GLGE,Starch and sucrose metabolism
+TREY,Starch and sucrose metabolism
+GLGB,Starch and sucrose metabolism
+GLGP,Starch and sucrose metabolism
+AMYL2,Starch and sucrose metabolism
+DHORDi,Purine and Pyrimidine Biosynthesis
+SHCHCS3,Cofactor and Prosthetic Group Biosynthesis
+SEPHCHCS,Cofactor and Prosthetic Group Biosynthesis
+SALSYN,Mycobactin biosynthesis
+APPLDHr,Cofactor and Prosthetic Group Biosynthesis
+AOBUTDs,Cofactor and Prosthetic Group Biosynthesis
+THRD,Glycolysis/Gluconeogenesis
+EX_adocbl_e,Extracellular exchange
+DMBI,Cofactor and Prosthetic Group Biosynthesis
+BARB,Purine and Pyrimidine Biosynthesis
+HETZK,Cofactor and Prosthetic Group Biosynthesis
+EX_mobd_e,Extracellular exchange
+TBSYNLDPS,Others
+TBSNLS1,Others
+TBSNLS2,Others
+TBSNLS3,Others
+3M2OPLOXRD,Lipid metabolism
+BPNT2,Sulfur metabolism
+G3PD5,Glycerophospholipid metabolism
+G3PD1ir,Glycerophospholipid metabolism
+G3PT,Glycerophospholipid metabolism
+DHORD2,Purine and Pyrimidine Biosynthesis
+PPAKr,Propanoate Metabolism
+PTA2,Lipid metabolism
+EMB,Arabinogalactan biosynthesis
+BTNTe,Transport
+EX_btn_e,Extracellular exchange
+GLYDHDA,Glyoxylate Metabolism
+OPP,Lipid metabolism
+HEXTT,Lipid metabolism
+PPTT,Lipid metabolism

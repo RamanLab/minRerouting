@@ -1,0 +1,38 @@
+,Combination,Count,Same,Percentage
+0,Cell Envelope Biosynthesis & Membrane Lipid Metabolism,147,False,0.5485074626865671
+1,Cofactor and Prosthetic Group Biosynthesis & Cofactor and Prosthetic Group Biosynthesis,33,True,0.12313432835820895
+2,Cell Envelope Biosynthesis & Cell Envelope Biosynthesis,18,True,0.06716417910447761
+3,Pentose Phosphate Pathway & Pentose Phosphate Pathway,9,True,0.033582089552238806
+4,Inorganic Ion Transport and Metabolism & Inorganic Ion Transport and Metabolism,5,True,0.018656716417910446
+5,Nucleotide Salvage Pathway & Nucleotide Salvage Pathway,5,True,0.018656716417910446
+6,Glycerophospholipid Metabolism & Glycerophospholipid Metabolism,4,True,0.014925373134328358
+7,Glycolysis/Gluconeogenesis & Inorganic Ion Transport and Metabolism,4,False,0.014925373134328358
+8,"Glycolysis/Gluconeogenesis & Transport, Outer Membrane Porin",4,False,0.014925373134328358
+9,Alternate Carbon Metabolism & Histidine Metabolism,3,False,0.011194029850746268
+10,Cofactor and Prosthetic Group Biosynthesis & Inorganic Ion Transport and Metabolism,3,False,0.011194029850746268
+11,"Cofactor and Prosthetic Group Biosynthesis & Transport, Outer Membrane Porin",3,False,0.011194029850746268
+12,Glycine and Serine Metabolism & Glycine and Serine Metabolism,3,True,0.011194029850746268
+13,"Alanine and Aspartate Metabolism & Valine, Leucine, and Isoleucine Metabolism",2,False,0.007462686567164179
+14,Arginine and Proline Metabolism & Arginine and Proline Metabolism,2,True,0.007462686567164179
+15,Nucleotide Salvage Pathway & Purine and Pyrimidine Biosynthesis,2,False,0.007462686567164179
+16,Alanine and Aspartate Metabolism & Alanine and Aspartate Metabolism,1,True,0.0037313432835820895
+17,Anaplerotic Reactions & Anaplerotic Reactions,1,True,0.0037313432835820895
+18,Anaplerotic Reactions & Citric Acid Cycle,1,False,0.0037313432835820895
+19,Anaplerotic Reactions & Oxidative Phosphorylation,1,False,0.0037313432835820895
+20,"Citric Acid Cycle & Transport, Outer Membrane Porin",1,False,0.0037313432835820895
+21,Cofactor and Prosthetic Group Biosynthesis & Cysteine Metabolism,1,False,0.0037313432835820895
+22,Cofactor and Prosthetic Group Biosynthesis & Oxidative Phosphorylation,1,False,0.0037313432835820895
+23,Cysteine Metabolism & Cysteine Metabolism,1,True,0.0037313432835820895
+24,Cysteine Metabolism & Oxidative Phosphorylation,1,False,0.0037313432835820895
+25,Cysteine Metabolism & Unassigned,1,False,0.0037313432835820895
+26,Glutamate Metabolism & Glutamate Metabolism,1,True,0.0037313432835820895
+27,"Inorganic Ion Transport and Metabolism & Transport, Inner Membrane",1,False,0.0037313432835820895
+28,"Inorganic Ion Transport and Metabolism & Transport, Outer Membrane Porin",1,False,0.0037313432835820895
+29,Oxidative Phosphorylation & Unassigned,1,False,0.0037313432835820895
+30,Purine and Pyrimidine Biosynthesis & Purine and Pyrimidine Biosynthesis,1,True,0.0037313432835820895
+31,Pyruvate Metabolism & Unassigned,1,False,0.0037313432835820895
+32,"Transport, Inner Membrane & Transport, Outer Membrane Porin",1,False,0.0037313432835820895
+33,"Transport, Outer Membrane & Transport, Outer Membrane",1,True,0.0037313432835820895
+34,"Transport, Outer Membrane Porin & Transport, Outer Membrane Porin",1,True,0.0037313432835820895
+35,"Tyrosine, Tryptophan, and Phenylalanine Metabolism & Tyrosine, Tryptophan, and Phenylalanine Metabolism",1,True,0.0037313432835820895
+36,"Valine, Leucine, and Isoleucine Metabolism & Valine, Leucine, and Isoleucine Metabolism",1,True,0.0037313432835820895

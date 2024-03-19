@@ -1,0 +1,55 @@
+,Rxn_1,Rxn_2,Rxn_1_Class,Rxn_2_Class,Subsystem 1,Subsystem 2
+0,ADPT,ADD,pFBAOpt_Rxns,MLE_Rxns,Salvage pathway of ATP,Purine metabolism
+1,ADPT,HXPRT,pFBAOpt_Rxns,MLE_Rxns,Salvage pathway of ATP,Salvage pathway of GTP
+2,ALAD_L,FADOX,pFBAOpt_Rxns,MLE_Rxns,Alanine Metabolism,Respiratory chain
+3,ANS2,ANS,pFBAOpt_Rxns,MLE_Rxns,Chorismate Metabolism,Tryptophan Biosynthesis
+4,DHPS,FOLD3,pFBAOpt_Rxns,MLE_Rxns,Folate Biosynthesis,Folate Biosynthesis
+5,DHPS,HPPK,pFBAOpt_Rxns,MLE_Rxns,Folate Biosynthesis,Folate Biosynthesis
+6,CAT,CCP,pFBAOpt_Rxns,MLE_Rxns,ROS Detoxification,ROS Detoxification
+7,GARFT,FTHFD,pFBAOpt_Rxns,MLE_Rxns,IMP Synthesis,THF Metabolism
+8,GART,FTHFLi,pFBAOpt_Rxns,ELE_Rxns,IMP Synthesis,THF Metabolism
+9,HCO3E,H2CO3D,pFBAOpt_Rxns,ELE_Rxns,Others,Others
+10,HCO3E,H2CO3D2,pFBAOpt_Rxns,ELE_Rxns,Others,Others
+11,HEMEti,CPPPGO,ZeroFlux_Rxns,pFBAOpt_Rxns,Transport,Heme biosynthesis
+12,HEMEti,FCLT,ZeroFlux_Rxns,pFBAOpt_Rxns,Transport,Heme biosynthesis
+13,HEMEti,FE2abc,ZeroFlux_Rxns,pFBAOpt_Rxns,Transport,Transport
+14,HEMEti,GLUTRR,ZeroFlux_Rxns,pFBAOpt_Rxns,Transport,Heme biosynthesis
+15,HEMEti,GLUTRS,ZeroFlux_Rxns,pFBAOpt_Rxns,Transport,Heme biosynthesis
+16,HEMEti,G1SAT,ZeroFlux_Rxns,pFBAOpt_Rxns,Transport,Heme biosynthesis
+17,HEMEti,HMBS,ZeroFlux_Rxns,pFBAOpt_Rxns,Transport,Heme biosynthesis
+18,HEMEti,PPBNGS,ZeroFlux_Rxns,pFBAOpt_Rxns,Transport,Heme biosynthesis
+19,HEMEti,PPPGO,ZeroFlux_Rxns,pFBAOpt_Rxns,Transport,Heme biosynthesis
+20,HEMEti,UPP3S,ZeroFlux_Rxns,pFBAOpt_Rxns,Transport,Heme biosynthesis
+21,HEMEti,UPPDC1,ZeroFlux_Rxns,pFBAOpt_Rxns,Transport,Heme biosynthesis
+22,ME1,AKO,pFBAOpt_Rxns,MLE_Rxns,Others,TCA cycle
+23,ME1,FADOX,pFBAOpt_Rxns,MLE_Rxns,Others,Respiratory chain
+24,KAS15,ACOATA,pFBAOpt_Rxns,ELE_Rxns,Fatty Acid Synthesis,Fatty Acid Synthesis
+25,KAS15,KAS14,pFBAOpt_Rxns,ELE_Rxns,Fatty Acid Synthesis,Fatty Acid Synthesis
+26,NH4t,ARGSL,pFBAOpt_Rxns,MLE_Rxns,Transport,Urea Cycle
+27,NH4t,ARGSS,pFBAOpt_Rxns,MLE_Rxns,Transport,Urea Cycle
+28,NH4t,OCBT,pFBAOpt_Rxns,MLE_Rxns,Transport,Urea Cycle
+29,NH4t,UREAt,pFBAOpt_Rxns,MLE_Rxns,Transport,Transport
+30,TKT2,GND,pFBAOpt_Rxns,MLE_Rxns,Pentose-Phosphate-Pathway,Pentose-Phosphate-Pathway
+31,TKT2,PGL,pFBAOpt_Rxns,MLE_Rxns,Pentose-Phosphate-Pathway,Pentose-Phosphate-Pathway
+32,TRPS1,TRPS2,pFBAOpt_Rxns,ELE_Rxns,Tryptophan Biosynthesis,Tryptophan Biosynthesis
+33,TRPS1,TRPS3,pFBAOpt_Rxns,ELE_Rxns,Tryptophan Biosynthesis,Tryptophan Biosynthesis
+34,UREA,UREAt,pFBAOpt_Rxns,MLE_Rxns,Urea Cycle,Transport
+35,URIDK2r,DUTPDP,pFBAOpt_Rxns,MLE_Rxns,dTTP Biosynthesis,dTTP Biosynthesis
+36,RNDR4,DCTPD,pFBAOpt_Rxns,MLE_Rxns,dUTP Biosynthesis,Nucleotide Interconversion
+37,RPE,GND,pFBAOpt_Rxns,MLE_Rxns,Pentose-Phosphate-Pathway,Pentose-Phosphate-Pathway
+38,RPE,PGL,pFBAOpt_Rxns,MLE_Rxns,Pentose-Phosphate-Pathway,Pentose-Phosphate-Pathway
+39,ALAR,DALAt2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Alanine Metabolism,Transport
+40,ATPS4r,ACKr,pFBAOpt_Rxns,pFBAOpt_Rxns,Respiratory chain,Others
+41,ATPS4r,ACt2r,pFBAOpt_Rxns,pFBAOpt_Rxns,Respiratory chain,Transport
+42,GART,GARFT,pFBAOpt_Rxns,pFBAOpt_Rxns,IMP Synthesis,IMP Synthesis
+43,G3PD2,G3PD1ir,pFBAOpt_Rxns,pFBAOpt_Rxns,Glycerolipid Synthesis,Glycerolipid Synthesis
+44,ME1,FRD5,pFBAOpt_Rxns,pFBAOpt_Rxns,Others,TCA cycle
+45,ME1,FUM,pFBAOpt_Rxns,pFBAOpt_Rxns,Others,TCA cycle
+46,NH4t,ATPS4r,pFBAOpt_Rxns,pFBAOpt_Rxns,Transport,Respiratory chain
+47,TKT1,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose-Phosphate-Pathway,Pentose-Phosphate-Pathway
+48,TKT2,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose-Phosphate-Pathway,Pentose-Phosphate-Pathway
+49,TKT2,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose-Phosphate-Pathway,Pentose-Phosphate-Pathway
+50,PTAr,ATPS4r,pFBAOpt_Rxns,pFBAOpt_Rxns,Others,Respiratory chain
+51,RPE,TALA,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose-Phosphate-Pathway,Pentose-Phosphate-Pathway
+52,RPE,TKT1,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose-Phosphate-Pathway,Pentose-Phosphate-Pathway
+53,RPE,TKT2,pFBAOpt_Rxns,pFBAOpt_Rxns,Pentose-Phosphate-Pathway,Pentose-Phosphate-Pathway

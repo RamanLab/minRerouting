@@ -1,0 +1,5 @@
+Type,Rxn_1_Type,Rxn_2_Type,Count,Fraction,Rxn_1_Prod,Rxn_2_Prod
+PSL,pFBAOpt_Rxns,ELE_Rxns,16,0.21333333333333335,16,16
+PSL,pFBAOpt_Rxns,MLE_Rxns,27,0.36,27,27
+PSL,pFBAOpt_Rxns,pFBAOpt_Rxns,17,0.22666666666666666,17,17
+RSL,pFBAOpt_Rxns,pFBAOpt_Rxns,15,0.2,15,15
