@@ -1,0 +1,554 @@
+CPPPGO,Heme biosynthesis
+CS,TCA cycle
+CTPS1,UTP/CTP de novo Synthesis
+CYOO_HP,Respiratory chain
+CYSS,Methionine Metabolism
+CYSabc,Transport
+CYTDt2,Transport
+CYTK1,Nucleotide Interconversion
+ADMDC,Spermidine Biosynthesis
+DAAD,Alanine Metabolism
+ADNUC,Purine metabolism
+DADK,Nucleotide Interconversion
+EX_pime_e,Extracellular exchange
+DADNt2,Transport
+ADNt2,Transport
+ADPT,Salvage pathway of ATP
+DAGK_HP,Glycerolipid Synthesis
+ADSK,Others
+ADSL1r,ATP de novo Synthesis
+EX_phe__L_e,Extracellular exchange
+ADSL2r,IMP Synthesis
+DALAt2r,Transport
+ADSS,ATP de novo Synthesis
+DAPDC,Lysine Biosynthesis
+EX_pheme_e,Extracellular exchange
+DAPE,Lysine Biosynthesis
+EX_pi_e,Extracellular exchange
+DASYN_HP,Glycerolipid Synthesis
+4HGLSD,Glyoxylate Metabolism
+ADtr,Transport
+DB4PS,Riboflavin Metabolism
+AGMHE,LPS Biosynthesis - adphep
+DBTS,Biotin Biosynthesis
+AGMT,Spermidine Biosynthesis
+AHCYSNS,Others
+A5PISO,LPS Biosynthesis
+AAtr,Transport
+ACACT1r,Others
+AHSERL2,Methionine Metabolism
+AICART,IMP Synthesis
+AIRC2,IMP Synthesis
+AIRC3,IMP Synthesis
+AKGt2r,Transport
+AKO,TCA cycle
+ALAALAr,Peptidoglycan Biosynthesis
+DCTPD,Nucleotide Interconversion
+ALAD_L,Alanine Metabolism
+ALAR,Alanine Metabolism
+ACACt2,Transport
+ALAt2r,Transport
+DCTPD2,Nucleotide Interconversion
+ALAt4,Transport
+ALCD2y,Others
+AMAA,Peptidoglycan Biosynthesis
+ACALDt,Transport
+ACCOAC,Fatty Acid Synthesis
+ACKr,Others
+DCYTt2,Transport
+ACOATA,Fatty Acid Synthesis
+AMAOTr,Biotin Biosynthesis
+ACONT,TCA cycle
+DDPA,Chorismate Biosynthesis
+DDPGA,Glyoxylate Biosynthesis
+ACP1_FMN,Riboflavin Metabolism
+DGK1,Nucleotide Interconversion
+DHDPRy,Lysine Biosynthesis
+ACPS,Pantothenate and CoA Biosynthesis
+DHDPS,Lysine Biosynthesis
+ACS,Others
+AMID2,Others
+DHFR,Folate Biosynthesis
+AMID4,Others
+ACt2r,Transport
+ADCL,Folate Biosynthesis
+AMID5,Others
+DHFS,Folate Biosynthesis
+AMMQT6,Menaquinone Biosynthesis
+ANPRT,Tryptophan Biosynthesis
+ANS,Tryptophan Biosynthesis
+ANS2,Chorismate Metabolism
+ADD,Purine metabolism
+ADEt2,Transport
+ADK1,ATP de novo Synthesis
+DHNAOT2,Menaquinone Biosynthesis
+EX_fe2_e,Extracellular exchange
+DHNPA,Folate Biosynthesis
+EX_fe3_e,Extracellular exchange
+AOXSr,Biotin Biosynthesis
+APRAUR,Riboflavin Metabolism
+DHORD3,UTP/CTP de novo Synthesis
+ARGDC,Spermidine Biosynthesis
+ARGN,Urea Cycle
+EX_for_e,Extracellular exchange
+EX_fum_e,Extracellular exchange
+EX_gal_e,Extracellular exchange
+EX_glc__D_e,Extracellular exchange
+ARGSL,Urea Cycle
+ARGSS,Urea Cycle
+DHORTS,UTP/CTP de novo Synthesis
+ARGt2r,Transport
+EX_gln__L_e,Extracellular exchange
+EX_glu__L_e,Extracellular exchange
+DHPPDA,Riboflavin Metabolism
+EX_gly_e,Extracellular exchange
+EX_gsn_e,Extracellular exchange
+ASAD,Aspartate Metabolism
+ASNN,Asparagine Metabolism
+EX_gua_e,Extracellular exchange
+DHPS,Folate Biosynthesis
+EX_h2_e,Extracellular exchange
+ASNS2,Asparagine Metabolism
+DHPTDCs,Others
+ASNabc,Transport
+DHQTi,Chorismate Biosynthesis
+ASNt2r,Transport
+ASP1DC,Pantothenate and CoA Biosynthesis
+ASPCT,UTP/CTP de novo Synthesis
+ASPK,Aspartate Metabolism
+EX_h2co3_e,Extracellular exchange
+EX_h2o_e,Extracellular exchange
+EX_h_e,Extracellular exchange
+EX_his__L_e,Extracellular exchange
+EX_hxan_e,Extracellular exchange
+EX_ile__L_e,Extracellular exchange
+ASPO2,Nicotinate Biosynthesis
+ASPT,Aspartate Metabolism
+EX_lac__L_e,Extracellular exchange
+ASPTA,Aspartate Metabolism
+DHQS,Chorismate Biosynthesis
+ASPt2r,Transport
+ATPS4r,Respiratory chain
+EX_leu__L_e,Extracellular exchange
+EX_lys__L_e,Extracellular exchange
+EX_mal__L_e,Extracellular exchange
+BACCL,Biotin Biosynthesis
+DKMPPD,Methionine Salvage Pathway
+BC10_new,Respiratory chain
+EX_met__L_e,Extracellular exchange
+EX_na1_e,Extracellular exchange
+DMATT,Others
+EX_nh4_e,Extracellular exchange
+EX_ni2_e,Extracellular exchange
+BPNT,Pantothenate and CoA Biosynthesis
+BTS2,Biotin Biosynthesis
+BIOMASS_HP_published,Biomass and maintenance functions
+EX_nmn_e,Extracellular exchange
+EX_no2_e,Extracellular exchange
+C140SN,Fatty Acid Synthesis
+EX_no3_e,Extracellular exchange
+C160SN,Fatty Acid Synthesis
+DMPPS,Isoprenoid Biosynthesis
+C180SN,Fatty Acid Synthesis
+C181SN,Fatty Acid Synthesis
+C190cSN,Fatty Acid Synthesis
+EX_no_e,Extracellular exchange
+EX_o2_e,Extracellular exchange
+EX_orn_e,Extracellular exchange
+EX_orot_e,Extracellular exchange
+EX_pro__L_e,Extracellular exchange
+EX_pyr_e,Extracellular exchange
+CAT,ROS Detoxification
+DM_hmfurn_c,Intracellular demand
+CBPS,UTP/CTP de novo Synthesis
+CCP,ROS Detoxification
+CDAPPA_HP,Glycerolipid Synthesis
+EX_ser__D_e,Extracellular exchange
+EX_ser__L_e,Extracellular exchange
+EX_so4_e,Extracellular exchange
+CDPMEK,Isoprenoid Biosynthesis
+DNMPPA,Folate Biosynthesis
+CHCOAL,Biotin Biosynthesis
+EX_succ_e,Extracellular exchange
+CHORM,Phenylalanine biosynthesis
+EX_thm_e,Extracellular exchange
+CHORS,Chorismate Biosynthesis
+DNTPPA,Folate Biosynthesis
+CLPNS_HP,Glycerolipid Synthesis
+EX_thr__L_e,Extracellular exchange
+EX_thymd_e,Extracellular exchange
+EX_trp__L_e,Extracellular exchange
+DPCOAK,Pantothenate and CoA Biosynthesis
+EX_tyr__L_e,Extracellular exchange
+EX_ura_e,Extracellular exchange
+DPR,Pantothenate and CoA Biosynthesis
+EX_urea_e,Extracellular exchange
+EX_uri_e,Extracellular exchange
+CO2t,Transport
+DSERt2,Transport
+EX_val__L_e,Extracellular exchange
+EX_xan_e,Extracellular exchange
+FADOX,Respiratory chain
+EX_etoh_e,Extracellular exchange
+DTMPK,Nucleotide Interconversion
+GARFT,IMP Synthesis
+FBA,Glycolysis
+DURIK1,Nucleotide Interconversion
+FBA2,Others
+GART,IMP Synthesis
+DURIPP,Nucleotide Interconversion
+GCALDD,Others
+FBP,Glycolysis
+DURIt2,Transport
+FCLPA,Fucose Biosynthesis
+FCLT,Heme biosynthesis
+GF6PTA,Aminosugar Metabolism
+DUTPDP,dTTP Biosynthesis
+DXPRIi,Isoprenoid Biosynthesis
+GFUCS,Fucose Biosynthesis
+GHMT2r,"Ser, Gly Biosynthesis"
+GK1,GTP de novo Synthesis
+FE2abc,Transport
+DXPS,Isoprenoid Biosynthesis
+FEDCabc,Transport
+GLCt2,Transport
+EDA,Entner-Doudouroff Pathway
+GLNS,Gln Biosynthesis
+FMNRx2,Respiratory chain
+EDD,Entner-Doudouroff Pathway
+FMNAT,Riboflavin Metabolism
+GLNabc,Transport
+EHGLAT,Glyoxylate Biosynthesis
+FOLD3,Folate Biosynthesis
+ENO,Glycolysis
+FORAMD,Others
+PIt2r,Transport
+FORt,Transport
+GLUDC,Glutamate Metabolism
+ETOHt2r,Transport
+GLUDy,Glutamate Metabolism
+GLUN,Glutamate Metabolism
+GLUPRT,IMP Synthesis
+GLUR,Others
+FRD5,TCA cycle
+FRDO,Respiratory chain
+FTHFD,THF Metabolism
+FTHFLi,THF Metabolism
+FUM,TCA cycle
+GLUTRR,Heme biosynthesis
+GLUTRS,Heme biosynthesis
+FUMt3,Transport
+EX_aa_e,Extracellular exchange
+G1PACT,Aminosugar Metabolism
+G1SAT,Heme biosynthesis
+GLUt2r,Transport
+EX_ac_e,Extracellular exchange
+G3PD1ir,Glycerolipid Synthesis
+EX_acac_e,Extracellular exchange
+G3PD2,Glycerolipid Synthesis
+GLYCTO1,Others
+EX_acald_e,Extracellular exchange
+GLYK,Glycerolipid Synthesis
+G5SADs,Proline Biosynthesis
+GLYt2r,Transport
+G6PDH1,Pentose-Phosphate-Pathway
+EX_ad_e,Extracellular exchange
+G6PDH2r,Pentose-Phosphate-Pathway
+GMAND,Fucose Biosynthesis
+GMHEPAT,LPS Biosynthesis - adphep
+GMHEPK,LPS Biosynthesis - adphep
+GALKr,LPS Biosynthesis
+EX_ade_e,Extracellular exchange
+GALT,LPS Biosynthesis
+GALUi,Others
+GMHEPPA,LPS Biosynthesis - adphep
+GMPR,Nucleotide Interconversion
+GMPS2,GTP de novo Synthesis
+GND,Pentose-Phosphate-Pathway
+GNNUC,Purine metabolism
+GALt2,Transport
+GAPD,Glycolysis
+EX_adn_e,Extracellular exchange
+LPSSYN_HP,LPS Biosynthesis
+GRTT,Others
+GSNt2,Transport
+GTMLT,Others
+EX_akg_e,Extracellular exchange
+GTPCI,Folate Biosynthesis
+GTPCII,Riboflavin Metabolism
+GUAPRT,Salvage pathway of GTP
+LYSt2r,Transport
+L_LACt2r,Transport
+LacR,Others
+GUAt,Transport
+EX_ala__D_e,Extracellular exchange
+H2CO3D,Others
+EX_ala__L_e,Extracellular exchange
+H2CO3D2,Others
+MALS,TCA cycle
+H2CO3TP,Transport
+EX_arg__L_e,Extracellular exchange
+H2Ot,Transport
+MALt2r,Transport
+MAN1PT2,Fucose Biosynthesis
+EX_asn__L_e,Extracellular exchange
+MAN6PI,Fucose Biosynthesis
+HBZOPT,Ubiquinone Biosynthesis
+MCOATA,Fatty Acid Synthesis
+MDH4,TCA cycle
+HCO3E,Others
+EX_asp__L_e,Extracellular exchange
+EX_cit_e,Extracellular exchange
+HEMEti,Transport
+MDRPD,Others
+EX_co2_e,Extracellular exchange
+ME1,Others
+HETZK,Thiamin Biosynthesis
+EX_cys__L_e,Extracellular exchange
+HEX1,Glycolysis
+HISabc,"Transport, ABC system"
+HMBS,Heme biosynthesis
+MECDPDH,Isoprenoid Biosynthesis
+MECDPS,Isoprenoid Biosynthesis
+MEPCT,Isoprenoid Biosynthesis
+METAT,Spermidine Biosynthesis
+HPPK,Folate Biosynthesis
+EX_cytd_e,Extracellular exchange
+HPROa,Glyoxylate Biosynthesis
+METB1,Methionine Metabolism
+EX_dad_2_e,Extracellular exchange
+METabc,"Transport, ABC system"
+MOAT_HP,LPS Biosynthesis
+HPROx,Glyoxylate Biosynthesis
+HSDy,Lysine/ Threonine Biosynthesis
+EX_dcyt_e,Extracellular exchange
+HSERTA,Methionine Metabolism
+EX_duri_e,Extracellular exchange
+HSK,Lysine/ Threonine Biosynthesis
+HXPRT,Salvage pathway of GTP
+HYDA1,Respiratory chain
+MOHMT,Pantothenate and CoA Biosynthesis
+MTAN,Methionine Salvage Pathway
+MTHFC,THF Metabolism
+PGCD,"Ser, Gly Biosynthesis"
+MTHFD,THF Metabolism
+MTHFR2,THF Metabolism
+HYXNt,Transport
+ICDHyr,TCA cycle
+ICHORS,Menaquinone Biosynthesis
+MTRI,Methionine Salvage Pathway
+MTRK,Methionine Salvage Pathway
+PGI,Glycolysis
+NADK,Nicotinate Biosynthesis
+NADPHQR,Respiratory chain
+IGPS,"Tyr, Phe, Trp Biosynthesis"
+ILETA,Amino Acid Degradation
+ILEabc,"Transport, ABC system"
+IMPC,IMP Synthesis
+NADS1,Nicotinate Biosynthesis
+PGK,Glycolysis
+NARK,Transport
+PMANM,Fucose Biosynthesis
+IMPD,GTP de novo Synthesis
+PGL,Pentose-Phosphate-Pathway
+IPDPS,Isoprenoid Biosynthesis
+NAt3_1,Transport
+PGM,Glycolysis
+NDH_1,Respiratory chain
+KARA1,Val Metabolism
+KARA2,Ile Metabolism
+NDPK1,GTP de novo Synthesis
+PGMT,Others
+NDPK2,UTP/CTP de novo Synthesis
+KAS14,Fatty Acid Synthesis
+KAS15,Fatty Acid Synthesis
+KAS_HP,Fatty Acid Synthesis
+NDPK3,Nucleotide Interconversion
+KAS_HP2,Fatty Acid Synthesis
+NDPK4,dTTP Biosynthesis
+PGPP_HP,Glycerolipid Synthesis
+NDPK5,dGTP Biosynthesis
+NDPK6,dUTP Biosynthesis
+KDOCT2,LPS Biosynthesis - cmpkdo
+KDOPP,LPS Biosynthesis - cmpkdo
+KDOPS,LPS Biosynthesis - cmpkdo
+LDH_D1,Respiratory chain
+NDPK7,dCTP Biosynthesis
+NDPK8,dATP Biosynthesis
+PGSA_HP,Glycerolipid Synthesis
+NH4t,Transport
+NIabc,"Transport, ABC system"
+LEUTA,Amino Acid Degradation
+LEUabc,"Transport, ABC system"
+LPADSS_HP,LPS Biosynthesis
+NMNAT,Nicotinate Biosynthesis
+NMNTP,Transport
+NNATr,Nicotinate Biosynthesis
+NNDPR,Nicotinate Biosynthesis
+NO,Peroxynitrite
+PHCD,Glyoxylate Biosynthesis
+NO3t2,Transport
+NO3t3,Transport
+SHKK,Chorismate Biosynthesis
+SHSL1,Methionine Metabolism
+NOt,Transport
+PHCHGS,Glyoxylate Biosynthesis
+NPHS,Menaquinone Biosynthesis
+NTRARz,Nitrite Metabolism
+PHETA1,"Tyr, Phe, Trp Biosynthesis"
+PHEt2r,Transport
+PIMEtr,Transport
+O2t,Transport
+OCBT,Urea Cycle
+SHSL2r,Methionine Metabolism
+PMDPHT,Riboflavin Metabolism
+OCOAT1,TCA cycle
+PMPK,Thiamin Biosynthesis
+OCTDPS,Others
+OMBZLM,Ubiquinone Biosynthesis
+PNTK,Pantothenate and CoA Biosynthesis
+OMPDC,UTP/CTP de novo Synthesis
+PPA,Others
+OOR3r,TCA cycle
+PPBNGS,Heme biosynthesis
+OPHBDC,Ubiquinone Biosynthesis
+ORNTA,Glutamate Biosynthesis
+SHSL4r,Methionine Metabolism
+PPCDC,Pantothenate and CoA Biosynthesis
+SPMS,Spermidine Biosynthesis
+ORNt2r,Transport
+OROATP,"Transport, ABC system"
+ORPT,UTP/CTP de novo Synthesis
+OXGDC2,Menaquinone Biosynthesis
+SPODM,ROS Detoxification
+SPRMS,Spermidine Biosynthesis
+SUCBZL,Menaquinone Biosynthesis
+P5CD,Glutamate Biosynthesis
+PPM,Nucleotide Interconversion
+P5CR,Proline Biosynthesis
+PABB,Folate Biosynthesis
+PANTS,Pantothenate and CoA Biosynthesis
+SUCBZS,Menaquinone Biosynthesis
+SUCCt2r,Transport
+SUCFUMt,Transport
+SULR,Others
+PAPPT3,Peptidoglycan Biosynthesis
+PAPSR,Others
+PPM2,Nucleotide Interconversion
+PASYN_HP,Glycerolipid Synthesis
+PDH2,Glycolysis
+PEPT_HP,Glycerolipid Synthesis
+SULabc,Transport
+TALA,Pentose-Phosphate-Pathway
+THDPS,Lysine/ Threonine Biosynthesis
+PGAMT,Aminosugar Metabolism
+PPNCL2,Pantothenate and CoA Biosynthesis
+PPND,"Tyr, Phe, Trp Biosynthesis"
+THMDt2,Transport
+THMabc,"Transport, ABC system"
+PPNDH,"Tyr, Phe, Trp Biosynthesis"
+THRD_L,Amino Acid Degradation
+PPPGO,Heme biosynthesis
+THRS,Lysine/ Threonine Biosynthesis
+THRt2r,Transport
+THZSN,Thiamin Biosynthesis
+PPS,Glycolysis
+TKT1,Pentose-Phosphate-Pathway
+PPTGS,Peptidoglycan Biosynthesis
+TKT2,Pentose-Phosphate-Pathway
+PRAGSr,IMP Synthesis
+TMDK1,Nucleotide Interconversion
+TMDSf,Nucleotide Interconversion
+TMPPP,Thiamin Biosynthesis
+TPI,Glycolysis
+PRAIS,IMP Synthesis
+TRDR,Others
+PRAIi,"Tyr, Phe, Trp Biosynthesis"
+TRPS1,Tryptophan Biosynthesis
+TRPS2,Tryptophan Biosynthesis
+PRASCSi,IMP Synthesis
+TRPS3,Tryptophan Biosynthesis
+TRPt2r,Transport
+TYRTA,Tyrosine Biosynthesis
+PRFGS,IMP Synthesis
+TYRt2r,Transport
+U23GAAT_HP,LPS Biosynthesis
+U2GAAT,LPS Biosynthesis
+PROD2,Amino Acid Degradation
+U2GAAT2,LPS Biosynthesis
+UAAGDS,Peptidoglycan Biosynthesis
+PROabc,"Transport, ABC system"
+UAGAAT_HP,LPS Biosynthesis
+UAGCVT,Aminosugar Metabolism
+UAGDP,Aminosugar Metabolism
+UAGDP2,Aminosugar Metabolism
+UAGPT3,Peptidoglycan Biosynthesis
+PROt2r,Transport
+UAMAGS,Peptidoglycan Biosynthesis
+UAMAS,Peptidoglycan Biosynthesis
+UAPGR,Aminosugar Metabolism
+PROt4,Transport
+UDCPDP,Peptidoglycan Biosynthesis
+UDCPDPS,Others
+PRPPS,IMP Synthesis
+UDPG4E,LPS Biosynthesis
+UGMDDS,Peptidoglycan Biosynthesis
+PSCVT,Chorismate Biosynthesis
+UHGADA_HP,LPS Biosynthesis
+UMPK,UTP/CTP de novo Synthesis
+UNK2,Methionine Salvage Pathway
+UPP3S,Heme biosynthesis
+PSD_HP,Glycerolipid Synthesis
+UPPDC1,Heme biosynthesis
+UPPDC2,Heme biosynthesis
+PSERT,"Ser, Gly Biosynthesis"
+UPPRT,Nucleotide Interconversion
+URAt2,Transport
+PSP_D,"Ser, Gly Biosynthesis"
+PSP_L,"Ser, Gly Biosynthesis"
+UREA,Urea Cycle
+PSSA_HP,Glycerolipid Synthesis
+UREAt,Transport
+PTAr,Others
+PTPATi,Pantothenate and CoA Biosynthesis
+URIDK2r,dTTP Biosynthesis
+PUNP1,Salvage pathway of ATP
+URIt2,Transport
+PUNP2,Salvage pathway of ATP
+USHD_HP,LPS Biosynthesis
+VALTA,Amino Acid Degradation
+PUNP3,Salvage pathway of GTP
+VALabc,"Transport, ABC system"
+XANt2,Transport
+PUNP4,Salvage pathway of GTP
+XPPT,Salvage pathway of XTP
+PUNP5,Nucleotide Interconversion
+PUNP6,Nucleotide Interconversion
+SK_ahcys_c,Intracellular source/sink
+PUNP7,Salvage pathway of XTP
+DM_amob_c,Intracellular source/sink
+PUTA3,Glutamate Biosynthesis
+PYRDC,Others
+PYRt2,Transport
+QULNS,Nicotinate Biosynthesis
+RBFK,Riboflavin Metabolism
+RBFSa,Riboflavin Metabolism
+RBFSb,Riboflavin Metabolism
+RFAC_HP,LPS Biosynthesis - adphep
+RFA_HP,LPS Biosynthesis
+RHCCE,Others
+RNDR1,dATP Biosynthesis
+RNDR2,dGTP Biosynthesis
+RNDR3,dCTP Biosynthesis
+RNDR4,dUTP Biosynthesis
+RPE,Pentose-Phosphate-Pathway
+RPI,Pentose-Phosphate-Pathway
+S7PI,LPS Biosynthesis - adphep
+SADT2,Others
+SDPDS,Lysine Biosynthesis
+SDPTA,Lysine Biosynthesis
+SERAT,Methionine Metabolism
+SERD_L,Serine Metabolism
+SERt2r,Transport
+SHCHCS2,Menaquinone Biosynthesis
+SHK3Dr,Chorismate Biosynthesis
